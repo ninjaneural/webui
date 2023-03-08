@@ -12,3 +12,16 @@
 | Colab Page                                                                                                                                                                                         | Model Page                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/deforum_webui_colab.ipynb) deforum_webui_colab | https://huggingface.co/WarriorMama777/OrangeMixs |
+
+- prompt
+
+긍정:
+(masterpiece), best quality, high resolution,perfect_finger,extremely detailed, (photorealistic),
+cinematic light,
+1girl,solo,
+
+부정:
+(worst quality, low quality:1.2),
+sketches,monochrome,grayscale,signature,watermark,
+text, error, missing fingers,
+(nude,nsfw)
