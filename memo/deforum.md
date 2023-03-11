@@ -44,9 +44,9 @@ nsfw, easynegative, DreamArtistBADHAND, By bad artist -neg, (worst quality:2), (
 모션값
 
 ```
-0:(4.7),60:(-4.7)
-0:(0),60:(-0.5)
-0:(-1),60:(1)
+translation_x 0:(4.7),60:(-4.7)
+translation_z 0:(0),60:(-0.5)
+rotation_3d_y 0:(-1),60:(1)
 ```
 
 # 두번째 애니메이션 이미지 정보
@@ -84,6 +84,14 @@ nsfw, easynegative, (pointy ears), (worst quality:2), (low quality:2), lowres, (
         "30": " (fox ears,pony,red eyes:1.4)",
         "60": " (fox ears, pony,red eyes,ninetail:1.4)"
 }
+```
+
+모션값
+
+```
+translation_x 0:(2.4),60:(-3.6)
+translation_z 0:(0),60:(0)
+rotation_3d_y 0:(-0.5),60:(0.7)
 ```
 
 # 마지막 애니메이션 정보
