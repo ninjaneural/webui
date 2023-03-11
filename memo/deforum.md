@@ -52,13 +52,22 @@ nsfw, easynegative, DreamArtistBADHAND, By bad artist -neg, (worst quality:2), (
 # 두번째 애니메이션 이미지 정보
 
 샘플러
+
+```
 dpm++ sde karras, 25 Steps
+```
 
 시드값
+
+```
 3983358655
+```
 
 긍정프롬프트
+
+```
 intricate details, cinematic light, (masterpiece), (detailed), 1girl, (a beautiful 20 y.o korean lady:1.2), (small head:1.2), k-pop, (kpop idol, korean mixed), golden ratio face, a face of perfect proportion, benevolent_face, white oversized blouse, light blue jeans, floating_hair, bangs, long hair, (street, outdoor)
+```
 
 부정프롬프트
 
