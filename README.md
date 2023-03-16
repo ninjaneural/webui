@@ -1,6 +1,6 @@
 # SD-WebUI Colab 목록
 
-## 컨트롤넷 포함
+## 컨트롤넷 ControlNet 포함
 
 | Colab                                                                                                                                                                                     | Model                                                                              | Memo           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- |
@@ -13,7 +13,7 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/realdosmix_webui_colab.ipynb)         | [realdosmix](https://civitai.com/models/6925/realdosmix)                           | vae 설정필요함 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/abyssbasil_0_5_webui_colab.ipynb)     | AOM2H(0.5) + BasilMix(0.5)                                                         |                |
 
-## 디포럼 포함
+## 디포럼 Deforum 포함
 
 | Colab                                                                                                                                                                                              | Model                    | Memo                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
