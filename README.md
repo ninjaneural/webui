@@ -1,6 +1,6 @@
 # SD-WebUI Colab 목록
 
-## 컨트롤넷 포함
+## ControlNet 컨트롤넷 설정
 
 | Colab                                                                                                                                                                                     | Model                                                                              | Memo           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- |
@@ -13,11 +13,13 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/realdosmix_webui_colab.ipynb)         | [realdosmix](https://civitai.com/models/6925/realdosmix)                           | vae 설정필요함 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/abyssbasil_0_5_webui_colab.ipynb)     | AOM2H(0.5) + BasilMix(0.5)                                                         |                |
 
-## 디포럼 포함
+## Deforum 디포럼 설정 
+
+Deforum용 파일 미리 다운 받고, 영상찍었을때 버전으로 맞춘 colab 이에요
 
 | Colab                                                                                                                                                                                              | Model                    | Memo                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/deforum_webui_colab.ipynb) deforum_webui_colab | anything-v4,chillout_mix | 2023-03-09 기준 버전 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/deforum_webui_colab.ipynb) deforum | anything-v4,chillout_mix | 2023-03-09 기준 버전 |
 
 ## 유용한 사이트
 
