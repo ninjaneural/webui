@@ -33,3 +33,19 @@
   <img src="./segmentation/map3.png" width="480"/>
 
   <img src="./segmentation/map4.png" width="480"/>
+
+- 맵 이미지 (캐릭터 포함)
+
+  <img src="./segmentation/map_c1.png" width="480"/>
+
+  <img src="./segmentation/map_c2.png" width="480"/>
+
+  <img src="./segmentation/map_c3.png" width="480"/>
+
+  <img src="./segmentation/map_c4.png" width="480"/>
+
+- 샘플 캐릭터 필터
+
+  <img src="./segmentation/sample_body.png" width="480"/>
+
+  <img src="./segmentation/sample_face.png" width="480"/>
