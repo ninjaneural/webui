@@ -13,13 +13,20 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/realdosmix_webui_colab.ipynb)         | [realdosmix](https://civitai.com/models/6925/realdosmix)                           | vae 설정필요함 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/abyssbasil_0_5_webui_colab.ipynb)     | AOM2H(0.5) + BasilMix(0.5)                                                         |                |
 
-## Deforum 디포럼 설정 
+## Deforum 디포럼 설정
 
 Deforum용 파일 미리 다운 받고, 영상찍었을때 버전으로 맞춘 colab 이에요
 
-| Colab                                                                                                                                                                                              | Model                    | Memo                 |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
+| Colab                                                                                                                                                                                  | Model                    | Memo                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/deforum_webui_colab.ipynb) deforum | anything-v4,chillout_mix | 2023-03-09 기준 버전 |
+
+## 구글드라이브 LoRA, Checkpoint 연결
+
+| Colab                                                                                                                                                                              | Model                                                               | Memo                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------- |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/google_aom2_webui_colab.ipynb) | [AbyssOrangeMix2](https://huggingface.co/WarriorMama777/OrangeMixs) | 모델,로라 구글드라이브연결 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/google_webui_colab.ipynb)      | 없음                                                                | 모델,로라 구글드라이브연결 |
 
 ## 유용한 사이트
 
