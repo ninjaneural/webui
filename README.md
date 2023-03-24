@@ -2,6 +2,8 @@
 
 ## ControlNet 컨트롤넷 설정
 
+아무것도 없이 바로 시작할 수 있는 colab이에요
+
 | Colab                                                                                                                                                                                     | Model                                                                              | Memo           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/abyss_orange_mix_2_webui_colab.ipynb) | [AbyssOrangeMix2](https://huggingface.co/WarriorMama777/OrangeMixs)                |                |
@@ -22,6 +24,8 @@ Deforum용 파일 미리 다운 받고, 영상찍었을때 버전으로 맞춘 c
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/deforum_webui_colab.ipynb) deforum | anything-v4,chillout_mix | 2023-03-09 기준 버전 |
 
 ## 구글드라이브 LoRA, Checkpoint 연결
+
+LoRA와 Checkpoint를 구글드라이브에 넣고 마음대로 구성하는 colab
 
 | Colab                                                                                                                                                                              | Model                                                               | Memo                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------- |
