@@ -34,6 +34,10 @@ LoRA와 Checkpoint를 구글드라이브에 넣고 마음대로 구성하는 col
 
 ## 유용한 사이트
 
+- 컨트롤넷 공유사이트
+
+  [https://controlnetposes.com/](https://controlnetposes.com/)
+
 - 컨트롤넷 세그먼트
 
   [https://huggingface.co/spaces/shi-labs/OneFormer](https://huggingface.co/spaces/shi-labs/OneFormer)
