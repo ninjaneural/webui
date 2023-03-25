@@ -14,6 +14,8 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/realistic_vision_webui_colab.ipynb)   | [realistic-vision](https://civitai.com/models/4201/realistic-vision-v13-fantasyai) |                |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/realdosmix_webui_colab.ipynb)         | [realdosmix](https://civitai.com/models/6925/realdosmix)                           | vae 설정필요함 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/abyssbasil_0_5_webui_colab.ipynb)     | AOM2H(0.5) + BasilMix(0.5)                                                         |                |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/meina_mix_webui_colab.ipynb)          | [MeinaMix](https://huggingface.co/Meina/MeinaMix)                                  |                |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/blueberrymix_webui_colab.ipynb)       | [BlueberryMix](https://civitai.com/models/14323/blueberrymix)                      | vae 설정필요함 |
 
 ## Deforum 디포럼 설정
 
