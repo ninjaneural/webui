@@ -23,6 +23,7 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/meina_pastel_webui_colab.ipynb)       | [MeinaPastel](https://huggingface.co/Meina/MeinaPastel)                            | vae 설정필요함 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/camellia_mix25d_webui_colab.ipynb)    | [CamelliaMix](https://huggingface.co/Powidl43/CamelliaMix)                         |                |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/chikmix_mix_webui_colab.ipynb)        | [ChikMix](https://civitai.com/models/9871/chikmix)                                 |                |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/v80_v80_webui_colab.ipynb)            | [V80_V80](https://civitai.com/models/18427/v08)                                    |                |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/blueberrymix_webui_colab.ipynb)       | [BlueberryMix](https://civitai.com/models/14323/blueberrymix)                      | vae 설정필요함 |
 
 ## <strike>ControlNet 컨트롤넷 설정</strike> (기존 버전)
