@@ -1,10 +1,9 @@
 # SD-WebUI Colab 목록
 
-## ControlNet 컨트롤넷 설정 (새로운 버전)
+## 구글연동 + 멀티컨트롤넷 설정 (새로운 버전)
 
-아무것도 없이 바로 시작할 수 있는 colab이에요
-
-구글드라이브 연동과 통합되었어요 (옵션)
+> 아무것도 없이 바로 시작할 수 있는 colab이에요  
+> 구글드라이브 연동과 통합되었어요 (옵션)
 
 | Colab                                                                                                                                                                                     | Model                                                                              | Memo           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- |
@@ -27,9 +26,12 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/henmix_v1_webui_colab.ipynb)          | [henmixReal](https://civitai.com/models/20282/henmixreal)                          |                |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/blueberrymix_webui_colab.ipynb)       | [BlueberryMix](https://civitai.com/models/14323/blueberrymix)                      | vae 설정필요함 |
 
-## <strike>ControlNet 컨트롤넷 설정</strike> (기존 버전)
+## <strike>컨트롤넷 설정</strike> (기존 버전)
 
-아무것도 없이 바로 시작할 수 있는 colab이에요
+<details>
+    <summary>펼쳐보기</summary>
+
+> 아무것도 없이 바로 시작할 수 있는 colab이에요
 
 | Colab                                                                                                                                                                                         | Model                                                                              | Memo           |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- |
@@ -42,11 +44,13 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/old/realdosmix_webui_colab.ipynb)         | [realdosmix](https://civitai.com/models/6925/realdosmix)                           | vae 설정필요함 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/old/abyssbasil_0_5_webui_colab.ipynb)     | AOM2H(0.5) + BasilMix(0.5)                                                         |                |
 
+</details>
+
 ---
 
 ## Deforum 디포럼 설정
 
-Deforum용 파일 미리 다운 받고, 영상찍었을때 버전으로 맞춘 colab 이에요
+> Deforum용 파일 미리 다운 받고, 영상찍었을때 버전으로 맞춘 colab 이에요
 
 | Colab                                                                                                                                                                                  | Model                    | Memo                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
@@ -56,18 +60,23 @@ Deforum용 파일 미리 다운 받고, 영상찍었을때 버전으로 맞춘 c
 
 ## 구글드라이브 LoRA, Checkpoint 연결 (기존 버전)
 
-**새로운버전 <- 구글드라이브 연동과 통합되었어요**
+> **새로운버전 <- 구글드라이브 연동과 통합되었어요**  
+> 파일경로가 webui 안으로 들어갔어요
 
-파일경로가 webui 안으로 들어갔어요
-
+```
 lora -> webui/lora
-
 checkpoint -> webui/checkpoint
+```
+
+<details>
+    <summary>펼쳐보기</summary>
 
 | Colab                                                                                                                                                                              | Model                                                               | Memo                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------- |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/google_aom2_webui_colab.ipynb) | [AbyssOrangeMix2](https://huggingface.co/WarriorMama777/OrangeMixs) | 모델,로라 구글드라이브연결 |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/google_webui_colab.ipynb)      | 없음                                                                | 모델,로라 구글드라이브연결 |
+
+</details>
 
 ---
 
