@@ -3,7 +3,7 @@
 긍정 프롬프트
 
 ```
-(masterpiece,best quality:1.2), highres, 8k, UHD, (complex detail), __light__, photorealistic, realistic, night, 1girl, solo, standing, brown hair, outdoors, thighhighs, blurry,, <lora:corset_v10:0.4>,stockings, narrow waist,tight, superhero, power, scenery, I am superhero and then
+(masterpiece,best quality:1.2), highres, 8k, UHD, (complex detail), __light__, photorealistic, realistic, day, 1girl, solo, standing, gold hair, indoors, thighhighs, blurry,, mecha,stockings, bodysuit,tight, superhero, power, scenery, I am superhero and then
 ```
 
 부정 프롬프트
