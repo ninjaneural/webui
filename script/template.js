@@ -147,7 +147,7 @@ const checkpoints = [
         type: '2D',
         model: 'https://civitai.com/models/7241/mix-pro-v4',
         ipynb: 'mixpro_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/34559?type=Model&format=SafeTensor',
+        checkpoint: 'https://huggingface.co/AIARTCHAN/MIX-Pro-V4/resolve/main/MIX-Pro-V4-fp16.safetensors',
         checkpoint_file: 'mixProV4.safetensors',
         bakedVAE: true,
     },
