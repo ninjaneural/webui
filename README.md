@@ -1,8 +1,8 @@
 # 🚨 중요 🚨
 
-# 공식 발표에 따르면 Stable Diffusion WebUI는 Colab **무료 티어**에서 사용할 수 없습니다.
+# 이제 Stable Diffusion WebUI는 공식적으로는 Colab **무료 티어**에서 사용할 수 없다고 하네요
 
-# 지금은 첫번째단계로 경고창만 추가했지만 차후 밴당할 수도 있는거 같아요.
+# 지금은 첫번째 단계로 경고창만 추가되었어요. 앞으로 제한이나 제재조치가 있을 수 있을거 같아요
 
 [Colab PM 트윗](https://twitter.com/thechrisperry/status/1649189902079381505)
 
