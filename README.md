@@ -1,37 +1,73 @@
+# 🚨 중요 🚨
+
+# 공식 발표에 따르면 Stable Diffusion WebUI는 Colab <font color="red">무료 티어</font>를 사용할 수 없습니다.
+
+# 지금은 경고창만 추가했지만 차후 밴당할 수도 있는거 같아요.
+
+[Colab PM 트윗](https://twitter.com/thechrisperry/status/1649189902079381505)
+
+> GPU 이동 brrrrrrr
+>
+> 우리는 무료 티어 사용자를 위한 대화형 노트북 컴퓨팅을 우선시합니다; Stable Diffusion WebUI 사용이 매우 커졌습니다;  
+> 우리 팀의 예산으로는 사용량 증가를 지원할 수 없습니다.
+
+[Colab PM 레딧글](https://old.reddit.com/r/StableDiffusion/comments/12t8tc7/is_colab_going_to_start_banning_people_who_use_it/jh2rwe1/)
+
+> Colab PM입니다.
+>
+> 죄송합니다. 저희는 무료 티어 사용자를 위한 대화형 노트북 컴퓨팅에 우선순위를 두고 있고, webui는 단지 Colab을 간편한 무료 GPU로 사용하고 있습니다.  
+> 저희는 쿨하게 대처하려고 노력하지만 최근 사용량이 실제로 증가하고 있으며 비용에서 매우 눈에 띄게 늘어나고 있습니다. 저희 예산으로는 할 수 있는 일이 한정되어 있어서요!
+>
+> https://research.google.com/colaboratory/faq.html#limitations-and-restrictions
+>
+> 그래서 첫 번째 단계로 무료 티어에 경고를 추가했습니다.
+
+# 유료(프로)는 일단 제한할 계획은 없다고해요
+
+[Colab PM 트윗](https://twitter.com/thechrisperry/status/1649196140909428736)
+
+> 유료 요금제에서 webui 사용을 제한할 계획은 없습니다.
+
+---
+
 # SD-WebUI Colab 목록
 
 ## 구글연동 + 멀티컨트롤넷 기본설정 (새로운 버전)
 
 > 아무것도 없이 바로 시작할 수 있는 colab이에요  
 > 구글드라이브 연동과 통합되었어요 (옵션)  
-> **멀티 컨트롤넷 설정 및 재시작 할필요없어요**  
+> **멀티 컨트롤넷 설정 및 재시작 할필요없어요**
 
-| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/abyss_orange_mix_2_webui_colab.ipynb) | [AbyssOrangeMix2](https://huggingface.co/WarriorMama777/OrangeMixs)                    |      | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/chillout_mix_webui_colab.ipynb)       | [ChilloutMix](https://huggingface.co/swl-models/chilloutmix)                           |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/chillout_ni_mix_webui_colab.ipynb)    | [ChilloutMix-Ni](https://huggingface.co/swl-models/chilloutmix-ni)                     |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/deliberate_webui_colab.ipynb)         | [Deliberate](https://huggingface.co/XpucT/Deliberate)                                  |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/dreamshaper_webui_colab.ipynb)        | [DreamShaper](https://huggingface.co/Lykon/DreamShaper)                                |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/lofi_webui_colab.ipynb)               | [LOFI](https://civitai.com/models/9052/lofi)                                           |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/expmix_line_webui_colab.ipynb)        | [ExpmixLine](https://huggingface.co/AIARTCHAN/expmixLine_v2)                           | 선택 | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/counterfeit_webui_colab.ipynb)        | [Counterfeit](https://huggingface.co/gsdf/Counterfeit-V2.0)                            | 선택 | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/oldfish_webui_colab.ipynb)            | [old-fish](https://civitai.com/models/14978/old-fish)                                  | 선택 | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/realistic_vision_webui_colab.ipynb)   | [realistic-vision](https://civitai.com/models/4201/realistic-vision-v13-fantasyai)     |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/realdosmix_webui_colab.ipynb)         | [realdosmix](https://civitai.com/models/6925/realdosmix)                               | 선택 | 2.5D                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/abyssbasil_0_5_webui_colab.ipynb)     | AOM2H(0.5) + BasilMix(0.5)                                                             |      | 2.5D                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/meina_mix_webui_colab.ipynb)          | [MeinaMix](https://huggingface.co/Meina/MeinaMix)                                      |      | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/meina_pastel_webui_colab.ipynb)       | [MeinaPastel](https://huggingface.co/Meina/MeinaPastel)                                | 선택 | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/camellia_mix25d_webui_colab.ipynb)    | [CamelliaMix](https://huggingface.co/Powidl43/CamelliaMix)                             |      | 2.5D                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/chikmix_mix_webui_colab.ipynb)        | [ChikMix](https://civitai.com/models/9871/chikmix)                                     |      | 2.5D                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/v80_v80_webui_colab.ipynb)            | [V80_V80](https://civitai.com/models/18427/v08)                                        |      | 2.5D                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/henmix_v1_webui_colab.ipynb)          | [henmixReal](https://civitai.com/models/20282/henmixreal)                              |      | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/mixpro_webui_colab.ipynb)             | [MixPro4](https://civitai.com/models/7241/mix-pro-v4)                                  |      | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/mixpro_webui_colab.ipynb)             | [Mistoon_Anime](https://civitai.com/models/24149/mistoonanime)                         | 선택 | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/mixpro_webui_colab.ipynb)             | [Animeflatmix](https://civitai.com/models/24387/aniflatmix-anime-flat-color-style-mix) | 선택 | 2D                      |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/yorrrlmix_webui_colab.ipynb)          | [YorrrlMix](https://civitai.com/models/17938/yorrrlmix)                                | 선택 | 2.5D                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/blueberrymix_webui_colab.ipynb)       | [BlueberryMix](https://civitai.com/models/14323/blueberrymix)                          | 선택 | 실사                    |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/google_run_webui_colab.ipynb)         | 없음                                                                                   |      | 구글드라이브에 직접설치 |
+| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ---- |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/abyss_orange_mix_2_webui_colab.ipynb) | [AbyssOrangeMix2](https://huggingface.co/WarriorMama777/OrangeMixs)                    |      | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/abyssbasil_0_5_webui_colab.ipynb)     | [AbyssBasil2]()                                                                        | 선택 | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/aniflatmix_webui_colab.ipynb)         | [Animeflatmix](https://civitai.com/models/24387/aniflatmix-anime-flat-color-style-mix) | 선택 | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/blueberrymix_webui_colab.ipynb)       | [blueberrymix](https://civitai.com/models/14323/blueberrymix)                          | 선택 | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/camellia_mix25d_webui_colab.ipynb)    | [CamelliaMix](https://huggingface.co/Powidl43/CamelliaMix)                             |      | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/chillout_mix_webui_colab.ipynb)       | [ChilloutMix](https://huggingface.co/swl-models/chilloutmix)                           |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/chillout_ni_mix_webui_colab.ipynb)    | [ChilloutMix-Ni](https://huggingface.co/swl-models/chilloutmix-ni)                     |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/chikmix_mix_webui_colab.ipynb)        | [Chikmix](https://civitai.com/models/9871/chikmix)                                     |      | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/counterfeit_webui_colab.ipynb)        | [Counterfeit-V2.0](https://huggingface.co/gsdf/Counterfeit-V2.0)                       | 선택 | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/deliberate_webui_colab.ipynb)         | [Deliberate](https://huggingface.co/XpucT/Deliberate)                                  |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/dreamshaper_webui_colab.ipynb)        | [DreamShaper](https://huggingface.co/Lykon/DreamShaper)                                |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/expmix_line_webui_colab.ipynb)        | [expmixLine_v2](https://huggingface.co/AIARTCHAN/expmixLine_v2)                        | 선택 | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/henmix_v1_webui_colab.ipynb)          | [henmixreal](https://civitai.com/models/20282/henmixreal)                              |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/lofi_webui_colab.ipynb)               | [LOFI](https://civitai.com/models/9052/lofi)                                           |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/meina_mix_webui_colab.ipynb)          | [MeinaMix](https://huggingface.co/Meina/MeinaMix)                                      |      | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/meina_pastel_webui_colab.ipynb)       | [MeinaPastel](https://huggingface.co/Meina/MeinaPastel)                                | 선택 | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/mistoon_anime_webui_colab.ipynb)      | [mistoonanime](https://civitai.com/models/24149/mistoonanime)                          | 선택 | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/mixpro_webui_colab.ipynb)             | [mix-pro-v4](https://civitai.com/models/7241/mix-pro-v4)                               |      | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/oldfish_webui_colab.ipynb)            | [old-fish](https://civitai.com/models/14978/old-fish)                                  | 선택 | 2D   |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/perfectworld_webui_colab.ipynb)       | [PerfectWorld_V1](https://huggingface.co/naonovn/PerfectWorldAom2hbasilmix)            |      | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/realdosmix_webui_colab.ipynb)         | [RealDosmix](https://civitai.com/models/6925/realdosmix)                               | 선택 | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/realistic_vision_webui_colab.ipynb)   | [realistic-vision](https://civitai.com/models/4201/realistic-vision-v13-fantasyai)     |      | 실사 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/v80_v80_webui_colab.ipynb)            | [v08_v80](https://civitai.com/models/18427/v08)                                        |      | 2.5D |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/yorrrlmix_webui_colab.ipynb)          | [yorrrlmix](https://civitai.com/models/17938/yorrrlmix)                                | 선택 | 2.5D |
+
+| Colab                                                                                                                                                                                    | Model | VAE | Memo                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | --- | ----------------------- |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/google_run_webui_colab.ipynb) | 없음  |     | 구글드라이브에 직접설치 |
 
 ---
 
@@ -41,7 +77,7 @@
 
 | Colab                                                                                                                                                                                         | Model                    | Memo                 |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/deforum_webui_colab.ipynb) deforum | anything-v4,chillout_mix | 2023-03-09 기준 버전 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/custom/deforum_webui_colab.ipynb) deforum | anything-v4,chillout_mix | 2023-03-09 기준 버전 |
 
 ---
 

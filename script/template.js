@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const TARGET_DIR = 'stable';
+const TARGET_DIR = process.argv[2] ?? 'stable';
 const BASE_SRC = `../${TARGET_DIR}/template.ipynb`;
 
 const checkpoints = [
@@ -24,7 +24,7 @@ const checkpoints = [
     },
     {
         name: 'blueberrymix',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://civitai.com/models/14323/blueberrymix',
         ipynb: 'blueberrymix_webui_colab',
         checkpoint: 'https://huggingface.co/luizC/blueberry/resolve/main/blueberrymix_10.safetensors',
@@ -41,7 +41,7 @@ const checkpoints = [
     },
     {
         name: 'ChilloutMix',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://huggingface.co/swl-models/chilloutmix',
         ipynb: 'chillout_mix_webui_colab',
         checkpoint: 'https://huggingface.co/swl-models/chilloutmix/resolve/main/Chilloutmix-non-ema-fp16.safetensors',
@@ -50,7 +50,7 @@ const checkpoints = [
     },
     {
         name: 'ChilloutMix-Ni',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://huggingface.co/swl-models/chilloutmix-ni',
         ipynb: 'chillout_ni_mix_webui_colab',
         checkpoint: 'https://huggingface.co/swl-models/chilloutmix-ni/resolve/main/chilloutmix-Ni-non-ema-fp16.safetensors',
@@ -76,7 +76,7 @@ const checkpoints = [
     },
     {
         name: 'Deliberate',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://huggingface.co/XpucT/Deliberate',
         ipynb: 'deliberate_webui_colab',
         checkpoint: 'https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors',
@@ -85,8 +85,9 @@ const checkpoints = [
     },
     {
         name: 'DreamShaper',
-        ipynb: 'dreamshaper_webui_colab',
+        type: '실사',
         model: 'https://huggingface.co/Lykon/DreamShaper',
+        ipynb: 'dreamshaper_webui_colab',
         checkpoint: 'https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_4BakedVae_fp16.safetensors',
         checkpoint_file: 'DreamShaper_4BakedVae_fp16.safetensors',
         bakedVAE: true,
@@ -101,7 +102,7 @@ const checkpoints = [
     },
     {
         name: 'henmixreal',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://civitai.com/models/20282/henmixreal',
         ipynb: 'henmix_v1_webui_colab',
         checkpoint: 'https://huggingface.co/naonovn/henmix/resolve/main/henmixReal_v10.safetensors',
@@ -110,7 +111,7 @@ const checkpoints = [
     },
     {
         name: 'LOFI',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://civitai.com/models/9052/lofi',
         ipynb: 'lofi_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/28882?type=Model&format=SafeTensor',
@@ -178,7 +179,7 @@ const checkpoints = [
     },
     {
         name: 'realistic-vision',
-        type: 'Realistic',
+        type: '실사',
         model: 'https://civitai.com/models/4201/realistic-vision-v13-fantasyai',
         ipynb: 'realistic_vision_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/6987?type=Model&format=SafeTensor',
@@ -199,14 +200,21 @@ const checkpoints = [
 
 async function copy_files() {
     let templateCode = fs.readFileSync(BASE_SRC, { encoding: 'utf8' });
-
+    let readme = [];
+    readme.push(`| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
     checkpoints.forEach((item) => {
         console.log(`${item.ipynb} 복사`);
         let code = templateCode;
         code = code.replaceAll('#template_checkpoint_default#', item.checkpoint);
         code = code.replaceAll('#template_checkpoint_default_name#', item.checkpoint_file);
         fs.writeFileSync(`../${TARGET_DIR}/${item.ipynb}.ipynb`, code);
+
+        readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/${TARGET_DIR}/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
     });
+
+    readmeText = readme.join('\n');
+    fs.writeFileSync(`../${TARGET_DIR}/README.md`, readmeText);
 
     return true;
 }
