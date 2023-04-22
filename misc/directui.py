@@ -243,6 +243,7 @@ def webui():
         startup_timer.record("create ui")
 
         app, local_url, share_url = shared.demo.launch(
+            height=5000,
             prevent_thread_lock=True
         )
         # after initial launch, disable --autolaunch for subsequent restarts
