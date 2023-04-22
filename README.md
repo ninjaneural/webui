@@ -74,12 +74,11 @@
 ## 구글연동 + 멀티컨트롤넷 기본설정 (터널링없이 직접실행 버전)
 
 > 코랩내에 직접실행
-> 이번 sd-webui 코랩제한 조치하면서 약관에 remote 관련사항이 추가되서 remote(터널링)없이 실행되는 버전을 미리 준비해봤어요
+> 이번 sd-webui 코랩제한 조치하면서 약관에 remote 관련사항이 추가되서 remote(터널링)없이 실행되는 버전을 미리 준비해봤어요  
+> 테스트중
 
 <details>
   <summary>펼쳐보기</summary>
-
----
 
 | Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ---- |
@@ -109,6 +108,8 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/direct/yorrrlmix_webui_colab.ipynb)          | [yorrrlmix](https://civitai.com/models/17938/yorrrlmix)                                | 선택 | 2.5D |
 
 </details>
+
+---
 
 ## Deforum 디포럼 설정
 
