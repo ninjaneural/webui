@@ -219,9 +219,23 @@ async function copy_files() {
     return true;
 }
 
+async function make_readme() {
+    let readme = [];
+    readme.push(`| WebUI 3월(stable)                                                                                                                                                                                | WebUI 최신                                                                                                                                                                                        | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
+    checkpoints.forEach((item) => {
+        readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/nightly/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
+    });
+
+    readmeText = readme.join('\n');
+    fs.writeFileSync(`../COLAB.md`, readmeText);
+    return true;
+}
+
 (function () {
     try {
         copy_files();
+        make_readme();
     } catch (e) {
         console.error(e);
     }

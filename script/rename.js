@@ -7,7 +7,7 @@ var basepath = `${process.argv[2]?.replace(/\\/g, '/')}/*.png`;
 
 (function () {
     glob(`${basepath}`, options, function (er, files) {
-        let index = 0;
+        let index = process.argv[3] ?? 0;
         for (element of files) {
             let name = path.basename(element);
             let dir = path.dirname(element);
