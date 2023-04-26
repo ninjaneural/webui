@@ -58,6 +58,15 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'ChilledRemix',
+        type: '실사',
+        model: 'https://huggingface.co/sazyou-roukaku/chilled_remix',
+        ipynb: 'chilled_remix_webui_colab',
+        checkpoint: 'https://huggingface.co/sazyou-roukaku/chilled_remix/resolve/main/chilled_remix_v1Fp16vae.safetensors',
+        checkpoint_file: 'chilled_remix_v1Fp16vae.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'Chikmix',
         type: '2.5D',
         model: 'https://civitai.com/models/9871/chikmix',
@@ -76,7 +85,7 @@ const checkpoints = [
     },
     {
         name: 'Deliberate',
-        type: '실사',
+        type: '실사+2.5D',
         model: 'https://huggingface.co/XpucT/Deliberate',
         ipynb: 'deliberate_webui_colab',
         checkpoint: 'https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors',
@@ -85,7 +94,7 @@ const checkpoints = [
     },
     {
         name: 'DreamShaper',
-        type: '실사',
+        type: '실사+2.5D',
         model: 'https://huggingface.co/Lykon/DreamShaper',
         ipynb: 'dreamshaper_webui_colab',
         checkpoint: 'https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_4BakedVae_fp16.safetensors',
@@ -101,12 +110,21 @@ const checkpoints = [
         checkpoint_file: 'expmixLine_v20.safetensors',
     },
     {
-        name: 'henmixreal',
+        name: 'henmixreal_v1',
         type: '실사',
         model: 'https://civitai.com/models/20282/henmixreal',
         ipynb: 'henmix_v1_webui_colab',
         checkpoint: 'https://huggingface.co/naonovn/henmix/resolve/main/henmixReal_v10.safetensors',
         checkpoint_file: 'henmixReal_v10.safetensors',
+        bakedVAE: true,
+    },
+    {
+        name: 'GhostMix',
+        type: '2.5D',
+        model: 'https://civitai.com/models/36520/ghostmix',
+        ipynb: 'ghostmix_webui_colab',
+        checkpoint: 'https://huggingface.co/drnighthan/GhostMix/resolve/main/GhostMix-V1.1.safetensors',
+        checkpoint_file: 'GhostMix-V1.1.safetensors',
         bakedVAE: true,
     },
     {
@@ -221,7 +239,7 @@ async function copy_files() {
 
 async function make_readme() {
     let readme = [];
-    readme.push(`| WebUI 3월(stable)                                                                                                                                                                                | WebUI 최신                                                                                                                                                                                        | UI-UX 최신                                                                                                                                                                                       | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| WebUI 3월버전(추천)                                                                                                                                                                               | WebUI 최신                                                                                                                                                                                        | UI-UX 최신                                                                                                                                                                                       | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
     checkpoints.forEach((item) => {
         readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/nightly/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/uiux/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
