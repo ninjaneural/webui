@@ -9,10 +9,10 @@
 {standing|walking|sitting|run|dynamic pose},
 {cowboy shot|wide shot|zooming out|full body},
 __eyescolor__,
-{black|brown} hair,__my_hairstyle__,__my_hairstyle2__,
-{0.1::indoors|0.2::outdoors},
+{black|brown|silver|gold} hair,__my_hairstyle__,__my_hairstyle2__,
+{1::indoors|2::outdoors},
 {open_mouth|expression|joyful|happy|light_smile|smile},
-__color__ {0.5::__my_bottom__,__my_top__|0.1:: hanbok},
+__color__ {5::__my_bottom__,__my_top__|1::<lora:femaleNobleClassHanbok_v10:0.7> hanbok},
 {medium|large} breasts,
 {blue sky|pool|classroom|village|seoul|country|hospital|cafe|school ground|country village|street|school|island village||||}, scenery,
 ```
