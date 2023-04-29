@@ -1,4 +1,4 @@
-#프롬프트
+# 프롬프트
 
 긍정 프롬프트
 
@@ -29,6 +29,6 @@ __color__ {0.5::__my_bottom__,__my_top__|0.1:: hanbok},
 Steps: 25, Sampler: DPM++ SDE Karras, CFG scale: 9, Seed: 3115253346, Size: 896x512, Model hash: Majic Mix Realistic, Model: mixProV4, Denoising strength: 0.4, Clip skip: 2
 ```
 
-#와일드카드 파일
+# 와일드카드 파일
 
-- [wildcard.zip 파일](./wildcard/wildcard.zip)
+- [wildcard.zip 파일](https://github.com/ninjaneural/webui/blob/master/memo/wildcard/wildcard.zip?raw=true)
