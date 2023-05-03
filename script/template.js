@@ -5,6 +5,15 @@ const BASE_SRC = `../${TARGET_DIR}/template.ipynb`;
 
 const checkpoints = [
     {
+        name: 'Aurora',
+        type: '범용',
+        model: 'https://civitai.com/models/40199/aurora',
+        ipynb: 'aurora_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/45601?type=Model&format=SafeTensor&size=full&fp=fp16',
+        checkpoint_file: 'aurora_v10.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'AbyssOrangeMix2',
         type: '2.5D',
         model: 'https://huggingface.co/WarriorMama777/OrangeMixs',
@@ -84,8 +93,16 @@ const checkpoints = [
         checkpoint_file: 'Counterfeit-V2.0fp16.safetensors',
     },
     {
+        name: 'Colorful',
+        type: '범용',
+        model: 'https://civitai.com/models/7279/colorful',
+        ipynb: 'colorful_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/51426?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'colorful_v30.safetensors',
+    },
+    {
         name: 'Deliberate',
-        type: '실사+2.5D',
+        type: '범용',
         model: 'https://huggingface.co/XpucT/Deliberate',
         ipynb: 'deliberate_webui_colab',
         checkpoint: 'https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v2.safetensors',
@@ -103,7 +120,7 @@ const checkpoints = [
     },
     {
         name: 'DreamShaper',
-        type: '실사+2.5D',
+        type: '범용',
         model: 'https://huggingface.co/Lykon/DreamShaper',
         ipynb: 'dreamshaper_webui_colab',
         checkpoint: 'https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_4BakedVae_fp16.safetensors',
@@ -125,15 +142,6 @@ const checkpoints = [
         ipynb: 'henmix_v1_webui_colab',
         checkpoint: 'https://huggingface.co/naonovn/henmix/resolve/main/henmixReal_v10.safetensors',
         checkpoint_file: 'henmixReal_v10.safetensors',
-        bakedVAE: true,
-    },
-    {
-        name: 'majicMIX realistic',
-        type: '실사',
-        model: 'https://civitai.com/models/43331/majicmix-realistic',
-        ipynb: 'majic_mix_realistic_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/55911?type=Model&format=SafeTensor&size=pruned&fp=fp16',
-        checkpoint_file: 'majicMIX_realistic_v4.safetensors',
         bakedVAE: true,
     },
     {
@@ -161,6 +169,15 @@ const checkpoints = [
         ipynb: 'lofi_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/28882?type=Model&format=SafeTensor',
         checkpoint_file: 'lofi_V2.safetensors',
+        bakedVAE: true,
+    },
+    {
+        name: 'majicMIX realistic',
+        type: '실사',
+        model: 'https://civitai.com/models/43331/majicmix-realistic',
+        ipynb: 'majic_mix_realistic_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/55911?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'majicMIX_realistic_v4.safetensors',
         bakedVAE: true,
     },
     {
@@ -195,6 +212,15 @@ const checkpoints = [
         ipynb: 'mixpro_webui_colab',
         checkpoint: 'https://huggingface.co/AIARTCHAN/MIX-Pro-V4/resolve/main/MIX-Pro-V4-fp16.safetensors',
         checkpoint_file: 'mixProV4.safetensors',
+        bakedVAE: true,
+    },
+    {
+        name: 'Never Ending Dream',
+        type: '범용',
+        model: 'https://civitai.com/models/10028/neverending-dream-ned',
+        ipynb: 'ned_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/11925?type=Pruned%20Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'neverendingDreamNED_BakedVae.safetensors',
         bakedVAE: true,
     },
     {
