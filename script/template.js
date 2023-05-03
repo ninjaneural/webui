@@ -32,7 +32,7 @@ const checkpoints = [
         checkpoint_file: 'aniflatmixAnimeFlatColorStyle_v10.safetensors',
     },
     {
-        name: 'blueberrymix',
+        name: 'BlueberryMix',
         type: '실사',
         model: 'https://civitai.com/models/14323/blueberrymix',
         ipynb: 'blueberrymix_webui_colab',
@@ -128,7 +128,7 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
-        name: 'expmixLine_v2',
+        name: 'expmixLine V2',
         type: '2D',
         model: 'https://huggingface.co/AIARTCHAN/expmixLine_v2',
         ipynb: 'expmix_line_webui_colab',
@@ -136,12 +136,21 @@ const checkpoints = [
         checkpoint_file: 'expmixLine_v20.safetensors',
     },
     {
-        name: 'henmixreal_v1',
+        name: 'henmixreal V1',
         type: '실사',
         model: 'https://civitai.com/models/20282/henmixreal',
         ipynb: 'henmix_v1_webui_colab',
         checkpoint: 'https://huggingface.co/naonovn/henmix/resolve/main/henmixReal_v10.safetensors',
         checkpoint_file: 'henmixReal_v10.safetensors',
+        bakedVAE: true,
+    },
+    {
+        name: 'I Can\'t Believe It\'s Not Photography',
+        type: '실사',
+        model: 'https://civitai.com/models/28059/icbinp-i-cant-believe-its-not-photography',
+        ipynb: 'icbinp_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/60899?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'icbinpICantBelieveIts_v30.safetensors',
         bakedVAE: true,
     },
     {
@@ -198,7 +207,7 @@ const checkpoints = [
         checkpoint_file: 'MeinaPastelV3WithoutVAE.safetensors',
     },
     {
-        name: 'mistoonanime',
+        name: 'MistoonAnime',
         type: '2D',
         model: 'https://civitai.com/models/24149/mistoonanime',
         ipynb: 'mistoon_anime_webui_colab',
@@ -206,7 +215,7 @@ const checkpoints = [
         checkpoint_file: 'mistoonAnime.safetensors',
     },
     {
-        name: 'mix-pro-v4',
+        name: 'MIX-Pro-V4',
         type: '2D',
         model: 'https://civitai.com/models/7241/mix-pro-v4',
         ipynb: 'mixpro_webui_colab',
@@ -232,7 +241,7 @@ const checkpoints = [
         checkpoint_file: 'OldFish_v11.safetensors',
     },
     {
-        name: 'PerfectWorld_V1',
+        name: 'PerfectWorld V1',
         type: '2.5D',
         model: 'https://huggingface.co/naonovn/PerfectWorldAom2hbasilmix',
         ipynb: 'perfectworld_webui_colab',
@@ -249,12 +258,12 @@ const checkpoints = [
         checkpoint_file: 'realdosmix.safetensors',
     },
     {
-        name: 'realistic-vision',
+        name: 'Realistic Vision V2.0',
         type: '실사',
         model: 'https://civitai.com/models/4201/realistic-vision-v13-fantasyai',
         ipynb: 'realistic_vision_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/6987?type=Model&format=SafeTensor',
-        checkpoint_file: 'realisticVisionV13_v13.safetensors',
+        checkpoint: 'https://civitai.com/api/download/models/29460?type=Pruned%20Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'realisticVision_v20.safetensors',
         bakedVAE: true,
     },
     {
