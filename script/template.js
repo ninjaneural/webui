@@ -145,7 +145,7 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
-        name: 'I Can\'t Believe It\'s Not Photography',
+        name: 'ICBINP',
         type: '실사',
         model: 'https://civitai.com/models/28059/icbinp-i-cant-believe-its-not-photography',
         ipynb: 'icbinp_webui_colab',
