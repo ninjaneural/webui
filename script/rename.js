@@ -11,6 +11,7 @@ if (startIndex === 0 || !!startIndex) startIndex = parseInt(startIndex);
 
 (function () {
     glob(`${basepath}`, options, function (er, files) {
+        files = natSort(files);
         let index = startIndex + (files.length - 1) * step;
         let reversed = files.reverse();
         for (element of reversed) {
@@ -25,3 +26,48 @@ if (startIndex === 0 || !!startIndex) startIndex = parseInt(startIndex);
         }
     });
 })();
+
+// natural sort algorithm in JavaScript by Miigon.
+// 2021-03-30
+// 
+// GitHub: https://github.com/miigon/
+
+function natSort(arr) {
+    return arr.map(v => { // split string into number/ascii substrings
+        let processedName = []
+        let str = v
+        for (let i = 0; i < str.length; i++) {
+            let isNum = Number.isInteger(Number(str[i]));
+            let j;
+            for (j = i + 1; j < str.length; j++) {
+                if (Number.isInteger(Number(str[j])) != isNum) {
+                    break;
+                }
+            }
+            processedName.push(isNum ? Number(str.slice(i, j)) : str.slice(i, j));
+            i = j - 1;
+        }
+        // console.log(processedName);
+        return processedName;
+
+    }).sort((a, b) => {
+        let len = Math.min(a.length, b.length);
+        for (let i = 0; i < len; i++) {
+            if (a[i] != b[i]) {
+                let isNumA = Number.isInteger(a[i]);
+                let isNumB = Number.isInteger(b[i]);
+                if (isNumA && isNumB) {
+                    return a[i] - b[i];
+                } else if (isNumA) {
+                    return -1;
+                } else if (isNumB) {
+                    return 1;
+                } else {
+                    return a[i] < b[i] ? -1 : 1;
+                }
+            }
+        }
+        // in case of one string being a prefix of the other
+        return a.length - b.length;
+    }).map(v => v.join(''));
+}
