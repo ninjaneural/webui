@@ -177,7 +177,7 @@ const checkpoints = [
         type: '실사',
         model: 'https://civitai.com/models/34686/kencanmix',
         ipynb: 'kencanmix_webui_colab',
-        checkpoint: 'https://huggingface.co/sunnyweir/kencanmix_v16/blob/main/kencanmix_v16.safetensors',
+        checkpoint: 'https://huggingface.co/sunnyweir/kencanmix_v16/resolve/main/kencanmix_v16.safetensors',
         checkpoint_file: 'kencanmix_v16.safetensors',
         bakedVAE: true,
     },
