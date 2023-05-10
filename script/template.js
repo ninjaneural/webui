@@ -136,6 +136,15 @@ const checkpoints = [
         checkpoint_file: 'expmixLine_v20.safetensors',
     },
     {
+        name: 'endlessReality',
+        type: '실사',
+        model: 'https://civitai.com/models/25573/endlessreality',
+        ipynb: 'endless_reality_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/38255?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'endlessReality_v11.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'henmixreal V1',
         type: '실사',
         model: 'https://civitai.com/models/20282/henmixreal',
@@ -162,13 +171,14 @@ const checkpoints = [
         checkpoint_file: 'icbinpICantBelieveIts_v30.safetensors',
         bakedVAE: true,
     },
+
     {
-        name: 'endlessReality',
+        name: 'KenCanMix',
         type: '실사',
-        model: 'https://civitai.com/models/25573/endlessreality',
-        ipynb: 'endless_reality_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/38255?type=Model&format=SafeTensor&size=pruned&fp=fp16',
-        checkpoint_file: 'endlessReality_v11.safetensors',
+        model: 'https://civitai.com/models/34686/kencanmix',
+        ipynb: 'kencanmix_webui_colab',
+        checkpoint: 'https://huggingface.co/sunnyweir/kencanmix_v16/blob/main/kencanmix_v16.safetensors',
+        checkpoint_file: 'kencanmix_v16.safetensors',
         bakedVAE: true,
     },
     {
