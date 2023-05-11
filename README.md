@@ -134,7 +134,7 @@
 ## 구글연동 + 멀티컨트롤넷 기본설정 (torch2.0+cuda118 버전)
 
 > **torch2.0+cuda118**  
-> **~15% 속도향상 (--opt-sdp-no-mem-attention 적용)**  
+> **--opt-sdp-attention (xformer대비 속도향상?)**  
 > **펼쳐보기를 클릭해주세요**
 
 <details>
