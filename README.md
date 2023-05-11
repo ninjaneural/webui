@@ -133,8 +133,8 @@
 
 ## 구글연동 + 멀티컨트롤넷 기본설정 (torch2.0+cuda118 버전)
 
-> **코랩내에 직접실행**  
-> ~15% 속도향상 (--opt-sdp-no-mem-attention 적용)  
+> **torch2.0+cuda118**  
+> **~15% 속도향상 (--opt-sdp-no-mem-attention 적용)**  
 > **펼쳐보기를 클릭해주세요**
 
 <details>
