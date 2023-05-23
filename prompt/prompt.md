@@ -1,3 +1,62 @@
+https://twitter.com/lakeside529/status/1593626475034337280?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1593626475034337280%7Ctwgr%5Ec062d011718e6d8cef898a482415a8a80b442c76%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fnote.com%2Faioe%2Fn%2Fne0ec91afd53e
+
+https://note.com/aioe/n/ne0ec91afd53e
+
+from
+カメラアングルを指定することができます。
+・from front
+・from side
+・from behind
+・from above
+・from below
+・from angle
+
+lens flare
+キラキラした光を表現できます。
+
+画像
+one cute girl, the background is lakeside, (lens flare:1.4), the girl wearing (casual and cute clothes),
+
+magnificent view
+壮大な景色という意味です。
+とりあえずこれを入れとけば奥行きのある良い感じの背景になります。
+
+画像
+one cute girl, the background is outdoors, (magnificent view:1.2), the girl wearing (casual and cute clothes),
+これマジで便利。
+
+wind
+服や髪が風になびく様子を表現できます。
+
+画像
+one cute girl has long hair, (wind:1.4), the background is outdoors, the girl wearing (casual and cute clothes),
+1.4 は強調しすぎなので、(wind)くらいにしておくと良いアクセントになります。
+
+one chibi girl
+ちびキャラを作ることができます。
+プロンプトの最初に chibi を入れると複数人出てきてしまうので、one chibi girl としています。
+solo も入れると 1 人だけ出てきやすいです。
+
+画像
+(one chibi girl:1.2), (solo:1.4), (white background:1.4), the girl wearing (lolita fashion), smile, anger, (one chibi girl:1.2),
+プロンプトに 2 回に入れるとより反映されやすいです。これを「復唱」と呼んでいます。
+
+absurdres,
+
+highres,
+
+ultra detailed,
+
+Two men are hitting each other.
+
+The man punched another man into the stomach with all his might, and the body of the man who was beaten was bent in a dogleg shape.
+
+Manga-like flashy perspective and composition like Dragon Ball and Naruto.
+
+네거티브：
+
+EasyNegative,worst quality, low quality,bad anatomy,badhandsv4,nude
+
 Recommend Some Promts:
 Fractal Art（highly recommend，awsome）
 
