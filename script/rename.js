@@ -16,6 +16,7 @@ if (startIndex === 0 || !!startIndex) startIndex = parseInt(startIndex);
         let reversed = files.reverse();
         for (element of reversed) {
             let name = path.basename(element);
+            console.log('name', name);
             let dir = path.dirname(element);
             newname = ('' + index).padStart(7, '0') + '.png';
             fs.renameSync(
@@ -44,7 +45,7 @@ function natSort(arr) {
                     break;
                 }
             }
-            processedName.push(isNum ? Number(str.slice(i, j)) : str.slice(i, j));
+            processedName.push(str.slice(i, j));
             i = j - 1;
         }
         // console.log(processedName);
