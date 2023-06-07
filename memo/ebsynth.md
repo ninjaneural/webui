@@ -27,3 +27,17 @@ ffmpeg -y -r 30  -i "./output/%07d.png" -i input.mp4 -c:a copy -c:v libx264 -pix
 ```
 ffmpeg -y -r 30  -i "./output/%07d.png" -c:v libx264 -pix_fmt yuv420p -crf 17 "./output.mp4"
 ```
+
+# 시작인덱스 설정
+
+- 이미지들 -> 비디오
+
+```
+ffmpeg -y -r 30 -start_number 1 -i "./output/%07d.png" -c:v libx264 -pix_fmt yuv420p -crf 17 "./output.mp4"
+```
+
+- 이미지들+오디오 -> 비디오
+
+```
+ffmpeg -y -r 30 -start_number 1 -i "./output/%07d.png" -i input.mp4 -c:a copy -c:v libx264 -pix_fmt yuv420p -crf 17 -map 0:v -map 1:a "./output.mp4"
+```
