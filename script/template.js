@@ -40,6 +40,15 @@ const checkpoints = [
         checkpoint_file: 'blueberrymix_10.safetensors',
     },
     {
+        name: 'braBeautifulRealistic v5',
+        type: '실사',
+        model: 'https://civitai.com/models/25494/brabeautiful-realistic-asians-v5',
+        ipynb: 'bra_beautiful_realistic_webui_colab',
+        checkpoint: 'https://huggingface.co/ailjtb/braBeautifulRealistic/resolve/main/braBeautifulRealistic_brav5.safetensors',
+        checkpoint_file: 'braBeautifulRealistic_brav5.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'BreakDomain',
         type: '2D',
         model: 'https://civitai.com/models/50520/breakdomain',
