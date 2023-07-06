@@ -1,6 +1,6 @@
 유튜브채널 https://www.youtube.com/@neuralninja
 
-# 🚨 중요 🚨 <br/> Stable Diffusion WebUI를 Colab **무료 티어**에서 사용시 제한조치가 시작되었어요 <br/>
+🚨 중요 🚨 <br/> Stable Diffusion WebUI를 Colab **무료 티어**에서 사용시 제한조치가 시작되었어요 <br/>
 
 <details>
   <summary>자세히보기</summary>
