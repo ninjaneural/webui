@@ -1,3 +1,5 @@
+유튜브채널 https://www.youtube.com/@neuralninja
+
 # 🚨 중요 🚨 <br/> Stable Diffusion WebUI를 Colab **무료 티어**에서 사용시 제한조치가 시작되었어요 <br/>
 
 <details>
@@ -220,6 +222,14 @@
 
 ## 유용한 사이트
 
+- 오픈포즈 에디터 (fork버전)
+
+  [https://ninjaneural.github.io/](https://ninjaneural.github.io)
+
+- 온라인 포토샵 (photopea)
+
+  [https://www.photopea.com](https://www.photopea.com/)
+
 - 컨트롤넷 공유사이트
 
   [https://controlnetposes.com/](https://controlnetposes.com/)
@@ -227,14 +237,6 @@
 - 컨트롤넷 세그먼트
 
   [https://huggingface.co/spaces/shi-labs/OneFormer](https://huggingface.co/spaces/shi-labs/OneFormer)
-
-- 오픈포즈 에디터
-
-  [https://zhuyu1997.github.io/open-pose-editor/](https://zhuyu1997.github.io/open-pose-editor/)
-
-- 온라인 포토샵
-
-  [https://www.photopea.com](https://www.photopea.com/)
 
 ## 익스텐션
 
