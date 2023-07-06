@@ -48,17 +48,16 @@ function natSort(arr) {
             processedName.push(str.slice(i, j));
             i = j - 1;
         }
-        // console.log(processedName);
         return processedName;
 
     }).sort((a, b) => {
         let len = Math.min(a.length, b.length);
         for (let i = 0; i < len; i++) {
             if (a[i] != b[i]) {
-                let isNumA = Number.isInteger(a[i]);
-                let isNumB = Number.isInteger(b[i]);
+                let isNumA = Number.isInteger(Number(a[i]));
+                let isNumB = Number.isInteger(Number(b[i]));
                 if (isNumA && isNumB) {
-                    return a[i] - b[i];
+                    return parseInt(a[i]) - parseInt(b[i]);
                 } else if (isNumA) {
                     return -1;
                 } else if (isNumB) {

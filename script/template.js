@@ -228,6 +228,15 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'Lyriel',
+        type: '복합',
+        model: 'https://civitai.com/models/22922/lyriel',
+        ipynb: 'lyriel_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/72396?type=Model&format=SafeTensor&size=full&fp=fp16',
+        checkpoint_file: 'lyriel_v16.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'majicMIX realistic',
         type: '실사',
         model: 'https://civitai.com/models/43331/majicmix-realistic',
