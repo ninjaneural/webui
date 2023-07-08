@@ -10,19 +10,19 @@
 (worst quality, low quality:1.2), EasyNegative, makeup, (nsfw, nude),
 ```
 
-- 이미지로 변환 (비디오 -> 이미지들)
+- 이미지로 변환 (비디오 -> 이미지들, 30프레임)
 
 ```
 ffmpeg -i "./input.mp4" -vf fps=30 "./input/%07d.png"
 ```
 
-- 오디오 포함한 영상으로 변환 (이미지들+오디오 -> 비디오)
+- 오디오 포함한 영상으로 변환 (이미지들+오디오 -> 비디오, 30프레임)
 
 ```
 ffmpeg -y -r 30  -i "./output/%07d.png" -i input.mp4 -c:a copy -c:v libx264 -pix_fmt yuv420p -crf 17 -map 0:v -map 1:a "./output.mp4"
 ```
 
-- 영상으로 변환 (이미지들 -> 비디오)
+- 영상으로 변환 (이미지들 -> 비디오, 30프레임)
 
 ```
 ffmpeg -y -r 30  -i "./output/%07d.png" -c:v libx264 -pix_fmt yuv420p -crf 17 "./output.mp4"
@@ -30,13 +30,13 @@ ffmpeg -y -r 30  -i "./output/%07d.png" -c:v libx264 -pix_fmt yuv420p -crf 17 ".
 
 # 시작인덱스 설정
 
-- 이미지들 -> 비디오
+- 이미지들 -> 비디오 (00000001 번부터)
 
 ```
 ffmpeg -y -r 30 -start_number 1 -i "./output/%07d.png" -c:v libx264 -pix_fmt yuv420p -crf 17 "./output.mp4"
 ```
 
-- 이미지들+오디오 -> 비디오
+- 이미지들+오디오 -> 비디오 (00000001 번부터)
 
 ```
 ffmpeg -y -r 30 -start_number 1 -i "./output/%07d.png" -i input.mp4 -c:a copy -c:v libx264 -pix_fmt yuv420p -crf 17 -map 0:v -map 1:a "./output.mp4"
