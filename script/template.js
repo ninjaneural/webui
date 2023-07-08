@@ -350,6 +350,15 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'ReV Animated',
+        type: '복합',
+        model: 'https://civitai.com/models/7371/rev-animated',
+        ipynb: 'rev_animated_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/46846?type=Model&format=SafeTensor&size=full&fp=fp32',
+        checkpoint_file: 'revAnimated_v122.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'v08_v80',
         type: '2.5D',
         ipynb: 'v80_v80_webui_colab',
