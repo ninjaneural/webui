@@ -17,6 +17,10 @@
 [https://civitai.com/models/37870/jasmine-aladin-disney](https://civitai.com/models/37870/jasmine-aladin-disney)
 [https://civitai.com/models/43409/hoshino-ai-or-or-oshi-no-ko-or](https://civitai.com/models/43409/hoshino-ai-or-or-oshi-no-ko-or)
 
+# Deforum 설정파일
+
+[https://raw.githubusercontent.com/ninjaneural/webui/master/memo/hybrid_video/test_settings.txt](https://raw.githubusercontent.com/ninjaneural/webui/master/memo/hybrid_video/test_settings.txt)
+
 # 로컬사용시 체크포인트, 로라등 공유설정
 
 ```
