@@ -312,7 +312,7 @@ const checkpoints = [
         model: 'https://civitai.com/models/32022',
         ipynb: 'mistoon_sapphire_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/116574?type=Model&format=SafeTensor&size=pruned&fp=fp16',
-        checkpoint_file: 'mistoonAnime.safetensors',
+        checkpoint_file: 'mistoonSapphire.safetensors',
     },
     {
         name: 'MIX-Pro-V4',
