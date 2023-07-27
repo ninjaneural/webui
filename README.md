@@ -228,15 +228,16 @@
 
 ## ComfyUI
 
-> **SDXL 0.9**  
+> **SDXL 1.0**  
 > **펼쳐보기를 클릭해주세요**
 
-<details>
-  <summary>펼쳐보기</summary>
+| Colab                                                                                                                                                                                             | Model                                                                             | VAE | Memo     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --- | -------- |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/dreamshaper_xl_webui_colab.ipynb)     | [Dreamshaper XL](https://civitai.com/models/112902/dreamshaper-xl-09-alpha)       |     | SDXL 1.0 |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/stablediffusion_xl_webui_colab.ipynb) | [StabilityAI XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) |     | SDXL 1.0 |
 
-| Colab                                                                                                                                                                                         | Model                                                                       | VAE | Memo          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --- | ------------- |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/dreamshaper_xl_webui_colab.ipynb) | [Dreamshaper XL](https://civitai.com/models/112902/dreamshaper-xl-09-alpha) |     | 범용 SDXL 0.9 |
+<details>
+  <summary>펼쳐보기 (SD1.5모델들)</summary>
 
 | Colab                                                                                                                                                                                                  | Model                                                                                         | VAE  | Memo |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ---- | ---- |
