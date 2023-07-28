@@ -60,9 +60,9 @@ const checkpoints = [
     {
         name: 'CamelliaMix',
         type: '2.5D',
-        model: 'https://huggingface.co/Powidl43/CamelliaMix',
+        model: 'https://civitai.com/models/44219',
         ipynb: 'camellia_mix25d_webui_colab',
-        checkpoint: 'https://huggingface.co/Powidl43/CamelliaMix/resolve/main/CamelliaMix_2.5D.safetensors',
+        checkpoint: 'https://civitai.com/api/download/models/48859?type=Model&format=SafeTensor&size=pruned&fp=fp16',
         checkpoint_file: 'CamelliaMix_2.5D.safetensors',
         bakedVAE: true,
     },

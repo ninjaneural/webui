@@ -231,10 +231,11 @@
 > **SDXL 1.0**  
 > **펼쳐보기를 클릭해주세요**
 
-| Colab                                                                                                                                                                                             | Model                                                                             | VAE | Memo     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --- | -------- |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/dreamshaper_xl_webui_colab.ipynb)     | [Dreamshaper XL](https://civitai.com/models/112902/dreamshaper-xl-09-alpha)       |     | SDXL 1.0 |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/stablediffusion_xl_webui_colab.ipynb) | [StabilityAI XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) |     | SDXL 1.0 |
+| Colab                                                                                                                                                                                                 | Model                                                                             | VAE | Memo                    |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --- | ----------------------- |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/dreamshaper_xl_webui_colab.ipynb)         | [Dreamshaper XL](https://civitai.com/models/112902/dreamshaper-xl-09-alpha)       |     | SDXL 1.0 Only BaseModel |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/anime_art_diffusion_xl_webui_colab.ipynb) | [AnimeArtDiffusion XL](https://civitai.com/models/117259?modelVersionId=127055)   |     | SDXL 1.0 Only BaseModel |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/stablediffusion_xl_webui_colab.ipynb)     | [StabilityAI XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) |     | SDXL 1.0                |
 
 <details>
   <summary>펼쳐보기 (SD1.5모델들)</summary>
