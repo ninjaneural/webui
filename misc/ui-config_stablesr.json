@@ -1,0 +1,6 @@
+{
+    "img2img/Prompt/visible": true,
+    "img2img/Prompt/value": "(masterpiece:2), (best quality:2), (realistic:2),(very clear:2)",
+    "img2img/Negative prompt/visible": true,
+    "img2img/Negative prompt/value": "3d, cartoon, anime, sketches, (worst quality:2), (low quality:2)"
+}
