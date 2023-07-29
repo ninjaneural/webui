@@ -294,6 +294,14 @@
 
 ---
 
+## StableSR (AI Image Upscale)
+
+| Colab                                                                                                                                                                     | Memo                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/colab/stablesr.ipynb) | [StableSR](https://github.com/pkuliyi2015/sd-webui-stablesr) |
+
+---
+
 ## 유용한 사이트
 
 - 오픈포즈 에디터 (fork버전)
