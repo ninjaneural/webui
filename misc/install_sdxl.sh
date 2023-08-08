@@ -3,6 +3,7 @@ git clone -b v1.5.1 https://github.com/AUTOMATIC1111/stable-diffusion-webui /con
 
 if [ $2 == True ]; then
   git clone -b nightly https://github.com/ninjaneural/deforum /content/$1/extensions/deforum
+  git clone https://github.com/ninjaneural/controlnet /content/$1/extensions/controlnet
 fi
 
 cd /content/$1
