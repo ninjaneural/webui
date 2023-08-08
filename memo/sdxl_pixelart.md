@@ -53,9 +53,9 @@ cyborg style, cybernetic cyborg woman, 1girl, cute, crop top, black hair, master
 
 # 모델(checkpoint)
 
-    - https://civitai.com/models/84040/sdxl-unstable-diffusers-yamermix
+    https://civitai.com/models/84040/sdxl-unstable-diffusers-yamermix
 
 # 로라(lora)
 
-    - https://civitai.com/models/120096/pixel-art-xl
-    - https://civitai.com/models/119405/cyborg-style-sdxl-or-goofy-ai
+    https://civitai.com/models/120096/pixel-art-xl
+    https://civitai.com/models/119405/cyborg-style-sdxl-or-goofy-ai

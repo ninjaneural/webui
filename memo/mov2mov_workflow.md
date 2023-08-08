@@ -14,13 +14,13 @@ NG_DeepNegative_V1_75T, bad-picture-chill-75v, EasyNegative, (worst quality, low
 
 # 모델(checkpoint)
 
-    - https://civitai.com/models/73086
+    https://civitai.com/models/73086
 
 # 로라(lora)
 
-    - https://civitai.com/models/26124?modelVersionId=31284
+    https://civitai.com/models/26124?modelVersionId=31284
 
 # 임베딩(textual inversion)
 
-    - https://civitai.com/models/17083?modelVersionId=20170
-    - https://civitai.com/models/4629?modelVersionId=5637
+    https://civitai.com/models/17083?modelVersionId=20170
+    https://civitai.com/models/4629?modelVersionId=5637
