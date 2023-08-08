@@ -50,3 +50,10 @@ cyborg style, cybernetic cyborg woman, 1girl, cute, crop top, black hair, master
 1girl, cute, kpop idol, dancing, stage, short hair, cheetah ears, arms up, point finger, crop top, leather boots, fairy, chibi, jean shorts, black hoodie, black hair, masterpiece, pixel art,cyborg style, <lora:pixelbuildings128-v1:1> <lora:cyborg_style_xl:1>
 
 ```
+
+- 모델(checkpoint)
+  https://civitai.com/models/84040/sdxl-unstable-diffusers-yamermix
+
+- 로라(lora)
+  https://civitai.com/models/120096/pixel-art-xl
+  https://civitai.com/models/119405/cyborg-style-sdxl-or-goofy-ai
