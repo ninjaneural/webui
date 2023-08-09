@@ -67,7 +67,6 @@ const checkpoints = [
         checkpoint_file: 'shikianimexl.safetensors',
         bakedVAE: false,
     },
-
     {
         name: 'DynaVision XL',
         type: '3D',
@@ -95,6 +94,17 @@ const checkpoints = [
         checkpoint_file: 'rundiffusion_xl.safetensors',
         bakedVAE: true,
     },
+    {
+        name: 'StabilityAI SDXL 1.0',
+        type: '복합',
+        model: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0',
+        ipynb: 'stable_diffusion_xl_webui_colab',
+        checkpoint: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0_0.9vae.safetensors',
+        checkpoint_file: 'sd_xl_base_1.0_0.9vae.safetensors',
+        refine_checkpoint: 'https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0_0.9vae.safetensors',
+        refine_checkpoint_file: 'sd_xl_refiner_1.0_0.9vae.safetensors',
+        bakedVAE: true,
+    },
 ];
 
 async function copy_files() {
@@ -107,6 +117,8 @@ async function copy_files() {
         let code = templateCode;
         code = code.replaceAll('#template_checkpoint_default#', item.checkpoint);
         code = code.replaceAll('#template_checkpoint_default_name#', item.checkpoint_file);
+        code = code.replaceAll('#template_refine_checkpoint_default#', item.refine_checkpoint ?? '');
+        code = code.replaceAll('#template_refine_checkpoint_default_name#', item.refine_checkpoint_file ?? '');
         fs.writeFileSync(`../${TARGET_DIR}/${item.ipynb}.ipynb`, code);
 
         readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/${TARGET_DIR}/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
