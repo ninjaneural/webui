@@ -6,6 +6,8 @@ if [ $2 == True ]; then
   git clone https://github.com/ninjaneural/controlnet /content/$1/extensions/controlnet
 fi
 
+git clone https://github.com/adieyal/sd-dynamic-prompts /content/$1/extensions/sd-dynamic-prompts
+git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/a1111-sd-webui-tagcomplete
 git clone https://github.com/wcde/sd-webui-refiner /content/$1/extensions/sd-webui-refiner
 
 cd /content/$1
