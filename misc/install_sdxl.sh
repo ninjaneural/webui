@@ -5,6 +5,9 @@ if [ $2 == True ]; then
   git clone -b nightly https://github.com/ninjaneural/deforum /content/$1/extensions/deforum
   git clone https://github.com/ninjaneural/controlnet /content/$1/extensions/controlnet
 fi
+if [ $3 == True ]; then
+  git clone https://github.com/Bing-su/adetailer /content/$1/extensions/adetailer
+fi
 
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/$1/extensions/sd-dynamic-prompts
 git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/a1111-sd-webui-tagcomplete
