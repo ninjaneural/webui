@@ -99,7 +99,7 @@ const checkpoints = [
         type: '복합',
         model: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0',
         ipynb: 'stable_diffusion_xl_webui_colab',
-        checkpoint: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0_0.9vae.safetensors',
+        checkpoint: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors',
         checkpoint_file: 'sd_xl_base_1.0_0.9vae.safetensors',
         refine_checkpoint: 'https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0_0.9vae.safetensors',
         refine_checkpoint_file: 'sd_xl_refiner_1.0_0.9vae.safetensors',
