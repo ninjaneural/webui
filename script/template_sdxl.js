@@ -16,7 +16,7 @@ const checkpoints = [
     {
         name: 'AnimeArtDiffusion XL',
         type: '2D',
-        model: 'https://huggingface.co/AIARTCHAN/expmixLine_v2',
+        model: 'https://civitai.com/models/117259/anime-art-diffusion-xl',
         ipynb: 'anime_art_diffusion_xl_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/127055?type=Model&format=SafeTensor&size=full&fp=fp16',
         checkpoint_file: 'AnimeArtDiffusion_XL_Alpha2.safetensors',
@@ -95,7 +95,7 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
-        name: 'StabilityAI SDXL 1.0',
+        name: 'StabilityAI XL 1.0',
         type: '복합',
         model: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0',
         ipynb: 'stable_diffusion_xl_webui_colab',
