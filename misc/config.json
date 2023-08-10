@@ -1,6 +1,7 @@
 {
     "quicksettings": "sd_model_checkpoint,sd_vae,initial_noise_multiplier,img2img_color_correction",
     "CLIP_stop_at_last_layers": 2,
+    "sd_model_checkpoint": "",
     "control_net_max_models_num": 4,
     "control_net_model_cache_size": 3,
     "control_net_allow_script_control": true
