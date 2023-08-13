@@ -37,6 +37,9 @@ git clone https://github.com/hnmr293/posex /content/$1/extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui /content/$1/extensions/video_loopback_for_webui
 git clone https://github.com/ninjaneural/mov2mov /content/$1/extensions/mov2mov
 
+git clone https://github.com/continue-revolution/sd-webui-animatediff /content/$1/extensions/animatediff
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt -d /content/$1/extensions/animatediff/model -o mm_sd_v15.ckpt
+
 if [ $2 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_openpose_fp16.safetensors -d /content/$1/extensions/controlnet/models -o control_v11p_sd15_openpose_fp16.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_lineart_fp16.safetensors -d /content/$1/extensions/controlnet/models -o control_v11p_sd15_lineart_fp16.safetensors
