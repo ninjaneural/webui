@@ -3,9 +3,11 @@
     "CLIP_stop_at_last_layers": 2,
     "sd_model_checkpoint": "",
     "sd_vae": "vae-ft-mse-840000-ema-pruned.vae.pt",
-    "samples_format": "webm",
-    "grid_format": "webm",
-   "control_net_max_models_num": 4,
+    "samples_format": "jpg",
+    "grid_format": "jpg",
+    "jpeg_quality": 90,
+    "localization": "ko_KR",
+    "control_net_max_models_num": 4,
     "control_net_model_cache_size": 3,
     "control_net_allow_script_control": true
 }

@@ -1,4 +1,4 @@
-# haku image
+# haku image 익스텐션
 git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-haku-img ./extensions/a1111-sd-webui-haku-img
 
 # 한글패치
