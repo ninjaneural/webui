@@ -137,6 +137,7 @@ async function copy_files() {
         code = code.replaceAll('#template_checkpoint_default_name#', item.checkpoint_file);
         code = code.replaceAll('#template_refine_checkpoint_default#', item.refine_checkpoint ?? '');
         code = code.replaceAll('#template_refine_checkpoint_default_name#', item.refine_checkpoint_file ?? '');
+        code = code.replaceAll('#template_notebook#', TARGET_DIR);
         fs.writeFileSync(`../${TARGET_DIR}/${item.ipynb}.ipynb`, code);
 
         readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/${TARGET_DIR}/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
