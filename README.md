@@ -43,7 +43,8 @@
 
 > **WEBUI(ControlNet)만 설치되는 심플버전 추가**  
 > **Deforum전용버전 추가**  
-> **Lycoris(Locon)은 WebUI 최신만 적용되요. 구글드라이브 /webui/lycoris 추가**
+> **Lycoris(Locon)은 WebUI 최신만 적용되요. 구글드라이브 /webui/lycoris 추가**  
+> **최신버전(nightly) 업데이트 v1.5.1 / ControlNet v1.1.238**  
 
 ---
 
