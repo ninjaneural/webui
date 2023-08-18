@@ -5,7 +5,7 @@ if [ $3 == True ]; then
   mim install mmdet>=3.0.0
 fi
 
-git clone -b v1.5.1 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
+git clone -b v1.3.2 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
 if [ $2 == True ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet /content/$1/extensions/controlnet
 fi
@@ -21,13 +21,13 @@ fi
 
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/$1/extensions/sd-dynamic-prompts
 git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding /content/$1/extensions/sd-dynamic-thresholding
+git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/$1/extensions/multidiffusion-upscaler-for-automatic1111
 git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/a1111-sd-webui-tagcomplete
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/$1/extensions/ultimate-upscale-for-automatic1111
-git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/$1/extensions/multidiffusion-upscaler-for-automatic1111
 git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/extensions/a1111-sd-webui-lycoris
 
 git clone https://github.com/neuralninja22/images-browser /content/$1/extensions/images-browser
-git clone https://github.com/ninjaneural/additional-networks /content/$1/extensions/additional-networks
+git clone https://github.com/kohya-ss/sd-webui-additional-networks /content/$1/extensions/additional-networks
 git clone https://github.com/neuralninja22/wd14-tagger /content/$1/extensions/wd14-tagger
 git clone https://github.com/yankooliveira/sd-webui-photopea-embed /content/$1/extensions/photopea-embed
 git clone https://github.com/ninjaneural/video-util /content/$1/extensions/video-util
