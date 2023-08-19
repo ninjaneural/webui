@@ -263,12 +263,21 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
-        name: 'majicMIX realistic',
+        name: 'majicMIX realistic better',
         type: '실사',
         model: 'https://civitai.com/models/43331/majicmix-realistic',
         ipynb: 'majic_mix_realistic_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/126470?type=Model&format=SafeTensor&size=pruned&fp=fp16',
         checkpoint_file: 'majicMIX_realistic_betterV2V25.safetensors',
+        bakedVAE: true,
+    },
+    {
+        name: 'majicMIX realistic v6',
+        type: '실사',
+        model: 'https://civitai.com/models/43331/majicmix-realistic',
+        ipynb: 'majic_mix_realistic_v6_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/94640?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'majicMIX_realistic_v6.safetensors',
         bakedVAE: true,
     },
     {
@@ -356,6 +365,14 @@ const checkpoints = [
         ipynb: 'oldfish_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/22052?type=Model&format=SafeTensor',
         checkpoint_file: 'OldFish_v11.safetensors',
+    },
+    {
+        name: 'Sardonyx REDUX',
+        type: '2D',
+        model: 'https://civitai.com/models/52548',
+        ipynb: 'sardonyx_redux_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/105566?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'sardonyx_redux_v20.safetensors',
     },
     {
         name: 'ToonYou',
