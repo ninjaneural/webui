@@ -1,7 +1,7 @@
 #  LoRA
 
-[FilmVelvia3](https://civitai.com/models/33208/filmgirl-film-grain-lora-and-loha)
-[InstantPhotoX3](https://civitai.com/models/52652?modelVersionId=102533)
+> [FilmVelvia3](https://civitai.com/models/33208/filmgirl-film-grain-lora-and-loha)  
+> [InstantPhotoX3](https://civitai.com/models/52652?modelVersionId=102533)  
 
 # Embedding
 
