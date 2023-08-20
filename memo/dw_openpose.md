@@ -28,7 +28,7 @@ ng_deepnegative_v1_75t, (worst quality,low quality,normal quality:1.4), lowres, 
 샘플러, 모델, 시드
 
 ```
-Steps: 40, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 3004066441, Size: 512x768, Model hash: e4a30e4607, Model: majicmixRealistic_v6, Denoising strength: 0.4, Clip skip: 2, ControlNet 0: "preprocessor: dw_openpose_full, model: control_v11p_sd15_openpose_fp16 [73c2b67d], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: ControlNet is more important, preprocessor params: (512, -1, -1)", Hires upscale: 2, Hires steps: 20, Hires upscaler: 4x-UltraSharp, Lora hashes: "FilmVelvia2: 142628a09ce9, InstantPhotoX3: 7036b103fef3", TI hashes: "ng_deepnegative_v1_75t: 54e7e4826d53", Version: v1.5.1
+Steps: 40, Sampler: Eular a, CFG scale: 7, Seed: -1, Size: 512x768, Model hash: e4a30e4607, Model: majicmixRealistic_v6, Denoising strength: 0.4, Clip skip: 2, ControlNet 0: "preprocessor: dw_openpose_full, model: control_v11p_sd15_openpose_fp16 [73c2b67d], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: ControlNet is more important, preprocessor params: (512, -1, -1)", Hires upscale: 2, Hires steps: 20, Hires upscaler: 4x-UltraSharp, Lora hashes: "FilmVelvia2: 142628a09ce9, InstantPhotoX3: 7036b103fef3", TI hashes: "ng_deepnegative_v1_75t: 54e7e4826d53", Version: v1.5.1
 ```
 
 # 마지막 이미지 정보
