@@ -1,7 +1,7 @@
 {
   "name": "animatediff",
   "base": "",
-  "path": "models/sd/#template_checkpoint_default_name#",
+  "path": "models/sd/#Checkpoint_Filename#",
   "motion_module": "models/motion-module/mm_sd_v15.ckpt",
   "compile": false,
   "seed": [
