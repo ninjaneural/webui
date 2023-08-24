@@ -1,0 +1,23 @@
+{
+  "name": "animatediff",
+  "base": "",
+  "path": "models/sd/#template_checkpoint_default_name#",
+  "motion_module": "models/motion-module/mm_sd_v15.ckpt",
+  "compile": false,
+  "seed": [
+    10788741199826055000, 6520604954829637000, 
+    16372571278361864000
+  ],
+  "scheduler": "k_dpmpp_2m",
+  "steps": 30,
+  "guidance_scale": 8.5,
+  "clip_skip": 2,
+  "prompt": [
+    "1girl, solo, best quality, masterpiece, looking at viewer, purple hair, orange hair, gradient hair, blurry background, upper body, dress, flower print, spaghetti strap, bare shoulders",
+    "1girl, solo, masterpiece, best quality, cherry blossoms, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals, white hair, black eyes,",
+    "1girl, solo, best quality, masterpiece, cloudy sky, dandelion, contrapposto, alternate hairstyle"
+  ],
+  "n_prompt": [
+    "worst quality, low quality, cropped, lowres, text, jpeg artifacts, multiple view"
+  ]
+}
