@@ -2,7 +2,7 @@ pip install -q xformers==0.0.20 triton==2.0.0 -U
 
 git clone -b v1.5.1 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
 
-wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/stabesr/config.json -O /content/$1/config.json
+wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/stablesr/config.json -O /content/$1/config.json
 wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/stablesr/ui-config.json -O /content/$1/ui-config.json
 
 git clone https://github.com/pkuliyi2015/sd-webui-stablesr /content/$1/extensions/sd-webui-stablesr
