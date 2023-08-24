@@ -1,0 +1,102 @@
+{
+  "name": "sample",
+  "path": "models/sd/#Checkpoint_Filename#",
+  "motion_module": "models/motion-module/mm_sd_v15.ckpt",
+  "compile": false,
+  "seed": [
+    341774366206100
+  ],
+  "scheduler": "k_dpmpp_sde",
+  "steps": 40,
+  "guidance_scale": 20,
+  "clip_skip": 2,
+  "prompt_map": {
+    "0":  "masterpiece, best quality, a beautiful and detailed portriat of muffet, monster girl,((purple body:1.3)),humanoid, arachnid, anthro,((fangs)),pigtails,hair bows,5 eyes,spider girl,6 arms,solo,smile standing, clothed, open mouth, awesome and detailed background, holding teapot, holding teacup, 6 hands,detailed hands,((spider webs:1.0)), storefront that sells pastries and tea,bloomers,(red and black clothing),inside,pouring into teacup,muffetwear",
+    "32":  "masterpiece, best quality, a beautiful and detailed portriat of muffet, monster girl,((purple body:1.3)),humanoid, arachnid, anthro,((fangs)),pigtails,hair bows,5 eyes,spider girl,6 arms,solo,(((walking))), clothed, open mouth, awesome and detailed background, holding teapot, holding teacup, 6 hands,detailed hands,((spider webs:1.0)), storefront that sells pastries and tea,bloomers,(red and black clothing),inside,pouring into teacup,muffetwear",
+    "64":  "masterpiece, best quality, a beautiful and detailed portriat of muffet, monster girl,((purple body:1.3)),humanoid, arachnid, anthro,((fangs)),pigtails,hair bows,5 eyes,spider girl,6 arms,solo,(((running))), clothed, open mouth, awesome and detailed background, holding teapot, holding teacup, 6 hands,detailed hands,((spider webs:2.0)), storefront that sells pastries and tea,bloomers,(red and black clothing),inside,pouring into teacup,muffetwear,wide angle lens, fish eye effect",
+    "96":  "masterpiece, best quality, a beautiful and detailed portriat of muffet, monster girl,((purple body:1.3)),humanoid, arachnid, anthro,((fangs)),pigtails,hair bows,5 eyes,spider girl,6 arms,solo,(((sitting))), clothed, open mouth, awesome and detailed background, holding teapot, holding teacup, 6 hands,detailed hands,((spider webs:1.0)), storefront that sells pastries and tea,bloomers,(red and black clothing),inside,pouring into teacup,muffetwear"
+  },
+  "n_prompt": [
+    "(worst quality, low quality:1.4),nudity,simple background,border,mouth closed,text, patreon,bed,bedroom,white background,((monochrome)),sketch,(pink body:1.4),7 arms,8 arms,4 arms"
+  ],
+  "lora_map": {
+    "models/lora/LowRA.safetensors" : 0.3,
+    "models/lora/add_detail.safetensors" : 0.5
+  },
+  "controlnet_map": {
+    "input_image_dir" : "controlnet_image/test",
+    "controlnet_tile":{
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
+    },
+    "controlnet_ip2p":{
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
+    },
+    "controlnet_lineart_anime":{
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
+    },
+    "controlnet_openpose":{
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
+    },
+    "controlnet_softedge":{
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
+    }
+  },
+  "upscale_config": {
+    "scheduler": "k_dpmpp_sde",
+    "steps": 20,
+    "strength": 0.5,
+    "guidance_scale": 10,
+    "controlnet_tile": {
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "guess_mode": false,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0
+    },
+    "controlnet_line_anime": {
+      "enable": false,
+      "controlnet_conditioning_scale": 1.0,
+      "guess_mode": false,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0
+    },
+    "controlnet_ip2p": {
+      "enable": false,
+      "controlnet_conditioning_scale": 0.5,
+      "guess_mode": false,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0
+    },
+    "controlnet_ref": {
+      "enable": false,
+      "use_frame_as_ref_image": false,
+      "use_1st_frame_as_ref_image": false,
+      "ref_image": "ref_image/path_to_your_ref_img.jpg",
+      "attention_auto_machine_weight": 1.0,
+      "gn_auto_machine_weight": 1.0,
+      "style_fidelity": 0.25,
+      "reference_attn": true,
+      "reference_adain": false
+    }
+  }
+}
