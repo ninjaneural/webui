@@ -1,0 +1,17 @@
+!git clone https://github.com/s9roll7/animatediff-cli-prompt-travel
+#!git clone https://github.com/neggles/animatediff-cli
+#%cd animatediff-cli
+%cd animatediff-cli-prompt-travel
+#!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+!pip install torch==2.0.0+cu118 torchvision==0.15.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+!pip install xformers==0.0.19
+#!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#!pip install xformers
+#!pip install imageio
+#!pip install omegaconf einops omegaconf safetensors diffusers[torch]==0.11.1 transformers xformers==0.0.20 triton==2.0.0
+!pip install -e .
+!wget "https://civitai.com/api/download/models/56071?type=Model&format=SafeTensor&size=pruned&fp=fp16" -O data/models/sd/toonyou_beta3.safetensors
+!wget "https://civitai.com/api/download/models/94640?type=Model&format=SafeTensor&size=pruned&fp=fp16" -O data/models/sd/majic.safetensors
+
+!wget https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt -O data/models/motion-module/mm_sd_v15.ckpt
+!animatediff generate -c config/prompts/prompt_travel.json -W 512 -H 768 -L128 -C 16
