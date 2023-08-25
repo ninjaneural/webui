@@ -11,7 +11,7 @@
   "guidance_scale": 20,
   "clip_skip": 2,
   "prompt_map": {
-    "0":  "(best quality, masterpiece, colorful, dynamic angle, highest detailed) upper body photo, fashion photography of cute, intense red long hair, Mary Jane in spiderman suit,(ultrahigh resolution textures), in dynamic pose, bokeh, glowing web, (intricate details, hyperdetailed:1.15), detailed, light passing through hair, splash art flat background(high contrast, official art, extreme detailed, highest detailed)"
+    "0":  "(best quality, masterpiece, colorful, dynamic angle, highest detailed) fashion photography of cute, intense red long hair, Mary Jane in spiderman suit, beautiful girl, cute, gold hair, (ultrahigh resolution textures), bokeh, glowing web, (intricate details, hyperdetailed:1.15), detailed, light passing through hair, splash art flat background(high contrast, official art, extreme detailed, highest detailed),"
   },
   "n_prompt": [
     "(worst quality, low quality:1.4),nudity,simple background,border,mouth closed,text, patreon,bed,bedroom,white background,((monochrome)),sketch,(pink body:1.4),7 arms,8 arms,4 arms"

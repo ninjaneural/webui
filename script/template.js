@@ -160,9 +160,19 @@ const checkpoints = [
         model: 'https://civitai.com/models/24779/dark-sushi-mix-mix',
         ipynb: 'dark_sushi_mix_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/56071?type=Model&format=SafeTensor&size=pruned&fp=fp16',
-        checkpoint_file: 'DarkSushiMix_colorful.safetensors',
+        checkpoint_file: 'dark_sushi_mix.safetensors',
         bakedVAE: true,
     },
+    {
+        name: 'DarkSushiMix 2.5D',
+        type: '2D',
+        model: 'https://civitai.com/models/48671/dark-sushi-25d-25d',
+        ipynb: 'dark_sushi_mix_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/141866?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'dark_sushi_25d_25d.safetensors',
+        bakedVAE: true,
+    },
+    
     {
         name: 'DreamShaper',
         type: '범용',
