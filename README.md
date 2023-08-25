@@ -412,6 +412,12 @@
 
 ---
 
+## AnimateDiff
+
+[페이지 이동](https://github.com/ninjaneural/webui/tree/master/animatediff)
+
+---
+
 ## 유용한 사이트
 
 - 오픈포즈 에디터 (fork버전)
