@@ -1,5 +1,6 @@
 {
   "name": "sample",
+  "base": "",
   "path": "models/sd/#Checkpoint_Filename#",
   "motion_module": "models/motion-module/mm_sd_v15.ckpt",
   "compile": false,
@@ -10,9 +11,9 @@
   "steps": 40,
   "guidance_scale": 20,
   "clip_skip": 2,
-  "prompt_map": {
-    "0":  "(best quality, masterpiece, colorful, dynamic angle, highest detailed) fashion photography of cute, intense red long hair, Mary Jane in spiderman suit, 22 years old women, beautiful face, gold hair, (ultrahigh resolution textures), bokeh, glowing web, (intricate details, hyperdetailed:1.15), detailed, light passing through hair, splash art flat background(high contrast, official art, extreme detailed, highest detailed),"
-  },
+  "prompt": [
+    "1girl, solo, best quality, masterpiece, looking at viewer, purple hair, orange hair, gradient hair, blurry background, upper body, dress, flower print, spaghetti strap, bare shoulders"
+  ],
   "n_prompt": [
     "ng_deepnegative_v1_75t, (worst quality,low quality,normal quality:1.4), nude, (monochrome) (bad hands) (disfigured) (grain) (Deformed) (poorly drawn) (mutilated) (lowres) (deformed) (dark) (lowpoly) (blurry)"
   ],
@@ -56,44 +57,6 @@
       "control_guidance_start": 0.0,
       "control_guidance_end": 1.0,
       "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
-    }
-  },
-  "upscale_config": {
-    "scheduler": "k_dpmpp_sde",
-    "steps": 20,
-    "strength": 0.5,
-    "guidance_scale": 10,
-    "controlnet_tile": {
-      "enable": true,
-      "controlnet_conditioning_scale": 1.0,
-      "guess_mode": false,
-      "control_guidance_start": 0.0,
-      "control_guidance_end": 1.0
-    },
-    "controlnet_line_anime": {
-      "enable": false,
-      "controlnet_conditioning_scale": 1.0,
-      "guess_mode": false,
-      "control_guidance_start": 0.0,
-      "control_guidance_end": 1.0
-    },
-    "controlnet_ip2p": {
-      "enable": false,
-      "controlnet_conditioning_scale": 0.5,
-      "guess_mode": false,
-      "control_guidance_start": 0.0,
-      "control_guidance_end": 1.0
-    },
-    "controlnet_ref": {
-      "enable": false,
-      "use_frame_as_ref_image": false,
-      "use_1st_frame_as_ref_image": false,
-      "ref_image": "ref_image/path_to_your_ref_img.jpg",
-      "attention_auto_machine_weight": 1.0,
-      "gn_auto_machine_weight": 1.0,
-      "style_fidelity": 0.25,
-      "reference_attn": true,
-      "reference_adain": false
     }
   }
 }
