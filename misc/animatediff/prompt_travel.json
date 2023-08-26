@@ -22,7 +22,7 @@
     "models/lora/add_detail.safetensors" : 0.5
   },
   "controlnet_map": {
-    "input_image_dir" : "controlnet_image/test",
+    "input_image_dir" : "controlnet_images/test",
     "controlnet_tile":{
       "enable": false,
       "controlnet_conditioning_scale": 1.0,
