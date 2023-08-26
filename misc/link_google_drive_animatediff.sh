@@ -4,6 +4,7 @@ if [ $2 == True ]; then
   mkdir /content/drive/MyDrive/$3/checkpoint
   mkdir /content/drive/MyDrive/$3/lora
   mkdir /content/drive/MyDrive/$3/wildcards
+  mkdir /content/drive/MyDrive/$3/animatediff
   mkdir /content/$1/data/models/lora
   rm /content/$1/data/embeddings
   rm /content/$1/data/models/sd
@@ -13,4 +14,5 @@ if [ $2 == True ]; then
   ln -s /content/drive/MyDrive/$3/checkpoint /content/$1/data/models/sd/google
   ln -s /content/drive/MyDrive/$3/lora /content/$1/data/models/lora/google
   ln -s /content/drive/MyDrive/$3/output /content/$1/output
+  ln -s /content/drive/MyDrive/$3/animatediff /content/$1/data/animatediff
 fi
