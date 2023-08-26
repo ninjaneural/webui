@@ -167,7 +167,7 @@ const checkpoints = [
         name: 'DarkSushiMix 2.5D',
         type: '2D',
         model: 'https://civitai.com/models/48671/dark-sushi-25d-25d',
-        ipynb: 'dark_sushi_mix_webui_colab',
+        ipynb: 'dark_sushi_25d_25d_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/141866?type=Model&format=SafeTensor&size=pruned&fp=fp16',
         checkpoint_file: 'dark_sushi_25d_25d.safetensors',
         bakedVAE: true,

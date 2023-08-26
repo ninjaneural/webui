@@ -6,15 +6,15 @@
   "seed": [
     341774366206100
   ],
-  "scheduler": "k_dpmpp_sde",
+  "scheduler": "k_dpmpp_2m",
   "steps": 40,
   "guidance_scale": 20,
   "clip_skip": 2,
   "prompt_map": {
-    "0":  "(best quality, masterpiece, colorful, dynamic angle, highest detailed) fashion photography of cute, intense red long hair, Mary Jane in spiderman suit, beautiful girl, cute, gold hair, (ultrahigh resolution textures), bokeh, glowing web, (intricate details, hyperdetailed:1.15), detailed, light passing through hair, splash art flat background(high contrast, official art, extreme detailed, highest detailed),"
+    "0":  "(best quality, masterpiece, colorful, dynamic angle, highest detailed) fashion photography of cute, intense red long hair, Mary Jane in spiderman suit, 22 years old women, beautiful face, gold hair, (ultrahigh resolution textures), bokeh, glowing web, (intricate details, hyperdetailed:1.15), detailed, light passing through hair, splash art flat background(high contrast, official art, extreme detailed, highest detailed),"
   },
   "n_prompt": [
-    "(worst quality, low quality:1.4),nudity,simple background,border,mouth closed,text, patreon,bed,bedroom,white background,((monochrome)),sketch,(pink body:1.4),7 arms,8 arms,4 arms"
+    "ng_deepnegative_v1_75t, (worst quality,low quality,normal quality:1.4), nude, (monochrome) (bad hands) (disfigured) (grain) (Deformed) (poorly drawn) (mutilated) (lowres) (deformed) (dark) (lowpoly) (blurry)"
   ],
   "lora_map": {
     "models/lora/LowRA.safetensors" : 0.3,
@@ -23,28 +23,28 @@
   "controlnet_map": {
     "input_image_dir" : "controlnet_image/test",
     "controlnet_tile":{
-      "enable": true,
+      "enable": false,
       "controlnet_conditioning_scale": 1.0,
       "control_guidance_start": 0.0,
       "control_guidance_end": 1.0,
       "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
     },
     "controlnet_ip2p":{
-      "enable": true,
+      "enable": false,
       "controlnet_conditioning_scale": 1.0,
       "control_guidance_start": 0.0,
       "control_guidance_end": 1.0,
       "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
     },
     "controlnet_lineart_anime":{
-      "enable": true,
+      "enable": false,
       "controlnet_conditioning_scale": 1.0,
       "control_guidance_start": 0.0,
       "control_guidance_end": 1.0,
       "control_scale_list":[0.5,0.4,0.3,0.2,0.1]
     },
     "controlnet_openpose":{
-      "enable": true,
+      "enable": false,
       "controlnet_conditioning_scale": 1.0,
       "control_guidance_start": 0.0,
       "control_guidance_end": 1.0,
