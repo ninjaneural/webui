@@ -1,0 +1,92 @@
+{
+  "name": "sample",
+  "base": ".",
+  "path": "models/sd/majicMIX_realistic_v6.safetensors",
+  "motion_module": "models/motion-module/mm_sd_v15.ckpt",
+  "compile": false,
+  "seed": [
+    542517774495100
+  ],
+  "scheduler": "k_dpmpp_2m",
+  "steps": 40,
+  "guidance_scale": 20.0,
+  "clip_skip": 2,
+  "prompt": [
+    "masterpiece, (best quality, high quality:1.2), 8k uhd,(realistic, photorealistic, RAW),spring day, 1girl,(cute:1.2), young,long hair, black hair,lustrous skin,medium breast, (smile:0.5),outdoors, aausagi, double bun, twintails, parted bangs, circlet, jewelry, earrings, choker, red bow, white gloves, elbow gloves, blue skirt"
+  ],
+  "n_prompt": [
+    "ng_deepnegative_v1_75t, (worst quality,low quality,normal quality:1.4), lowres, watermark, monochrome, nsfw, nude,"
+  ],
+  "lora_map": {
+    "models/lora/google/sailor_moon_v1.safetensors": 1.0,
+    "models/lora/add_detail.safetensors": 0.5
+  },
+  "controlnet_map": {
+    "input_image_dir": "animatediff/controlnet_images",
+    "controlnet_tile": {
+      "enable": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_ip2p": {
+      "enable": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_lineart_anime": {
+      "enable": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_openpose": {
+      "enable": true,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_softedge": {
+      "enable": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    }
+  }
+}
