@@ -17,14 +17,13 @@ pip install -e .
 
 # 모션모듈 파일다운로드
 
-# https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt
-# data\models\motion-module 이곳에 저장
+> https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt  
+> data\models\motion-module 이곳에 저장  
 
 
-# 프롬프트 수정 config\prompts\prompt.json
+# 설정파일 수정 config\prompts\prompt.json
 
-# 로컬 체크포인트 예제
-
+> 로컬 체크포인트 예제  
 > checkpoint, lora 직접 경로 입력
 
 ```
@@ -126,8 +125,8 @@ pip install -e .
 
 # 실행
 
-animatediff generate -h 도움말
-
+```
+animatediff generate -h 
 animatediff generate -W 512 -H 768 -L 16
-
+```
 
