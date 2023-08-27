@@ -18,6 +18,7 @@ pip install -e .
 # 모션모듈 파일다운로드
 
 > https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt  
+> https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt  
 > data\models\motion-module 이곳에 저장  
 
 
