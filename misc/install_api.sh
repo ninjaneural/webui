@@ -1,18 +1,18 @@
 pip install -q xformers==0.0.20 triton==2.0.0 -U
 
-git clone -b v1.5.1 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
+git clone -b $2 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
 
-if [ $5 == True ]; then
+if [ $6 == True ]; then
   git clone https://github.com/CiaraStrawberry/sd-webui-controlnet-TemporalNet-API /content/$1/extensions/controlnet
 else
-  if [ $2 == True ]; then
+  if [ $3 == True ]; then
     git clone https://github.com/ninjaneural/controlnet /content/$1/extensions/controlnet
   fi
 fi
-if [ $3 == True ]; then
+if [ $4 == True ]; then
   git clone -b mmdet3 https://github.com/ninjaneural/ddetailer /content/$1/extensions/ddetailer
 fi
-if [ $4 == True ]; then
+if [ $5 == True ]; then
   git clone https://github.com/Bing-su/adetailer /content/$1/extensions/adetailer
 fi
 
@@ -22,8 +22,8 @@ git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /conten
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/$1/extensions/multidiffusion-upscaler-for-automatic1111
 git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/extensions/a1111-sd-webui-lycoris
 
-if [ $2 == True ]; then
-  if [ $5 == True ]; then
+if [ $3 == True ]; then
+  if [ $6 == True ]; then
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalNet2/resolve/main/temporalnetversion2.ckpt -d /content/$1/extensions/controlnet/models -o temporalnetversion2.ckpt
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalNet2/resolve/main/temporalnetversion2.yaml -d /content/$1/extensions/controlnet/models -o temporalnetversion2.yaml
   fi
