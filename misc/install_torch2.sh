@@ -5,7 +5,7 @@ if [ $3 == True ]; then
   mim install mmdet>=3.0.0
 fi
 
-git clone -b v1.5.1 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
+git clone -b v1.5.2 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
 if [ $2 == True ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet /content/$1/extensions/controlnet
 fi
@@ -35,7 +35,6 @@ git clone https://github.com/ninjaneural/video-util /content/$1/extensions/video
 git clone https://github.com/fkunn1326/openpose-editor /content/$1/extensions/openpose-editor
 git clone https://github.com/hnmr293/posex /content/$1/extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui /content/$1/extensions/video_loopback_for_webui
-git clone https://github.com/Scholar01/sd-webui-mov2mov /content/$1/extensions/mov2mov
 
 git clone https://github.com/continue-revolution/sd-webui-animatediff /content/$1/extensions/animatediff
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt -d /content/$1/extensions/animatediff/model -o mm_sd_v15.ckpt
