@@ -28,7 +28,7 @@ git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/e
 
 git clone https://github.com/neuralninja22/images-browser /content/$1/extensions/images-browser
 git clone https://github.com/kohya-ss/sd-webui-additional-networks /content/$1/extensions/additional-networks
-git clone https://github.com/neuralninja22/wd14-tagger /content/$1/extensions/wd14-tagger
+git clone https://github.com/picobyte/stable-diffusion-webui-wd14-tagger /content/$1/extensions/wd14-tagger
 git clone https://github.com/yankooliveira/sd-webui-photopea-embed /content/$1/extensions/photopea-embed
 git clone https://github.com/ninjaneural/video-util /content/$1/extensions/video-util
 
