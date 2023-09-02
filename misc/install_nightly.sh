@@ -1,21 +1,21 @@
 pip install -q xformers==0.0.20 triton==2.0.0 -U
-if [ $3 == True ]; then
+if [ $4 == True ]; then
   pip install -U openmim
   mim install mmcv>=2.0.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.0.0/index.html
   mim install mmdet>=3.0.0
 fi
 
-git clone -b v1.3.2 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
-if [ $2 == True ]; then
+git clone -b $2 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
+if [ $3 == True ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet /content/$1/extensions/controlnet
 fi
-if [ $3 == True ]; then
+if [ $4 == True ]; then
   git clone -b mmdet3 https://github.com/ninjaneural/ddetailer /content/$1/extensions/ddetailer
 fi
-if [ $4 == True ]; then
+if [ $5 == True ]; then
   git clone https://github.com/Bing-su/adetailer /content/$1/extensions/adetailer
 fi
-if [ $5 == True ]; then
+if [ $6 == True ]; then
   git clone https://github.com/ninjaneural/segment-anything /content/$1/extensions/segment-anything
 fi
 
@@ -35,9 +35,12 @@ git clone https://github.com/ninjaneural/video-util /content/$1/extensions/video
 git clone https://github.com/fkunn1326/openpose-editor /content/$1/extensions/openpose-editor
 git clone https://github.com/hnmr293/posex /content/$1/extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui /content/$1/extensions/video_loopback_for_webui
-git clone https://github.com/Scholar01/sd-webui-mov2mov /content/$1/extensions/mov2mov
 
-if [ $2 == True ]; then
+if [ $7 == True ]; then
+  git clone https://github.com/Scholar01/sd-webui-mov2mov /content/$1/extensions/mov2mov
+fi
+
+if [ $3 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_openpose_fp16.safetensors -d /content/$1/extensions/controlnet/models -o control_v11p_sd15_openpose_fp16.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_lineart_fp16.safetensors -d /content/$1/extensions/controlnet/models -o control_v11p_sd15_lineart_fp16.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_softedge_fp16.safetensors -d /content/$1/extensions/controlnet/models -o control_v11p_sd15_softedge_fp16.safetensors
@@ -62,7 +65,7 @@ if [ $2 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/TencentARC/T2I-Adapter/resolve/main/models/t2iadapter_zoedepth_sd15v1.pth -d /content/$1/extensions/controlnet/models -o t2iadapter_zoedepth_sd15v1.pth
 fi
 
-if [ $5 == True ]; then
+if [ $6 == True ]; then
   mkdir /content/$1/models/sam
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d /content/$1/models/sam -o sam_vit_h_4b8939.pth
 fi
