@@ -8,5 +8,6 @@
     "live_previews_image_format": "jpg",
     "control_net_max_models_num": 4,
     "control_net_model_cache_size": 3,
+    "control_net_no_detectmap": true,
     "control_net_allow_script_control": true
 }
