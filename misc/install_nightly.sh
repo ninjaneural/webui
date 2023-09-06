@@ -70,6 +70,8 @@ if [ $6 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d /content/$1/models/sam -o sam_vit_h_4b8939.pth
 fi
 
-sed -i -e "/from modules import launch_utils/a\import os" /content/$1/launch.py
-sed -i -e "/        prepare_environment()/a\        os.system(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" /content/$1/repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" /content/$1/launch.py
+if [ $2 != "v1.6.0" ]; then
+  sed -i -e "/from modules import launch_utils/a\import os" /content/$1/launch.py
+  sed -i -e "/        prepare_environment()/a\        os.system(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" /content/$1/repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" /content/$1/launch.py
+fi
 wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/config.json -O /content/$1/config.json
