@@ -32,7 +32,9 @@ if [ $3 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_xl_canny.safetensors -d /content/$1/extensions/controlnet/models -o t2i-adapter_xl_canny.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_xl_openpose.safetensors -d /content/$1/extensions/controlnet/models -o t2i-adapter_xl_openpose.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_xl_sketch.safetensors -d /content/$1/extensions/controlnet/models -o t2i-adapter_xl_sketch.safetensors
-  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/thibaud_xl_openpose.safetensors -d /content/$1/extensions/controlnet/models -o /thibaud_xl_openpose.safetensors
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/thibaud_xl_openpose.safetensors -d /content/$1/extensions/controlnet/models -o thibaud_xl_openpose.safetensors
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/ip-adapter_xl.pth -d /content/$1/extensions/controlnet/models -o ip-adapter_xl.pth
+  
 fi
 
 cd /content/$1
