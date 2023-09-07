@@ -18,10 +18,8 @@ git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/
 git clone https://github.com/wcde/sd-webui-refiner /content/$1/extensions/sd-webui-refiner
 
 if [ $3 == True ]; then
-  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_full.safetensors -d /content/$1/extensions/controlnet/models -o diffusers_xl_canny_full.safetensors
-  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_depth_full.safetensors -d /content/$1/extensions/controlnet/models -o diffusers_xl_depth_full.safetensors
-  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/thibaud_xl_openpose.safetensors -d /content/$1/extensions/controlnet/models -o thibaud_xl_openpose.safetensors
-  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/ioclab_sd15_recolor.safetensors -d /content/$1/extensions/controlnet/models -o ioclab_sd15_recolor.safetensors
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_mid.safetensors -d /content/$1/extensions/controlnet/models -o diffusers_xl_canny_mid.safetensors
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_depth_mid.safetensors -d /content/$1/extensions/controlnet/models -o diffusers_xl_depth_mid.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/kohya_controllllite_xl_canny_anime.safetensors -d /content/$1/extensions/controlnet/models -o kohya_controllllite_xl_canny_anime.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/kohya_controllllite_xl_depth_anime.safetensors -d /content/$1/extensions/controlnet/models -o kohya_controllllite_xl_depth_anime.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/kohya_controllllite_xl_openpose_anime_v2.safetensors -d /content/$1/extensions/controlnet/models -o kohya_controllllite_xl_openpose_anime_v2.safetensors
@@ -34,7 +32,7 @@ if [ $3 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_xl_canny.safetensors -d /content/$1/extensions/controlnet/models -o t2i-adapter_xl_canny.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_xl_openpose.safetensors -d /content/$1/extensions/controlnet/models -o t2i-adapter_xl_openpose.safetensors
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_xl_sketch.safetensors -d /content/$1/extensions/controlnet/models -o t2i-adapter_xl_sketch.safetensors
-  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/thibaud_xl_openpose.safetensors -d /content/$1/extensions/controlnet/models -o thibaud_xl_openpose.safetensors  
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/thibaud_xl_openpose_256lora.safetensors -d /content/$1/extensions/controlnet/models -o /thibaud_xl_openpose_256lora.safetensors
 fi
 
 cd /content/$1
