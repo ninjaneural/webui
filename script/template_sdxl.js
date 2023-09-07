@@ -176,6 +176,15 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'XL13 Asmodeus (SFW & NSFW)',
+        type: '실사',
+        model: 'https://civitai.com/models/134646/xl13-asmodeus-sfw-and-nsfw',
+        ipynb: 'xl13_asmodeus_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/150490?type=Model&format=SafeTensor&size=full&fp=fp16',
+        checkpoint_file: 'xl13_asmodeus.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'StabilityAI XL 1.0',
         type: '복합',
         model: 'https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0',
@@ -193,7 +202,8 @@ async function copy_files() {
     let readme = [];
     readme.push(`| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    checkpoints.forEach((item) => {
+    const list = checkpoints.sort((a, b) => a.name > b.name ? 1 : a.name < b.name ? -1 : 0);
+    list.forEach((item) => {
         console.log(`${item.ipynb} 복사`);
         let code = templateCode;
         code = code.replaceAll('#template_checkpoint_default#', item.checkpoint);
@@ -216,7 +226,8 @@ async function make_readme() {
     let readme = [];
     readme.push(`| WebUI                                                                                                                                                                                    | ComfyUI                                                                                                                                                                                                 | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    checkpoints.forEach((item) => {
+    const list = checkpoints.sort((a, b) => a.name > b.name ? 1 : a.name < b.name ? -1 : 0);
+    list.forEach((item) => {
         readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/sdxl/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui_sdxl/${item.ipynb}.ipynb)  | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
     });
 
