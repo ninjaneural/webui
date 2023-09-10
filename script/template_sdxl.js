@@ -202,7 +202,7 @@ async function copy_files() {
     let readme = [];
     readme.push(`| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    const list = checkpoints.sort((a, b) => a.name > b.name ? 1 : a.name < b.name ? -1 : 0);
+    const list = checkpoints.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
     list.forEach((item) => {
         console.log(`${item.ipynb} 복사`);
         let code = templateCode;
@@ -226,7 +226,7 @@ async function make_readme() {
     let readme = [];
     readme.push(`| WebUI                                                                                                                                                                                    | ComfyUI                                                                                                                                                                                                 | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    const list = checkpoints.sort((a, b) => a.name > b.name ? 1 : a.name < b.name ? -1 : 0);
+    const list = checkpoints.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
     list.forEach((item) => {
         readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/sdxl/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui_sdxl/${item.ipynb}.ipynb)  | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
     });

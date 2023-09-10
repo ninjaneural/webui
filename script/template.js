@@ -446,6 +446,16 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'YabaL_Mix True2.5D',
+        type: '2.5D',
+        model: 'https://civitai.com/models/60093/yabalmix-true25d',
+        ipynb: 'yabal_mix_true25d_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/156961?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'yabaLMix_true25d.safetensors',
+        bakedVAE: true,
+    },
+    
+    {
         name: 'v08_v80',
         type: '2.5D',
         ipynb: 'v80_v80_webui_colab',
@@ -462,7 +472,8 @@ async function copy_files() {
     let readme = [];
     readme.push(`| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    checkpoints.forEach((item) => {
+    const list = checkpoints.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
+    list.forEach((item) => {
         console.log(`${item.ipynb} 복사`);
         let code = templateCode;
         code = code.replaceAll('#template_checkpoint_default#', item.checkpoint);
@@ -483,7 +494,8 @@ async function make_readme() {
     let readme = [];
     readme.push(`| 3월버전(stable)                                                                                                                                                                                  | 심플(simple)                                                                                                                                                                               | 최신(nightly)                                                                                                                                                                                        | Deforum전용                                                                                                                                                                                      | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    checkpoints.forEach((item) => {
+    const list = checkpoints.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
+    list.forEach((item) => {
         readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/simple/${item.ipynb}.ipynb) | [![Open In Colab](https://raw.githubusercontent.com/ninjaneural/webui/master/icons/colab-badge-nightly.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/nightly/${item.ipynb}.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/deforum/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
     });
 
