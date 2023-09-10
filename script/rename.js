@@ -18,7 +18,7 @@ if (startIndex === 0 || !!startIndex) startIndex = parseInt(startIndex);
             let name = path.basename(element);
             console.log('name', name);
             let dir = path.dirname(element);
-            newname = ('' + index).padStart(7, '0') + '.png';
+            newname = ('' + index).padStart(4, '0') + '.png';
             fs.renameSync(
                 [dir, "/", name].join(""),
                 [dir, "/", newname].join("")
