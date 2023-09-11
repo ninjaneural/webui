@@ -22,9 +22,9 @@ fi
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/$1/extensions/sd-dynamic-prompts
 git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding /content/$1/extensions/sd-dynamic-thresholding
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/$1/extensions/multidiffusion-upscaler-for-automatic1111
-git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/a1111-sd-webui-tagcomplete
+git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/tagcomplete
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/$1/extensions/ultimate-upscale-for-automatic1111
-git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/extensions/a1111-sd-webui-lycoris
+git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/extensions/lycoris
 
 git clone https://github.com/neuralninja22/images-browser /content/$1/extensions/images-browser
 git clone https://github.com/kohya-ss/sd-webui-additional-networks /content/$1/extensions/additional-networks
@@ -34,7 +34,7 @@ git clone https://github.com/ninjaneural/video-util /content/$1/extensions/video
 
 git clone https://github.com/fkunn1326/openpose-editor /content/$1/extensions/openpose-editor
 git clone https://github.com/hnmr293/posex /content/$1/extensions/posex
-git clone https://github.com/fishslot/video_loopback_for_webui /content/$1/extensions/video_loopback_for_webui
+git clone https://github.com/fishslot/video_loopback_for_webui /content/$1/extensions/video_loopback
 
 if [ $7 == True ]; then
   git clone https://github.com/Scholar01/sd-webui-mov2mov /content/$1/extensions/mov2mov

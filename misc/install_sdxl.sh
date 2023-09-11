@@ -14,8 +14,7 @@ if [ $5 == True ]; then
 fi
 
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/$1/extensions/sd-dynamic-prompts
-git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/a1111-sd-webui-tagcomplete
-git clone https://github.com/wcde/sd-webui-refiner /content/$1/extensions/sd-webui-refiner
+git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/$1/extensions/tagcomplete
 
 if [ $3 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_mid.safetensors -d /content/$1/extensions/controlnet/models -o diffusers_xl_canny_mid.safetensors

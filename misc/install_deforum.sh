@@ -5,7 +5,7 @@ if [ $2 == True ]; then
   git clone -b stable1 https://github.com/ninjaneural/controlnet /content/$1/extensions/controlnet
 fi
 
-git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/extensions/a1111-sd-webui-lycoris
+git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/$1/extensions/lycoris
 git clone -b nightly https://github.com/ninjaneural/deforum /content/$1/extensions/deforum
 
 if [ $2 == True ]; then
