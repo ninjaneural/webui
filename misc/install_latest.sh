@@ -1,4 +1,5 @@
-pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchtext==0.14.1 torchaudio==0.13.1 torchdata==0.5.1 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install -q xformers==0.0.20 triton==2.0.0 -U
+
 if [ $4 == True ]; then
   pip install -U openmim
   mim install mmcv>=2.0.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.0.0/index.html
