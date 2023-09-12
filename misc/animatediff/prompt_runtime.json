@@ -1,0 +1,239 @@
+{
+  "name": "sample",
+  "path": "models/sd/#Checkpoint_Filename#",
+  "motion_module": "models/motion-module/mm_sd_v15.ckpt",
+  "compile": false,
+  "seed": [
+    1688783514
+  ],
+  "scheduler": "k_dpmpp_2m",
+  "steps": 30,
+  "guidance_scale": 7,
+  "clip_skip": 2,
+  "prompt_map": {
+    "0": "",
+    "16": ",smile"
+  },
+  "n_prompt": [
+    ""
+  ],
+  "lora_path": "/models/lora/google",
+  "controlnet_map": {
+    "input_image_dir": "controlnet_image/runtime",
+    "max_samples_on_vram": 200,
+    "max_models_on_vram": 3,
+    "save_detectmap": true,
+    "preprocess_on_gpu": true,
+    "is_loop": true,
+    "controlnet_tile": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_lineart": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_lineart_anime": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_openpose": {
+      "enable": true,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.3,
+        0.28,
+        0.24,
+        0.22,
+        0.2
+      ]
+    },
+    "controlnet_softedge": {
+      "enable": true,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 0.75,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.3,
+        0.28,
+        0.24,
+        0.22,
+        0.2
+      ]
+    },
+    "controlnet_depth": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_canny": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_ip2p": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_inpaint": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_shuffle": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_mlsd": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_normalbae": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_scribble": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    },
+    "controlnet_seg": {
+      "enable": false,
+      "use_preprocessor": true,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": [
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    }
+  }
+}
