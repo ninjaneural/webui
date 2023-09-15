@@ -6,7 +6,7 @@ install버전으로 최초 한번 설치한후에 이후에 **run.ipynb** 으로
 
 ## 실행방법
 
-### 1. 직접실행 (추천)
+### 1. 직접실행 (구글드라이브에서 실행, 수정가능)
 
 1. [이곳](https://github.com/ninjaneural/webui/blob/master/install/run.ipynb)에서 run.ipyb 파일 다운로드 (클릭하고 오른쪽위에 다운로드버튼 클릭)
 
@@ -24,7 +24,7 @@ install버전으로 최초 한번 설치한후에 이후에 **run.ipynb** 으로
 3. 구글드라이브에서 실행 (run.ipynb 더블클릭)
 
 
-### 2. github 에서 실행
+### 2. 간편실행 (github에서 실행, 수정불가)
 
 > [run.ipynb 실행](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install/run.ipynb)  
 
