@@ -27,7 +27,6 @@ git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding ./extensio
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 ./extensions/multidiffusion-upscaler
 git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete ./extensions/tagcomplete
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 ./extensions/ultimate-upscale
-git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris ./extensions/lycoris
 
 git clone https://github.com/neuralninja22/images-browser ./extensions/images-browser
 git clone https://github.com/kohya-ss/sd-webui-additional-networks ./extensions/additional-networks
