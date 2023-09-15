@@ -12,7 +12,16 @@ install버전으로 최초 한번 설치한후에 이후에 **run.ipynb** 으로
 
 2. 구글드라이브에 업로드
 
-3. 구글드라이브에서 실행
+3. 구글드라이브에 Colab앱 설치
+
+    <img src="./install/1.png" />
+
+    <img src="./install/2.png" />
+
+    <img src="./install/3.png" />
+
+
+3. 구글드라이브에서 실행 (run.ipynb 더블클릭)
 
 
 ### 2. github 에서 실행
