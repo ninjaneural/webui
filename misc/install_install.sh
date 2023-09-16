@@ -28,7 +28,7 @@ git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic11
 git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete ./extensions/tagcomplete
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 ./extensions/ultimate-upscale
 
-git clone https://github.com/neuralninja22/images-browser ./extensions/images-browser
+git clone https://github.com/AlUlkesh/stable-diffusion-webui-images-browser ./extensions/images-browser
 git clone https://github.com/kohya-ss/sd-webui-additional-networks ./extensions/additional-networks
 git clone https://github.com/picobyte/stable-diffusion-webui-wd14-tagger ./extensions/wd14-tagger
 git clone https://github.com/yankooliveira/sd-webui-photopea-embed ./extensions/photopea-embed
