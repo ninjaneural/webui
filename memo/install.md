@@ -28,6 +28,12 @@ install버전으로 최초 한번 설치한후에 이후에 **run.ipynb** 으로
 
 > [run.ipynb 실행](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install/run.ipynb)  
 
+## SDXL용 run_xl.ipynb
+
+* SDXL용 ControlNet 모델연결
+
+> [run_xl.ipynb 다운로드](https://github.com/ninjaneural/webui/blob/master/install/run_xl.ipynb)  
+> [run_xl.ipynb 실행](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install/run_xl.ipynb)  
 
 ## 폴더 설명
 
@@ -39,6 +45,7 @@ install버전으로 최초 한번 설치한후에 이후에 **run.ipynb** 으로
 * install/models/LyCORIS : 라이코리스(LyCORIS)
 * install/embeddings : 임베딩(Textual Inversion)
 * install/hypernetworks : 하이퍼워크(Hyperworks)
+* install/extensions/sd-dynamic-prompt/wildcards : 와일드카드 파일(wildcard)
 
 ## WebUI내에서 Extension 설치가능
 
