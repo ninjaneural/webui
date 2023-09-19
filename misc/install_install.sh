@@ -30,7 +30,6 @@ git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 ./exten
 
 git clone https://github.com/AlUlkesh/stable-diffusion-webui-images-browser ./extensions/images-browser
 git clone https://github.com/kohya-ss/sd-webui-additional-networks ./extensions/additional-networks
-git clone https://github.com/picobyte/stable-diffusion-webui-wd14-tagger ./extensions/wd14-tagger
 git clone https://github.com/yankooliveira/sd-webui-photopea-embed ./extensions/photopea-embed
 git clone https://github.com/ninjaneural/video-util ./extensions/video-util
 

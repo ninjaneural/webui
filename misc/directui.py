@@ -251,7 +251,11 @@ def webui():
 
         startup_timer.record("gradio launch")
 
-        modules.progress.setup_progress_api(app)
+        app.user_middleware = [x for x in app.user_middleware if x.cls.__name__ != 'CORSMiddleware']
+        initialize_util.setup_middleware(app)
+
+        progress.setup_progress_api(app)
+        ui.setup_ui_api(app)
 
         ui_extra_networks.add_pages_to_demo(app)
 
