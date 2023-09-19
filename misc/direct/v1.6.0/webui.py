@@ -8,7 +8,6 @@ from modules import initialize_util
 from modules import initialize
 
 startup_timer = timer.startup_timer
-startup_timer.record("launcher")
 
 initialize.imports()
 
@@ -56,41 +55,16 @@ def webui():
     while 1:
         if shared.opts.clean_temp_dir_at_start:
             ui_tempdir.cleanup_tmpdr()
-            startup_timer.record("cleanup temp dir")
 
         script_callbacks.before_ui_callback()
-        startup_timer.record("scripts before_ui_callback")
 
         shared.demo = ui.create_ui()
-        startup_timer.record("create ui")
-
-        if not cmd_opts.no_gradio_queue:
-            shared.demo.queue(64)
 
         app, local_url, share_url = shared.demo.launch(
             height=3000,
             prevent_thread_lock=True
         )
 
-        startup_timer.record("gradio launch")
-
-        # gradio uses a very open CORS policy via app.user_middleware, which makes it possible for
-        # an attacker to trick the user into opening a malicious HTML page, which makes a request to the
-        # running web ui and do whatever the attacker wants, including installing an extension and
-        # running its code. We disable this here. Suggested by RyotaK.
-        app.user_middleware = [x for x in app.user_middleware if x.cls.__name__ != 'CORSMiddleware']
-
-        initialize_util.setup_middleware(app)
-
-        progress.setup_progress_api(app)
-        ui.setup_ui_api(app)
-
-        if launch_api:
-            create_api(app)
-
-        ui_extra_networks.add_pages_to_demo(app)
-
-        startup_timer.record("add APIs")
 
         with startup_timer.subcategory("app_started_callback"):
             script_callbacks.app_started_callback(shared.demo, app)
@@ -116,17 +90,12 @@ def webui():
             shared.demo.close()
             break
 
-        # disable auto launch webui in browser for subsequent UI Reload
-        os.environ.setdefault('SD_WEBUI_RESTARTING', '1')
-
         print('Restarting UI...')
         shared.demo.close()
         time.sleep(0.5)
         startup_timer.reset()
         script_callbacks.app_reload_callback()
-        startup_timer.record("app reload callback")
         script_callbacks.script_unloaded_callback()
-        startup_timer.record("scripts unloaded callback")
         initialize.initialize_rest(reload_script_modules=True)
 
 
