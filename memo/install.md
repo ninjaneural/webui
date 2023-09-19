@@ -1,8 +1,10 @@
 
 
-# 실행 노트북
+# 실행용 노트북 설명서
 
 install버전으로 최초 한번 설치한후에 이후에 **run.ipynb** 으로 설치없이 실행
+* 프록시없이 직접실행 run_direct.ipynb 추가  
+* SDXL용 run_xl.ipynb 추가  
 
 ## 실행방법
 
