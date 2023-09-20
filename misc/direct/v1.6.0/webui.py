@@ -65,11 +65,6 @@ def webui():
             prevent_thread_lock=True
         )
 
-        app.user_middleware = [x for x in app.user_middleware if x.cls.__name__ != 'CORSMiddleware']
-        initialize_util.setup_middleware(app)
-        progress.setup_progress_api(app)
-        ui.setup_ui_api(app)
-
         with startup_timer.subcategory("app_started_callback"):
             script_callbacks.app_started_callback(shared.demo, app)
 
