@@ -26,21 +26,15 @@ git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding ./extensio
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 ./extensions/multidiffusion-upscaler
 git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete ./extensions/tagcomplete
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 ./extensions/ultimate-upscale
-git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris ./extensions/lycoris
 
 git clone https://github.com/neuralninja22/images-browser ./extensions/images-browser
 git clone https://github.com/kohya-ss/sd-webui-additional-networks ./extensions/additional-networks
 git clone https://github.com/picobyte/stable-diffusion-webui-wd14-tagger ./extensions/wd14-tagger
 git clone https://github.com/yankooliveira/sd-webui-photopea-embed ./extensions/photopea-embed
-git clone https://github.com/ninjaneural/video-util ./extensions/video-util
 
 git clone https://github.com/fkunn1326/openpose-editor ./extensions/openpose-editor
 git clone https://github.com/hnmr293/posex ./extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/video_loopback
-
-if [ $7 == True ]; then
-  git clone https://github.com/Scholar01/sd-webui-mov2mov ./extensions/mov2mov
-fi
 
 if [ $6 == True ]; then
   mkdir ./models/sam
