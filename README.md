@@ -1,20 +1,11 @@
 유튜브채널 https://www.youtube.com/@neuralninja-ai
 
-🚨 중요 🚨 <br/> Stable Diffusion WebUI를 Colab **무료 티어**에서 사용시 제한조치가 시작되었어요 <br/>
-
-2023-09-21 **무료티어**에서 Stable Diffusion 사용불가 조치 <br/>
-<img src="https://raw.githubusercontent.com/ninjaneural/webui/master/misc/readme/free_tier.png"/>
-> 무료 등급에서 허용되지 않는 코드 실행으로 인해 런타임 연결이 끊어졌습니다.  
-> Colab은 수백만 명의 사용자에게 보조금을 지급하고 대화형 프로그래밍 세션에 우선순위를 두는 동시에 FAQ에 설명된 대로 일부 유형의 사용을 허용하지 않습니다.  
-
+🚨 중요 🚨 <br/> Stable Diffusion WebUI를 Colab **무료 티어**에서 사용시 제한조치가 시작되었어요 
 <details>
   <summary>자세히보기</summary>
 
-# 지금은 첫번째 단계로 경고창만 추가되었어요. 앞으로 제한이나 제재조치가 있을 수 있을거 같아요
-
-# 2023-06-28 경고창이 뜰경우 연결끊김 조치가 추가된거 같아요 -> 경고창이 안뜨게 수정조치
-
-# 2023-09-21 런타임 강제 종료 실행불가;;
+### 지금은 첫번째 단계로 경고창만 추가되었어요. 앞으로 제한이나 제재조치가 있을 수 있을거 같아요  
+### 2023-06-28 경고창이 뜰경우 연결끊김 조치가 추가된거 같아요 -> 경고창이 안뜨게 수정조치  
 
 [Colab PM 트윗](https://twitter.com/thechrisperry/status/1649189902079381505)
 
@@ -41,6 +32,24 @@
 > 유료 요금제에서 webui 사용을 제한할 계획은 없습니다.
 
 </details>
+<br/>
+
+2023-09-21 **무료티어**에서 Stable Diffusion 사용불가 조치 
+
+<details>
+  <summary>자세히보기</summary>
+
+### 2023-09-21 무료티어 Stable Diffusion 실행시 런타임 강제 종료 조치
+<img src="https://raw.githubusercontent.com/ninjaneural/webui/master/misc/readme/free_tier.png"/>
+
+> **무료 등급에서 허용되지 않는 코드 실행**으로 인해 런타임 연결이 끊어졌습니다.  
+
+</details>
+<br/>
+
+2023-09-22 **무료티어**는 설치버전(install)의 직접실행 버전만 실행 가능해요 (이것도 조만간 막힐수 있겠죠..;;) <br/>
+
+* 코랩으로 걱정없이 사용하려면 유료 요금제(코랩 프로)를..
 
 ---
 
