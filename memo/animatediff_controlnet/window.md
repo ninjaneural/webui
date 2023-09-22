@@ -1,9 +1,9 @@
 > https://github.com/s9roll7/animatediff-cli-prompt-travel  
-> (https://github.com/ninjaneural/animatediff-cli-mix 코랩용 수정버전)  
+> (https://github.com/neuralninja22/animatediff-cli-prompt-travel 코랩용 수정버전)  
 
 ```
-git clone https://github.com/ninjaneural/animatediff-cli-mix
-cd animatediff-cli-mix
+git clone https://github.com/neuralninja22/animatediff-cli-prompt-travel
+animatediff-cli-prompt-travel
 
 python -m venv .venv
 
@@ -11,6 +11,7 @@ python -m venv .venv
 
 python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 python -m pip install xformers
+python -m pip install onnxruntime
 
 pip install -e .
 ```
