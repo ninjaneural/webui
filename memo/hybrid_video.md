@@ -19,7 +19,7 @@
 
 # Deforum 설정파일
 
-[https://raw.githubusercontent.com/ninjaneural/webui/master/memo/hybrid_video/test_settings.txt](https://raw.githubusercontent.com/ninjaneural/webui/master/memo/hybrid_video/test_settings.txt)
+[https://raw.githubusercontent.com/neuralninja22/colab/master/memo/hybrid_video/test_settings.txt](https://raw.githubusercontent.com/neuralninja22/colab/master/memo/hybrid_video/test_settings.txt)
 
 # 로컬사용시 체크포인트, 로라등 공유설정
 

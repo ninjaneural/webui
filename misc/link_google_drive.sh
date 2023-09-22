@@ -9,7 +9,7 @@ if [ $2 == True ]; then
   mkdir /content/drive/MyDrive/$3/wildcards
   if [ "$4" ]; then
     mkdir /content/drive/MyDrive/$3/$4
-    wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/example/install.sh -nc -O /content/drive/MyDrive/$3/$4/install.sh
+    wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/example/install.sh -nc -O /content/drive/MyDrive/$3/$4/install.sh
   fi
   mkdir /content/$1/models/Lora
   mkdir /content/$1/models/LyCORIS

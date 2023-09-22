@@ -44,4 +44,4 @@ if [ $2 == True ]; then
 fi
 
 sed -i -e "/    prepare_environment()/a\    os.system\(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" /content/$1/repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" /content/$1/launch.py
-wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/config.json -O /content/$1/config.json
+wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O /content/$1/config.json

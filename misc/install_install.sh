@@ -44,4 +44,4 @@ fi
 
 sed -i -e "/    # TODO clone into temporary dir and move if successful/a\    return" /content/$1/modules/launch_utils.py
 
-wget https://raw.githubusercontent.com/ninjaneural/webui/master/misc/config.json -O ./config.json
+wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
