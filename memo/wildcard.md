@@ -31,6 +31,5 @@ Steps: 25, Sampler: DPM++ SDE Karras, CFG scale: 9, Seed: 3115253346, Size: 896x
 
 # 와일드카드 파일
 
-- [wildcard.zip 파일](https://github.com/ninjaneural/webui/blob/master/memo/wildcard/wildcard.zip?raw=true)
-
-- [wildcard_all.zip 파일](https://github.com/ninjaneural/webui/blob/master/memo/wildcard/wildcard_all.zip?raw=true)
+- [wildcard.zip 파일](https://raw.githubusercontent.com/ninjaneural/webui/master/memo/wildcard/wildcard.zip)
+- [wildcard_all.zip 파일](https://raw.githubusercontent.com/ninjaneural/webui/master/memo/wildcard/wildcard_all.zip)
