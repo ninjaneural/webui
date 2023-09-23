@@ -1,9 +1,11 @@
 > https://github.com/s9roll7/animatediff-cli-prompt-travel  
 > (https://github.com/neuralninja22/animatediff-cli-prompt-travel 코랩용 수정버전)  
 
+
+# 로컬 설치 (Window, Linux)
 ```
 git clone https://github.com/neuralninja22/animatediff-cli-prompt-travel
-animatediff-cli-prompt-travel
+cd animatediff-cli-prompt-travel
 
 python -m venv .venv
 
@@ -14,6 +16,17 @@ python -m pip install xformers
 python -m pip install onnxruntime
 
 pip install -e .
+
+animatediff -h
+```
+
+# 설치후에 실행
+
+```
+cd animatediff-cli-prompt-travel
+.venv\Scripts\activate
+
+animatediff -h
 ```
 
 # 모션모듈 파일다운로드
