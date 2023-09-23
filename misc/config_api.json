@@ -5,7 +5,6 @@
     "sd_vae": "vae-ft-mse-840000-ema-pruned.vae.pt",
     "samples_format": "webp",
     "grid_format": "webp",
-    "live_previews_image_format": "jpg",
     "control_net_max_models_num": 4,
     "control_net_model_cache_size": 3,
     "control_net_no_detectmap": true,
