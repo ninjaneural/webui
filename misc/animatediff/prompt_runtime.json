@@ -10,9 +10,9 @@
   "steps": 30,
   "guidance_scale": 7,
   "clip_skip": 2,
-  "prompt_map": {
-    "0": ""
-  },
+  "prompt": [
+    ""
+  ],
   "n_prompt": [
     ""
   ],
