@@ -385,6 +385,14 @@ const checkpoints = [
         checkpoint_file: 'sardonyx_redux_v20.safetensors',
     },
     {
+        name: 'seizaMix',
+        type: '2D',
+        model: 'https://civitai.com/models/116279/seizamix',
+        ipynb: 'seizamix_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/125903?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'seizamix_v2.safetensors',
+    },
+    {
         name: 'ToonYou',
         type: '2D',
         model: 'https://civitai.com/models/30240/toonyou',
