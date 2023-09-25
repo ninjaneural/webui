@@ -11,8 +11,7 @@
   "guidance_scale": 7,
   "clip_skip": 2,
   "prompt_map": {
-    "0": "",
-    "16": ",smile"
+    "0": ""
   },
   "n_prompt": [
     ""
