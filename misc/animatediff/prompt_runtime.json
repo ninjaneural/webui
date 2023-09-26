@@ -1,5 +1,6 @@
 {
-  "name": "sample",
+  "name": "runtime",
+  "base": "",
   "path": "models/sd/#Checkpoint_Filename#",
   "motion_module": "models/motion-module/mm_sd_v15.ckpt",
   "compile": false,
