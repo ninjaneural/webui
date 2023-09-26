@@ -366,32 +366,14 @@ def webui():
     initialize()
 
     while 1:
-        if shared.opts.clean_temp_dir_at_start:
-            ui_tempdir.cleanup_tmpdr()
-            startup_timer.record("cleanup temp dir")
-
         modules.script_callbacks.before_ui_callback()
-        startup_timer.record("scripts before_ui_callback")
 
         shared.demo = modules.ui.create_ui()
-        startup_timer.record("create ui")
-
-        if not cmd_opts.no_gradio_queue:
-            shared.demo.queue(64)
-
-        gradio_auth_creds = list(get_gradio_auth_creds()) or None
 
         app, local_url, share_url = shared.demo.launch(
             height=3000,
             prevent_thread_lock=True
         )
-        if cmd_opts.add_stop_route:
-            app.add_route("/_stop", stop_route, methods=["POST"])
-
-        # after initial launch, disable --autolaunch for subsequent restarts
-        cmd_opts.autolaunch = False
-
-        startup_timer.record("gradio launch")
 
         # gradio uses a very open CORS policy via app.user_middleware, which makes it possible for
         # an attacker to trick the user into opening a malicious HTML page, which makes a request to the
@@ -404,20 +386,12 @@ def webui():
         modules.progress.setup_progress_api(app)
         modules.ui.setup_ui_api(app)
 
-        if launch_api:
-            create_api(app)
-
         ui_extra_networks.add_pages_to_demo(app)
 
         modules.script_callbacks.app_started_callback(shared.demo, app)
         startup_timer.record("scripts app_started_callback")
 
         print(f"Startup time: {startup_timer.summary()}.")
-
-        if cmd_opts.subpath:
-            redirector = FastAPI()
-            redirector.get("/")
-            gradio.mount_gradio_app(redirector, shared.demo, path=f"/{cmd_opts.subpath}")
 
         try:
             while True:
