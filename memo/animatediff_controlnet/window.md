@@ -1,5 +1,5 @@
 
-> https://github.com/neggles/animatediff-cli
+> https://github.com/neggles/animatediff-cli  
 > https://github.com/s9roll7/animatediff-cli-prompt-travel  
 > (https://github.com/ninjaneural/animatediff-cli-mix 코랩용 수정버전)  
 
@@ -7,7 +7,7 @@
 # 로컬 설치 (Window, Linux)
 ```
 git clone https://github.com/ninjaneural/animatediff-cli-mix
-animatediff-cli-mix
+cd animatediff-cli-mix
 
 python -m venv .venv
 
