@@ -1,11 +1,13 @@
+
+> https://github.com/neggles/animatediff-cli
 > https://github.com/s9roll7/animatediff-cli-prompt-travel  
-> (https://github.com/neuralninja22/animatediff-cli-prompt-travel 코랩용 수정버전)  
+> (https://github.com/ninjaneural/animatediff-cli-mix 코랩용 수정버전)  
 
 
 # 로컬 설치 (Window, Linux)
 ```
-git clone https://github.com/neuralninja22/animatediff-cli-prompt-travel
-cd animatediff-cli-prompt-travel
+git clone https://github.com/ninjaneural/animatediff-cli-mix
+animatediff-cli-mix
 
 python -m venv .venv
 
@@ -23,7 +25,7 @@ animatediff -h
 # 설치후에 실행
 
 ```
-cd animatediff-cli-prompt-travel
+cd animatediff-cli-mix
 .venv\Scripts\activate
 
 animatediff -h
@@ -33,6 +35,7 @@ animatediff -h
 
 > https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt  
 > https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt  
+> https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt  
 > data\models\motion-module 이곳에 저장  
 
 
@@ -143,5 +146,6 @@ animatediff -h
 ```
 animatediff generate -h 
 animatediff generate -W 512 -H 768 -L 16
+animatediff generate -W 512 -H 768 -L 32 -I 이미지경로
 ```
 
