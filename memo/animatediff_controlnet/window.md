@@ -3,6 +3,7 @@
 > https://github.com/s9roll7/animatediff-cli-prompt-travel  
 > (https://github.com/ninjaneural/animatediff-cli-mix 코랩용 수정버전)  
 
+animatediff-cli-mix는 animatediff-cli-prompt-travel가 코랩에서 동작안해서 수정한 버전으로 animatediff-cli-prompt-travel 가 문제없이 실행되시면 이걸로 설치하세요~
 
 # 로컬 설치 (Window, Linux)
 ```
