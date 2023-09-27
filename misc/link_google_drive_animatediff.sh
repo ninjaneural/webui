@@ -10,6 +10,7 @@ if [ $2 == True ]; then
   rm /content/$1/data/models/sd
   rm /content/$1/output
   mv /content/$1/output /content/$1/output_backup
+  rm /content/$1/data/animatediff
   ln -s /content/drive/MyDrive/$3/embedding /content/$1/data/embeddings/google
   ln -s /content/drive/MyDrive/$3/checkpoint /content/$1/data/models/sd/google
   ln -s /content/drive/MyDrive/$3/lora /content/$1/data/models/lora/google
