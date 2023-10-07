@@ -1,10 +1,3 @@
-pip install -q xformers==0.0.20 triton==2.0.0 -U
-
-if [ $4 == True ]; then
-  pip install -U openmim
-  mim install mmcv>=2.0.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.0.0/index.html
-  mim install mmdet>=3.0.0
-fi
 
 git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
 cd /content/$1
