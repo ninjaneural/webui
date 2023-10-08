@@ -1,3 +1,4 @@
+pip install -q xformers==0.0.20 triton==2.0.0 -U
 
 git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
 cd /content/$1
