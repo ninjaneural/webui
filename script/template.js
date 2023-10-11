@@ -512,6 +512,20 @@ async function make_readme() {
     return true;
 }
 
+async function make_readme() {
+    let readme = [];
+    readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전                                                                                                                                                                                        | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
+    const list = checkpoints.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
+    list.forEach((item) => {
+        readme.push(`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/comfyui/${item.ipynb}.ipynb) | [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge-install.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install_comfyui/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
+    });
+
+    readmeText = readme.join('\n');
+    fs.writeFileSync(`../COLAB_COMFYUI.md`, readmeText);
+    return true;
+}
+
 (function () {
     try {
         copy_files();
