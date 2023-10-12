@@ -1,4 +1,2 @@
 colab:
     controlnet: /content/controlnet_models
-    clip_vision: /content/clip_vision
-    custom_nodes: /content/custom_nodes
