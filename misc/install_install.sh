@@ -36,6 +36,4 @@ if [ $6 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d ./models/sam -o sam_vit_h_4b8939.pth
 fi
 
-sed -i -e "/    # TODO clone into temporary dir and move if successful/a\    return" /content/$1/modules/launch_utils.py
-
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
