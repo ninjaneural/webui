@@ -164,6 +164,15 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'DarkSushiMix 2.25D',
+        type: '2D',
+        model: 'https://civitai.com/models/24779?modelVersionId=93208',
+        ipynb: 'dark_sushi_mix_mix_225d_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/93208?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint_file: 'dark_sushi_mix_mix_225d.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'DarkSushiMix 2.5D',
         type: '2D',
         model: 'https://civitai.com/models/48671/dark-sushi-25d-25d',
@@ -512,7 +521,7 @@ async function make_readme() {
     return true;
 }
 
-async function make_readme() {
+async function make_readme2() {
     let readme = [];
     readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전                                                                                                                                                                                        | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
@@ -530,6 +539,7 @@ async function make_readme() {
     try {
         copy_files();
         make_readme();
+        make_readme2();
     } catch (e) {
         console.error(e);
     }
