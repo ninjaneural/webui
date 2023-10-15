@@ -87,9 +87,15 @@ https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt
 
 <a href="./comfyui_animatediff/2%20%2D%20Vid2Vid%20Multi%2DControlNet%2Ejson">2 - Vid2Vid Multi-ControlNet.json</a>
 
+
+# Workflow vid2vid 가이드
+
+https://civitai.com/articles/2379/guide-comfyui-animatediff-guideworkflows-including-prompt-scheduling-an-inner-reflections-guide
+
 # Lora
 
 [harley-quinn](https://civitai.com/models/55639/harley-quinn-or-suicide-squad)
+
 
 
 # 프롬프트 정보
