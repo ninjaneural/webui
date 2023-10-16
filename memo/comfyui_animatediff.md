@@ -23,6 +23,14 @@ https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet
 
 https://github.com/Fannovel16/comfyui_controlnet_aux
 
+2023-10-08 버전 기준
+```
+git clone https://github.com/Fannovel16/comfyui_controlnet_aux
+cd comfyui_controlnet_aux
+git reset --hard 532ed8c695cb661060baf302715f497b70c01fba
+cd ..
+```
+
 * 비디오 저장
 
 https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
