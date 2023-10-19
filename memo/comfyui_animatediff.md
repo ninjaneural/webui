@@ -17,6 +17,10 @@ cd ComfyUI-AnimateDiff-Evolved
 git reset --hard 64688cb06093ee85f41b9fde61077f6455420368
 ```
 
+* 커스텀노드 매니저 
+
+https://github.com/ltdrdata/ComfyUI-Manager
+
 * 컨트롤넷 관련
 
 https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet
@@ -29,6 +33,16 @@ git clone https://github.com/Fannovel16/comfyui_controlnet_aux
 cd comfyui_controlnet_aux
 git reset --hard 532ed8c695cb661060baf302715f497b70c01fba
 cd ..
+```
+
+* 모듈 없다는 에러뜰때 (윈도우 기준)
+```
+No module named 'cv2' 
+```
+
+pip install 로 모듈 설치 
+```
+.\python_embeded\python.exe -m pip install opencv-python
 ```
 
 * 비디오 저장
