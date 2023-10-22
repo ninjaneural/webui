@@ -15,6 +15,9 @@ fi
 if [ $6 == True ]; then
   git clone https://github.com/ninjaneural/segment-anything ./extensions/segment-anything
 fi
+if [ $7 == True ]; then
+  git clone https://github.com/continue-revolution/sd-webui-animatediff ./extensions/animatediff
+fi
 
 git clone https://github.com/adieyal/sd-dynamic-prompts ./extensions/sd-dynamic-prompts
 git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding ./extensions/sd-dynamic-thresholding

@@ -48,6 +48,7 @@ if [ $8 == True ]; then
   git clone https://github.com/continue-revolution/sd-webui-animatediff ./extensions/animatediff
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt -d ./extensions/animatediff/model -o mm_sd_v14.ckpt
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt -d ./extensions/animatediff/model -o mm_sd_v15.ckpt
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt -d ./extensions/animatediff/model -o mm_sd_v15_v2.ckpt
 fi
 
 if [ $6 == True ]; then
