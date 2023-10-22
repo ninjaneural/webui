@@ -30,10 +30,6 @@ git clone https://github.com/kohya-ss/sd-webui-additional-networks ./extensions/
 git clone https://github.com/yankooliveira/sd-webui-photopea-embed ./extensions/photopea-embed
 git clone https://github.com/ninjaneural/video-util ./extensions/video-util
 
-git clone https://github.com/fkunn1326/openpose-editor ./extensions/openpose-editor
-git clone https://github.com/hnmr293/posex ./extensions/posex
-git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/video_loopback
-
 if [ $6 == True ]; then
   mkdir ./models/sam
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d ./models/sam -o sam_vit_h_4b8939.pth
