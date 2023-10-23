@@ -19,6 +19,15 @@ if [ $7 == True ]; then
   git clone https://github.com/continue-revolution/sd-webui-animatediff ./extensions/animatediff
 fi
 
+if [ $8 == True ]; then
+  git clone https://github.com/Scholar01/sd-webui-mov2mov ./extensions/mov2mov
+  sed -i -e "/if platform.system() == 'Windows':/if platform.system() == 'Windows' or platform.system() == 'Linux':" ./extensions/mov2mov/script/m2m_util.py
+fi
+
+if [ $9 == True ]; then
+  git clone -b nightly https://github.com/ninjaneural/deforum ./extensions/deforum
+fi
+
 git clone https://github.com/adieyal/sd-dynamic-prompts ./extensions/sd-dynamic-prompts
 git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding ./extensions/sd-dynamic-thresholding
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 ./extensions/multidiffusion-upscaler

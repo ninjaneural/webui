@@ -42,6 +42,7 @@ git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/vide
 
 if [ $7 == True ]; then
   git clone https://github.com/Scholar01/sd-webui-mov2mov ./extensions/mov2mov
+  sed -i -e "/if platform.system() == 'Windows':/if platform.system() == 'Windows' or platform.system() == 'Linux':" ./extensions/mov2mov/script/m2m_util.py
 fi
 
 if [ $8 == True ]; then
@@ -49,6 +50,10 @@ if [ $8 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt -d ./extensions/animatediff/model -o mm_sd_v14.ckpt
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt -d ./extensions/animatediff/model -o mm_sd_v15.ckpt
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt -d ./extensions/animatediff/model -o mm_sd_v15_v2.ckpt
+fi
+
+if [ $9 == True ]; then
+  git clone -b nightly https://github.com/ninjaneural/deforum ./extensions/deforum
 fi
 
 if [ $6 == True ]; then
