@@ -4,7 +4,7 @@
     "sd_model_checkpoint": "",
     "save_to_dirs": true,
     "samples_filename_pattern": "",
-    "save_images_add_number": false,
+    "save_images_add_number": true,
     "control_net_max_models_num": 4,
     "control_net_model_cache_size": 3,
     "control_net_allow_script_control": true
