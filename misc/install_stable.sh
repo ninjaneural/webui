@@ -32,6 +32,7 @@ git clone -b stable https://github.com/ninjaneural/additional-networks ./extensi
 git clone https://github.com/neuralninja22/wd14-tagger ./extensions/wd14-tagger
 git clone https://github.com/ninjaneural/photopea-embed ./extensions/photopea-embed
 git clone https://github.com/ninjaneural/video-util ./extensions/video-util
+git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris ./extensions/lycoris
 
 git clone https://github.com/fkunn1326/openpose-editor ./extensions/openpose-editor
 git clone https://github.com/hnmr293/posex ./extensions/posex
