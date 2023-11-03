@@ -15,7 +15,7 @@ if [ $3 == True ]; then
   git clone https://github.com/ninjaneural/ddetailer ./extensions/ddetailer
 fi
 if [ $4 == True ]; then
-  git clone https://github.com/Bing-su/adetailer ./extensions/adetailer
+  git clone -b v23.10.1 https://github.com/Bing-su/adetailer ./extensions/adetailer
 fi
 if [ $5 == True ]; then
   git clone https://github.com/ninjaneural/segment-anything ./extensions/segment-anything
