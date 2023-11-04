@@ -1,5 +1,6 @@
 pip install -q torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 torchtext==0.15.2 torchdata==0.6.1 --extra-index-url https://download.pytorch.org/whl/cu118 -U
 pip install -q xformers==0.0.20
+pip install httpx==0.24.1
 
 if [ $3 == True ]; then
   pip install -U openmim
