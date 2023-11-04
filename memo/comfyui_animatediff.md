@@ -93,6 +93,12 @@ https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt
 
 <a href="./comfyui_animatediff/cn_2image_upscale.json">cn_2image_upscale.json</a>
 
+* 32프레임 이상 타일 2이미지 전환
+
+<a href="./comfyui_animatediff/cn_adv_2image.json">cn_adv_2image.json</a>
+
+(생성한 이미지로 설정하고 프롬프트도 맟추면 초기 이미지 애니메이션)
+
 * 모션로라
 
 <a href="./comfyui_animatediff/motion_lora.json">motion_lora.json</a>
