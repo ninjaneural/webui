@@ -1,3 +1,4 @@
+/opt/conda/envs/colabui/bin/python3 -m pip install httpx==0.24.1
 
 if [ $4 == True ]; then
   /opt/conda/envs/colabui/bin/python3 -m pip install -U openmim
