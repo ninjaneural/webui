@@ -67,4 +67,10 @@ if [ $2 != "v1.6.0" ]; then
   sed -i -e "/        prepare_environment()/a\        os.system(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" /content/$1/repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" /content/$1/launch.py
 fi
 
+if [ $2 != "v1.6.0" ]; then
+  cd ./extensions/controlnet
+  git reset --hard 3011ff6e706d3fdd0cc7d2ac8ff0d59020b8f767
+  cd /content/$1
+fi
+
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
