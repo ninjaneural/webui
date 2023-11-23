@@ -45,7 +45,7 @@ const checkpoints = [
         type: '3D',
         model: 'https://civitai.com/models/107842/aniverse',
         ipynb: 'aniverse_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/124274?type=Model&format=SafeTensor&size=pruned&fp=fp16',
+        checkpoint: 'https://civitai.com/api/download/models/180845?type=Model&format=SafeTensor&size=pruned&fp=fp16',
         checkpoint_file: 'Aniverse_v16.safetensors',
         bakedVAE: true,
     },
