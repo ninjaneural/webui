@@ -41,6 +41,10 @@ git clone https://github.com/fkunn1326/openpose-editor ./extensions/openpose-edi
 git clone https://github.com/hnmr293/posex ./extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/video_loopback
 
+if [ $10 == True ]; then
+  git clone https://github.com/Gourieff/sd-webui-reactor ./extensions/sd-webui-reactor
+fi
+
 if [ $7 == True ]; then
   git clone https://github.com/Scholar01/sd-webui-mov2mov ./extensions/mov2mov
   sed -i -e "/if platform.system() == 'Windows':/if platform.system() == 'Windows' or platform.system() == 'Linux':" ./extensions/mov2mov/script/m2m_util.py
