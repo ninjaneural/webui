@@ -41,7 +41,7 @@ git clone https://github.com/fkunn1326/openpose-editor ./extensions/openpose-edi
 git clone https://github.com/hnmr293/posex ./extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/video_loopback
 
-if [ $10 == True ]; then
+if [ ${10} == True ]; then
   git clone https://github.com/Gourieff/sd-webui-reactor ./extensions/sd-webui-reactor
 fi
 
