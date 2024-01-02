@@ -43,6 +43,8 @@ git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/vide
 
 if [ ${10} == True ]; then
   git clone https://github.com/Gourieff/sd-webui-reactor ./extensions/sd-webui-reactor
+  pip install insightface==0.7.3
+  pip install onnxruntime-gpu
 fi
 
 if [ $7 == True ]; then
