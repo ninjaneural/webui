@@ -1,7 +1,6 @@
-pip install -q xformers==0.0.20 triton==2.0.0 -U
-
 git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
 cd /content/$1
+rm webui*.sh
 
 if [ $3 == True ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet ./extensions/controlnet
@@ -45,3 +44,7 @@ if [ $6 == True ]; then
 fi
 
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
+
+wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/direct/$2/repositories.tar
+tar -xvf repositories.tar
+rm repositories.tar

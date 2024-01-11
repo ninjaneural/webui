@@ -1,5 +1,4 @@
-pip install -q torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 torchtext==0.15.2 torchdata==0.6.1 --extra-index-url https://download.pytorch.org/whl/cu118 -U
-pip install -q xformers==0.0.20
+pip install -q torch==2.1.0 torchvision==0.16.0 xformers --index-url https://download.pytorch.org/whl/cu121
 pip install httpx==0.24.1
 
 if [ $4 == True ]; then
@@ -10,6 +9,7 @@ fi
 
 git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
 cd /content/$1
+rm webui*.sh
 
 if [ $3 == True ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet ./extensions/controlnet
@@ -57,6 +57,7 @@ if [ $8 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt -d ./extensions/animatediff/model -o mm_sd_v14.ckpt
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt -d ./extensions/animatediff/model -o mm_sd_v15.ckpt
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt -d ./extensions/animatediff/model -o mm_sd_v15_v2.ckpt
+  aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalDiff/resolve/main/temporaldiff-v1-animatediff.ckpt -d ./extensions/animatediff/model -o temporaldiff-v1-animatediff.ckpt
 fi
 
 if [ $9 == True ]; then

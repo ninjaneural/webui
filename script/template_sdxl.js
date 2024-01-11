@@ -5,12 +5,21 @@ const BASE_SRC = `../${TARGET_DIR}/template.ipynb`;
 
 const checkpoints = [
     {
+        name: 'Animagine XL',
+        type: '2D',
+        model: 'https://huggingface.co/cagliostrolab/animagine-xl-3.0',
+        ipynb: 'animagine_xl_webui_colab',
+        checkpoint: 'https://huggingface.co/cagliostrolab/animagine-xl-3.0/resolve/main/animagine-xl-3.0.safetensors',
+        checkpoint_file: 'animagine-xl-3.0.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'DreamShaper XL',
         type: '범용',
         model: 'https://civitai.com/models/112902/dreamshaper-xl10',
         ipynb: 'dreamshaper_xl_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/121931?type=Model&format=SafeTensor&size=full&fp=fp16',
-        checkpoint_file: 'DreamShaper_XL_09Alpha.safetensors',
+        checkpoint_file: 'DreamShaper_XL_10.safetensors',
         bakedVAE: true,
     },
     {
@@ -232,14 +241,30 @@ async function make_readme() {
     });
 
     readmeText = readme.join('\n');
-    fs.writeFileSync(`../COLAB.md`, readmeText);
+    fs.writeFileSync(`../COLAB_SDXL.md`, readmeText);
     return true;
 }
+
+async function make_readme2() {
+    let readme = [];
+    readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전(install)                                                                                                                                                                                | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
+    const list = checkpoints.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
+    list.forEach((item) => {
+        readme.push(`| [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/sdxl/${item.ipynb}.ipynb) | [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge-install.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install_sdxl/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
+    });
+
+    readmeText = readme.join('\n');
+    fs.writeFileSync(`../COLAB_SDXL_ALL.md`, readmeText);
+    return true;
+}
+
 
 (function () {
     try {
         copy_files();
         make_readme();
+        make_readme2();
     } catch (e) {
         console.error(e);
     }
