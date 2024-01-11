@@ -45,6 +45,6 @@ fi
 
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config_sdxl.json -O ./config.json
 
-wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/direct/$2/repositories.tar
+wget https://github.com/neuralninja22/colab/raw/master/misc/direct/$2/repositories.tar
 tar -xvf repositories.tar
 rm repositories.tar
