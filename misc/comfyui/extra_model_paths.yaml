@@ -1,2 +1,6 @@
 colab:
     controlnet: /content/controlnet_models
+    checkpoints: /content/checkpoints
+    upscale_models: /content/upscale_models
+    loras: /content/loras
+    vae: /content/vae
