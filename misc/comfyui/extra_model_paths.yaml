@@ -6,3 +6,4 @@ colab:
     vae: /content/models/vae
     clip: /content/models/clip
     clip_vision: /content/models/clip_vision
+    ipadapter: /content/ipadapter
