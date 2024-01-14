@@ -20,6 +20,7 @@
 
 # 사용된 커스텀노드
 
+<https://github.com/ltdrdata/ComfyUI-Manager> 
 <https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite>
 <https://github.com/ltdrdata/ComfyUI-Impact-Pack>
 <https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved>
