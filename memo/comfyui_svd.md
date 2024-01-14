@@ -12,6 +12,8 @@
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_svd/workflow.json>
 
+(마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
+
 # 예제 워크플로우 
 
 <https://comfyanonymous.github.io/ComfyUI_examples/video/>
