@@ -13,7 +13,6 @@ const checkpoints = [
         checkpoint_file: 'animagine-xl-3.0.safetensors',
         bakedVAE: true,
     },
-    
     {
         name: 'OpenDalle',
         type: '범용',
@@ -147,6 +146,15 @@ const checkpoints = [
         ipynb: 'cherry_picker_xl_webui_colab',
         checkpoint: 'https://civitai.com/api/download/models/149660?type=Model&format=SafeTensor&size=pruned&fp=fp16',
         checkpoint_file: 'cherry_picker_xl.safetensors',
+        bakedVAE: true,
+    },
+    {
+        name: 'RealVisXL',
+        type: '실사',
+        model: 'https://civitai.com/models/139562/realvisxl-v30-turbo?modelVersionId=268861',
+        ipynb: 'real_vis_xl_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/268861',
+        checkpoint_file: 'real_vis_xl_v30.safetensors',
         bakedVAE: true,
     },
     {

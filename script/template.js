@@ -138,6 +138,14 @@ const checkpoints = [
         checkpoint_file: 'Counterfeit-V2.0fp16.safetensors',
     },
     {
+        name: 'CaramelApple',
+        type: '3D',
+        model: 'https://civitai.com/models/98237/caramelapple',
+        ipynb: 'caramel_apple_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/110904',
+        checkpoint_file: 'caramel_apple_v2.safetensors',
+    },
+    {
         name: 'Colorful',
         type: '범용',
         model: 'https://civitai.com/models/7279/colorful',
