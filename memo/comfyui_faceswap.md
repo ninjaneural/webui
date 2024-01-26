@@ -71,6 +71,14 @@ Anything Everywhere및 정리
 Manager > Install PIP packages 에서 insightface 입력후 재시작
 
 
+# insightface 에러관련
+
+Install PIP packages으로 설치하고 재시작해도 안될때 참고해보세요~
+
+https://github.com/Gourieff/comfyui-reactor-node#i-for-windows-users-if-you-still-cannot-build-insightface-for-some-reasons-or-just-dont-want-to-install-visual-studio-or-vs-c-build-tools---do-the-following
+
+
+
 # 공통 프롬프트
 
 부정 프롬프트
