@@ -1,0 +1,48 @@
+# 워크플로우
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow1.json>
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow2.json>
+
+(마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
+
+
+# 사용된 커스텀노드
+
+<https://github.com/ltdrdata/ComfyUI-Manager> 
+
+<https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite>
+
+<https://github.com/ltdrdata/ComfyUI-Impact-Pack>
+
+<https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved>
+
+<https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet>
+
+<https://github.com/Fannovel16/comfyui_controlnet_aux>
+
+
+# LCM-LoRA 모델정보
+
+<https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors>
+
+(lcm-lora-sdv1-5.safetensors 파일명을 변경해주세요)
+
+* SDXL용
+
+<https://huggingface.co/latent-consistency/lcm-lora-sdxl/resolve/main/pytorch_lora_weights.safetensors>
+
+(lcm-lora-sdxl.safetensors 파일명을 변경해주세요)
+
+# 프롬프트 정보
+
+긍정 프롬프트
+```
+(masterpiece, best quality, high quality:1.2), 8k, extremely detailed, girl, cute, (smile:0.7)"
+```
+
+부정 프롬프트
+```
+(worst quality, low quality:1.2), (makeup, mole), (nsfw, nude)
+```
+

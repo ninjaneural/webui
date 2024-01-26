@@ -21,14 +21,19 @@
 # 사용된 커스텀노드
 
 <https://github.com/ltdrdata/ComfyUI-Manager> 
+
 <https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite>
+
 <https://github.com/ltdrdata/ComfyUI-Impact-Pack>
+
 <https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved>
+
 <https://github.com/Fannovel16/ComfyUI-Frame-Interpolation>
 
 # SVD 모델정보
 
 <https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors?download=true>
+
 <https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt.safetensors?download=true>
 
 # 프롬프트 정보

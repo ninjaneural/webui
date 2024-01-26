@@ -50,6 +50,16 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
+        name: 'PicX_real',
+        type: '실사',
+        model: 'https://civitai.com/models/241415?modelVersionId=272376',
+        ipynb: 'picx_real_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/272376',
+        checkpoint_file: 'picx_real_v1.safetensors',
+        bakedVAE: true,
+    },
+    
+    {
         name: 'BlueberryMix',
         type: '실사',
         model: 'https://civitai.com/models/14323/blueberrymix',
