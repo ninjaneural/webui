@@ -6,6 +6,8 @@
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow2.json>
 
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow3.json> (페이스디테일러만 따로 적용)
+
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
 
@@ -30,6 +32,14 @@
 
     - lcm-lora-sdv1-5.safetensors 파일명을 변경해주세요
     - models/loras 에 저장해주세요
+
+# AnimateDiff 모델 (선택)
+
+<https://huggingface.co/CiaraRowles/TemporalDiff/resolve/main/temporaldiff-v1-animatediff.ckpt>
+
+    - 다른 모델과 큰 차이는 없는거 같아요
+    - custom_nodes/ComfyUI-AnimateDiff-Evolved/models 이곳에 저장  
+
 
 ## SDXL용
 
