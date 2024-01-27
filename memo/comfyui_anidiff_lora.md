@@ -1,5 +1,7 @@
 # 워크플로우
 
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/default.json>
+
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow1.json>
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow2.json>
@@ -22,17 +24,19 @@
 <https://github.com/Fannovel16/comfyui_controlnet_aux>
 
 
-# LCM-LoRA 모델정보
+# LCM-LoRA 모델 다운로드
 
 <https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors>
 
-(lcm-lora-sdv1-5.safetensors 파일명을 변경해주세요)
+    - lcm-lora-sdv1-5.safetensors 파일명을 변경해주세요
+    - models/loras 에 저장해주세요
 
-* SDXL용
+## SDXL용
 
 <https://huggingface.co/latent-consistency/lcm-lora-sdxl/resolve/main/pytorch_lora_weights.safetensors>
 
-(lcm-lora-sdxl.safetensors 파일명을 변경해주세요)
+    - lcm-lora-sdxl.safetensors 파일명을 변경해주세요
+    - models/loras 에 저장해주세요
 
 # 프롬프트 정보
 
