@@ -1,5 +1,4 @@
 
-
 # 샘플이미지
 
 <img src="./comfyui_posechange/image1.png" width="480"/>
@@ -18,6 +17,8 @@
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
+# FaceID, ReActor 설치관련은 이 문서를 확인해주세요
+<https://github.com/ninjaneural/webui/blob/master/memo/comfyui_faceswap.md>
 
 # IPAdapter_plus
 
