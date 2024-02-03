@@ -2,11 +2,11 @@
 
 # 샘플이미지
 
-<img src="./comfyui_svd/image1.png" width="480"/>
-<img src="./comfyui_svd/image2.png" width="480"/>
+<img src="./comfyui_svd/image1.jpg" width="480"/>
+<img src="./comfyui_svd/image2.jpg" width="480"/>
 <img src="./comfyui_svd/image3.jpg" width="480"/>
-<img src="./comfyui_svd/image4.png" width="480"/>
-<img src="./comfyui_svd/image5.png" width="480"/>
+<img src="./comfyui_svd/image4.jpg" width="480"/>
+<img src="./comfyui_svd/image5.jpg" width="480"/>
 
 # 워크플로우
 
