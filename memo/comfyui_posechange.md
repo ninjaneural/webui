@@ -1,15 +1,15 @@
 
 # 샘플이미지
 
-<img src="./comfyui_posechange/image1.png" width="480"/>
-<img src="./comfyui_posechange/image2.png" width="480"/>
-<img src="./comfyui_posechange/image3.png" width="480"/>
-<img src="./comfyui_posechange/image4.png" width="480"/>
-<img src="./comfyui_posechange/image5.png" width="480"/>
-<img src="./comfyui_posechange/image6.png" width="480"/>
-<img src="./comfyui_posechange/image7.png" width="480"/>
-<img src="./comfyui_posechange/image8.png" width="480"/>
-<img src="./comfyui_posechange/image9.png" width="480"/>
+<img src="./comfyui_posechange/image1.jpg" width="480"/>
+<img src="./comfyui_posechange/image2.jpg" width="480"/>
+<img src="./comfyui_posechange/image3.jpg" width="480"/>
+<img src="./comfyui_posechange/image4.jpg" width="480"/>
+<img src="./comfyui_posechange/image5.jpg" width="480"/>
+<img src="./comfyui_posechange/image6.jpg" width="480"/>
+<img src="./comfyui_posechange/image7.jpg" width="480"/>
+<img src="./comfyui_posechange/image8.jpg" width="480"/>
+<img src="./comfyui_posechange/image9.jpg" width="480"/>
 
 # 워크플로우
 
