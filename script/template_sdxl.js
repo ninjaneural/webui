@@ -149,15 +149,6 @@ const checkpoints = [
         bakedVAE: true,
     },
     {
-        name: 'ParchartXL',
-        type: '2D',
-        model: 'https://civitai.com/models/141471/parchartxl',
-        ipynb: 'parchartxl_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/318677?type=Model&format=SafeTensor',
-        checkpoint_file: 'parchartxl_v20.safetensors',
-        bakedVAE: true,
-    },
-    {
         name: 'Artium',
         type: '2.5D',
         model: 'https://civitai.com/models/216439/artium',
