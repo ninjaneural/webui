@@ -1,15 +1,14 @@
 @유튜브채널 https://www.youtube.com/@neuralninja-ai  
 
 > Kaggle실행사이트 https://github.com/ninjaneural/kaggle  
-> SageMaker실행사이트 https://github.com/ninjaneural/sagemaker
-
+> SageMaker실행사이트 https://github.com/ninjaneural/sagemaker  
+> Fooocus실행사이트 https://github.com/ninjaneural/fooocus  
 
 🚨 중요 🚨 <br/> Stable Diffusion WebUI를 Colab **무료 티어**에서 사용시 제한조치가 시작되었어요 
 
 **무료티어**는 설치버전(install)의 직접실행 버전만 실행 가능해요<br/>
+참고영상 <https://youtu.be/C8uEhp822BI>
 
-
-* 코랩으로 걱정없이 사용하려면 유료 요금제(코랩 프로)를..
 
 ---
 
