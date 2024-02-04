@@ -161,7 +161,7 @@
 
 | Colab                                                                                                                                                                     | Memo                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/colab/stablesr.ipynb) | [StableSR](https://github.com/pkuliyi2015/sd-webui-stablesr) |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/stable/stablesr.ipynb) | [StableSR](https://github.com/pkuliyi2015/sd-webui-stablesr) |
 
 ---
 
