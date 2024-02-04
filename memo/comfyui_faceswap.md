@@ -2,13 +2,13 @@
 
 # 샘플이미지
 
-<img src="./comfyui_faceswap/image_face1.png" width="480"/>
-<img src="./comfyui_faceswap/image_face2.png" width="480"/>
+<img src="./comfyui_faceswap/image_face1.jpg" width="480"/>
+<img src="./comfyui_faceswap/image_face2.jpg" width="480"/>
 
-<img src="./comfyui_faceswap/image1.png" width="480"/>
-<img src="./comfyui_faceswap/image2.png" width="480"/>
-<img src="./comfyui_faceswap/image3.png" width="480"/>
-<img src="./comfyui_faceswap/image4.png" width="480"/>
+<img src="./comfyui_faceswap/image1.jpg" width="480"/>
+<img src="./comfyui_faceswap/image2.jpg" width="480"/>
+<img src="./comfyui_faceswap/image3.jpg" width="480"/>
+<img src="./comfyui_faceswap/image4.jpg" width="480"/>
 
 # 워크플로우
 
@@ -19,6 +19,10 @@
 Anything Everywhere및 정리
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow2.json>
+
+이미지 생성없이 기존 이미지 수정
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow3.json>
 
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
