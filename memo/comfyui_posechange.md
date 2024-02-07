@@ -13,7 +13,13 @@
 
 # 워크플로우
 
+기본 워크플로우
+
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_posechange/workflow1.json>
+
+SDXL버전
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_posechange/workflow2.json>
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
@@ -36,11 +42,19 @@
 
 > 그외에 기본, light, face, full 모델들
 
-* clip vision 모델 다운로드 (Optional)
+* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드 (Optional)
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors>
 
 > 없다면 다운받아주세요
+
+# IPAdapter_plus (SDXL)
+
+* plus_sdxl_vit-h 모델 다운로드
+
+<https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors>
+
+> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
 
 
 # 그외 커스텀노드
