@@ -24,6 +24,10 @@ Anything Everywhere및 정리
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow3.json>
 
+SDXL버전
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow4.json>
+
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
@@ -46,11 +50,26 @@ Anything Everywhere및 정리
 
 > ComfyUI 설치폴더/models/loras 이곳에 복사
 
-* clip vision 모델 다운로드 (Optional)
+* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드 (Optional)
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors>
 
 > 없다면 다운받아주세요
+
+
+# IPAdapter_plus (SDXL)
+
+* faceid-plusv2_sdxl 모델 다운로드
+
+<https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin>
+
+> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
+
+* faceid-plusv2_sdxl 로라 다운로드
+
+<https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors>
+
+> ComfyUI 설치폴더/models/loras 이곳에 복사
 
 
 # ReActor
