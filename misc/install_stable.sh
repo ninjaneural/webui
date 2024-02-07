@@ -49,3 +49,5 @@ fi
 
 sed -i -e "/    prepare_environment()/a\    os.system\(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" ./repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" ./launch.py
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
+
+pip install gradio-client==0.8.1

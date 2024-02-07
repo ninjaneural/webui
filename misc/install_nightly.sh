@@ -69,15 +69,19 @@ if [ $6 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d ./models/sam -o sam_vit_h_4b8939.pth
 fi
 
-if [ $2 != "v1.6.0" ]; then
+if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
   sed -i -e "/from modules import launch_utils/a\import os" /content/$1/launch.py
   sed -i -e "/        prepare_environment()/a\        os.system(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" /content/$1/repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" /content/$1/launch.py
 fi
 
-if [ $2 != "v1.6.0" ]; then
+if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
   cd ./extensions/controlnet
   git reset --hard 3011ff6e706d3fdd0cc7d2ac8ff0d59020b8f767
   cd /content/$1
+fi
+
+if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
+  pip install gradio-client==0.8.1
 fi
 
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
