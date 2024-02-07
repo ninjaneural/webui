@@ -57,6 +57,15 @@ SDXL버전
 > ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
 
 
+# ControlNet (SDXL)
+
+* OpenPose XL
+
+<https://huggingface.co/thibaud/controlnet-openpose-sdxl-1.0/resolve/main/OpenPoseXL2.safetensors>
+
+> ComfyUI 설치폴더/models/controlnet 이곳에 복사
+
+
 # 그외 커스텀노드
 
 <https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes> 
