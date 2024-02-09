@@ -1,12 +1,20 @@
 # 워크플로우
 
-<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/default.json>
+* 기본 워프플로우
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow1.json>
 
+* FaceDetailer
+
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow2.json>
 
-<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow3.json> (페이스디테일러만 따로 적용)
+* FaceDetailer대신 SimpleDetector + Detailer (AnimateDiff)
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow3.json>
+
+* FaceDetailer만 따로
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow4.json> 
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
