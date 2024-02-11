@@ -34,6 +34,10 @@ CLIPSeg 워크플로우
 
 > pysssss 시리즈 노드 / 하단 이미지 피드
 
+<https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes> 
+
+> CR_ 시리즈 노드 
+
 <https://github.com/biegert/ComfyUI-CLIPSeg>
 
 > CLIPSeg (프롬프트로 마스크 선택)
