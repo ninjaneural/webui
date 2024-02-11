@@ -13,6 +13,10 @@
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_changepic/workflow1.json>
 
+CLIPSeg 워크플로우
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_changepic/workflow2.json>
+
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
 
