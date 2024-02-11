@@ -68,6 +68,10 @@
 (worst quality, low quality:1.2), (makeup, mole), (nsfw, nude)
 ```
 
+# 컨트롤넷 모델
+
+<https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main>
+
 
 # ComfyUI-VideoHelperSuite 노드가 나타나지 않는경우 
 
