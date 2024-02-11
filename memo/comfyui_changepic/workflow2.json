@@ -1,6 +1,6 @@
 {
-  "last_node_id": 125,
-  "last_link_id": 222,
+  "last_node_id": 126,
+  "last_link_id": 224,
   "nodes": [
     {
       "id": 17,
@@ -383,7 +383,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 66,
+          "link": 224,
           "widget": {
             "name": "seed"
           }
@@ -1504,59 +1504,6 @@
       ]
     },
     {
-      "id": 48,
-      "type": "Seed",
-      "pos": [
-        852,
-        278
-      ],
-      "size": {
-        "0": 315,
-        "1": 142
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "seed",
-          "type": "SEED",
-          "links": null,
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "number",
-          "type": "NUMBER",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "float",
-          "type": "FLOAT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "int",
-          "type": "INT",
-          "links": [
-            66,
-            67
-          ],
-          "shape": 3,
-          "slot_index": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Seed"
-      },
-      "widgets_values": [
-        249874118613783,
-        "randomize"
-      ]
-    },
-    {
       "id": 37,
       "type": "SetLatentNoiseMask",
       "pos": [
@@ -2053,7 +2000,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 67,
+          "link": 223,
           "widget": {
             "name": "seed"
           }
@@ -2683,7 +2630,7 @@
         "1": 657.7000122070312
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -2712,6 +2659,46 @@
       "widgets_values": [
         "ComfyUI_00995_ (8).png",
         "image"
+      ]
+    },
+    {
+      "id": 126,
+      "type": "CR Seed",
+      "pos": [
+        859,
+        260
+      ],
+      "size": {
+        "0": 315,
+        "1": 102
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            223,
+            224
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Seed"
+      },
+      "widgets_values": [
+        22222,
+        "fixed"
       ]
     }
   ],
@@ -2963,22 +2950,6 @@
       47,
       0,
       "IMAGE"
-    ],
-    [
-      66,
-      48,
-      3,
-      45,
-      4,
-      "INT"
-    ],
-    [
-      67,
-      48,
-      3,
-      30,
-      4,
-      "INT"
     ],
     [
       68,
@@ -3483,6 +3454,22 @@
       50,
       0,
       "MASK"
+    ],
+    [
+      223,
+      126,
+      0,
+      30,
+      4,
+      "INT"
+    ],
+    [
+      224,
+      126,
+      0,
+      45,
+      4,
+      "INT"
     ]
   ],
   "groups": [],

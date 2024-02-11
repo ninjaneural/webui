@@ -1,6 +1,6 @@
 {
-  "last_node_id": 113,
-  "last_link_id": 185,
+  "last_node_id": 114,
+  "last_link_id": 187,
   "nodes": [
     {
       "id": 10,
@@ -573,7 +573,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 67,
+          "link": 186,
           "widget": {
             "name": "seed"
           }
@@ -823,7 +823,7 @@
         {
           "name": "seed",
           "type": "INT",
-          "link": 66,
+          "link": 187,
           "widget": {
             "name": "seed"
           }
@@ -2636,15 +2636,15 @@
       ]
     },
     {
-      "id": 48,
-      "type": "Seed",
+      "id": 114,
+      "type": "CR Seed",
       "pos": [
-        852,
-        278
+        859,
+        271
       ],
       "size": {
         "0": 315,
-        "1": 142
+        "1": 102
       },
       "flags": {},
       "order": 9,
@@ -2652,36 +2652,23 @@
       "outputs": [
         {
           "name": "seed",
-          "type": "SEED",
-          "links": null,
+          "type": "INT",
+          "links": [
+            186,
+            187
+          ],
           "shape": 3,
           "slot_index": 0
         },
         {
-          "name": "number",
-          "type": "NUMBER",
+          "name": "show_help",
+          "type": "STRING",
           "links": null,
           "shape": 3
-        },
-        {
-          "name": "float",
-          "type": "FLOAT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "int",
-          "type": "INT",
-          "links": [
-            66,
-            67
-          ],
-          "shape": 3,
-          "slot_index": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "Seed"
+        "Node name for S&R": "CR Seed"
       },
       "widgets_values": [
         22222,
@@ -3057,22 +3044,6 @@
       47,
       0,
       "IMAGE"
-    ],
-    [
-      66,
-      48,
-      3,
-      45,
-      4,
-      "INT"
-    ],
-    [
-      67,
-      48,
-      3,
-      30,
-      4,
-      "INT"
     ],
     [
       68,
@@ -3457,6 +3428,22 @@
       49,
       2,
       "MASK"
+    ],
+    [
+      186,
+      114,
+      0,
+      30,
+      4,
+      "INT"
+    ],
+    [
+      187,
+      114,
+      0,
+      45,
+      4,
+      "INT"
     ]
   ],
   "groups": [],
