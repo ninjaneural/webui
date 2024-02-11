@@ -68,3 +68,28 @@
 (worst quality, low quality:1.2), (makeup, mole), (nsfw, nude)
 ```
 
+
+# ComfyUI-VideoHelperSuite 노드가 나타나지 않는경우 
+
+* 실행할때 아래 메세지가 나오는지 확인해보세요~
+
+```
+no module named 'cv2'
+```
+
+1. Manger 이용 방법
+
+> Manager 메뉴에서 Install PIP Packages 를 누르고 opencv-python 를 입력해서 설치해보세요 (설치 완료까지 대기후 재시작)
+
+<img src="./comfyui_anidiff_lora/manager.png"/>
+
+2. 직접설치 방법
+
+> 윈도우의 경우 아래처럼 "명령 프롬프트"에서 comfyui 설치폴더로 이동후 opencv-python을 직접 설치해주세요
+
+```
+python_embeded\python -m pip install opencv-python
+```
+
+<img src="./comfyui_anidiff_lora/opencv.png"/>
+
