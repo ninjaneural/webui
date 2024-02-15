@@ -1,6 +1,6 @@
 {
-  "last_node_id": 97,
-  "last_link_id": 175,
+  "last_node_id": 101,
+  "last_link_id": 185,
   "nodes": [
     {
       "id": 13,
@@ -232,7 +232,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -257,7 +257,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -282,7 +282,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -296,57 +296,6 @@
       }
     },
     {
-      "id": 33,
-      "type": "ADE_AnimateDiffUniformContextOptions",
-      "pos": [
-        45,
-        919
-      ],
-      "size": {
-        "0": 315,
-        "1": 270
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "prev_context",
-          "type": "CONTEXT_OPTIONS",
-          "link": null
-        },
-        {
-          "name": "view_opts",
-          "type": "VIEW_OPTS",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONTEXT_OPTIONS",
-          "type": "CONTEXT_OPTIONS",
-          "links": [
-            49
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ADE_AnimateDiffUniformContextOptions"
-      },
-      "widgets_values": [
-        16,
-        1,
-        4,
-        "uniform",
-        false,
-        "flat",
-        false,
-        0,
-        1
-      ]
-    },
-    {
       "id": 35,
       "type": "ControlNetLoaderAdvanced",
       "pos": [
@@ -358,7 +307,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [
         {
@@ -396,7 +345,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [
         {
@@ -434,7 +383,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -643,7 +592,7 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "AnimateDiff_01389.mp4",
+            "filename": "AnimateDiff_01611.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4"
@@ -663,7 +612,7 @@
         218
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -727,7 +676,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -818,65 +767,6 @@
       ]
     },
     {
-      "id": 3,
-      "type": "KSampler",
-      "pos": [
-        1115,
-        135
-      ],
-      "size": {
-        "0": 315,
-        "1": 262
-      },
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 13
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 45
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 46
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 18
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            7
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        534764095017769,
-        "fixed",
-        8,
-        1,
-        "lcm",
-        "normal",
-        0.6
-      ]
-    },
-    {
       "id": 56,
       "type": "SAMLoader",
       "pos": [
@@ -888,7 +778,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -920,7 +810,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -944,51 +834,6 @@
       ]
     },
     {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        37,
-        350
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            50
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            14
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "anihelloy2d_v15.safetensors"
-      ]
-    },
-    {
       "id": 55,
       "type": "UltralyticsDetectorProvider",
       "pos": [
@@ -1000,7 +845,7 @@
         "1": 78
       },
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1027,115 +872,6 @@
       ]
     },
     {
-      "id": 32,
-      "type": "ADE_AnimateDiffLoaderWithContext",
-      "pos": [
-        30,
-        650
-      ],
-      "size": {
-        "0": 342.5999755859375,
-        "1": 230
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 50
-        },
-        {
-          "name": "context_options",
-          "type": "CONTEXT_OPTIONS",
-          "link": 49,
-          "slot_index": 1
-        },
-        {
-          "name": "motion_lora",
-          "type": "MOTION_LORA",
-          "link": null
-        },
-        {
-          "name": "motion_model_settings",
-          "type": "MOTION_MODEL_SETTINGS",
-          "link": null
-        },
-        {
-          "name": "sample_settings",
-          "type": "sample_settings",
-          "link": null
-        },
-        {
-          "name": "ad_keyframes",
-          "type": "AD_KEYFRAMES",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            51
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ADE_AnimateDiffLoaderWithContext"
-      },
-      "widgets_values": [
-        "temporaldiff-v1-animatediff.ckpt",
-        "sqrt_linear (AnimateDiff)",
-        1,
-        true
-      ]
-    },
-    {
-      "id": 11,
-      "type": "ModelSamplingDiscrete",
-      "pos": [
-        470,
-        810
-      ],
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 12
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            13,
-            138
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ModelSamplingDiscrete"
-      },
-      "widgets_values": [
-        "lcm",
-        false
-      ]
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -1147,7 +883,7 @@
         "1": 94.61527252197266
       },
       "flags": {},
-      "order": 21,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1186,7 +922,7 @@
         "1": 100.9815673828125
       },
       "flags": {},
-      "order": 22,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1225,13 +961,13 @@
         "1": 126
       },
       "flags": {},
-      "order": 16,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 51
+          "link": 178
         },
         {
           "name": "clip",
@@ -1268,71 +1004,6 @@
         "lcm-lora-sdv15.safetensors",
         1,
         1
-      ]
-    },
-    {
-      "id": 57,
-      "type": "SEGSDetailerForAnimateDiff",
-      "pos": [
-        950,
-        1420
-      ],
-      "size": {
-        "0": 342.5999755859375,
-        "1": 358
-      },
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_frames",
-          "type": "IMAGE",
-          "link": 170
-        },
-        {
-          "name": "segs",
-          "type": "SEGS",
-          "link": 91
-        },
-        {
-          "name": "basic_pipe",
-          "type": "BASIC_PIPE",
-          "link": 92,
-          "slot_index": 2
-        },
-        {
-          "name": "refiner_basic_pipe_opt",
-          "type": "BASIC_PIPE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "segs",
-          "type": "SEGS",
-          "links": [
-            99
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SEGSDetailerForAnimateDiff"
-      },
-      "widgets_values": [
-        512,
-        true,
-        768,
-        565511830783268,
-        "fixed",
-        6,
-        2,
-        "lcm",
-        "normal",
-        0.5,
-        0.2
       ]
     },
     {
@@ -1417,7 +1088,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 138
+          "link": 185
         },
         {
           "name": "clip",
@@ -1507,7 +1178,7 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "AnimateDiff_01394.mp4",
+            "filename": "AnimateDiff_01612.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4"
@@ -1647,6 +1318,346 @@
         5,
         255
       ]
+    },
+    {
+      "id": 98,
+      "type": "ADE_StandardStaticContextOptions",
+      "pos": [
+        29,
+        934
+      ],
+      "size": {
+        "0": 317.4000244140625,
+        "1": 198
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prev_context",
+          "type": "CONTEXT_OPTIONS",
+          "link": null
+        },
+        {
+          "name": "view_opts",
+          "type": "VIEW_OPTS",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONTEXT_OPTS",
+          "type": "CONTEXT_OPTIONS",
+          "links": [
+            184
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ADE_StandardStaticContextOptions"
+      },
+      "widgets_values": [
+        16,
+        4,
+        "pyramid",
+        false,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        37,
+        350
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            178
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            14
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "anihelloy2d_v15.safetensors"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "ModelSamplingDiscrete",
+      "pos": [
+        470,
+        810
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            182
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingDiscrete"
+      },
+      "widgets_values": [
+        "lcm",
+        false
+      ]
+    },
+    {
+      "id": 101,
+      "type": "ADE_AnimateDiffLoaderGen1",
+      "pos": [
+        39,
+        653
+      ],
+      "size": {
+        "0": 315,
+        "1": 222
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 182
+        },
+        {
+          "name": "context_options",
+          "type": "CONTEXT_OPTIONS",
+          "link": 184,
+          "slot_index": 1
+        },
+        {
+          "name": "motion_lora",
+          "type": "MOTION_LORA",
+          "link": null
+        },
+        {
+          "name": "ad_settings",
+          "type": "AD_SETTINGS",
+          "link": null
+        },
+        {
+          "name": "ad_keyframes",
+          "type": "AD_KEYFRAMES",
+          "link": null
+        },
+        {
+          "name": "sample_settings",
+          "type": "SAMPLE_SETTINGS",
+          "link": null
+        },
+        {
+          "name": "scale_multival",
+          "type": "MULTIVAL",
+          "link": null
+        },
+        {
+          "name": "effect_multival",
+          "type": "MULTIVAL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            183,
+            185
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ADE_AnimateDiffLoaderGen1"
+      },
+      "widgets_values": [
+        "mm_sd15_v3.safetensors",
+        "autoselect"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        1115,
+        135
+      ],
+      "size": {
+        "0": 315,
+        "1": 262
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 183
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 45
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 46
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        534764095017769,
+        "fixed",
+        6,
+        1,
+        "lcm",
+        "normal",
+        0.6
+      ]
+    },
+    {
+      "id": 57,
+      "type": "SEGSDetailerForAnimateDiff",
+      "pos": [
+        950,
+        1420
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 358
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_frames",
+          "type": "IMAGE",
+          "link": 170
+        },
+        {
+          "name": "segs",
+          "type": "SEGS",
+          "link": 91
+        },
+        {
+          "name": "basic_pipe",
+          "type": "BASIC_PIPE",
+          "link": 92,
+          "slot_index": 2
+        },
+        {
+          "name": "refiner_basic_pipe_opt",
+          "type": "BASIC_PIPE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "segs",
+          "type": "SEGS",
+          "links": [
+            99
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "cnet_images",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SEGSDetailerForAnimateDiff"
+      },
+      "widgets_values": [
+        512,
+        true,
+        768,
+        565511830783268,
+        "fixed",
+        6,
+        1,
+        "lcm",
+        "normal",
+        0.5,
+        0.2
+      ]
     }
   ],
   "links": [
@@ -1663,14 +1674,6 @@
       10,
       0,
       11,
-      0,
-      "MODEL"
-    ],
-    [
-      13,
-      11,
-      0,
-      3,
       0,
       "MODEL"
     ],
@@ -1867,30 +1870,6 @@
       "IMAGE"
     ],
     [
-      49,
-      33,
-      0,
-      32,
-      1,
-      "CONTEXT_OPTIONS"
-    ],
-    [
-      50,
-      4,
-      0,
-      32,
-      0,
-      "MODEL"
-    ],
-    [
-      51,
-      32,
-      0,
-      10,
-      0,
-      "MODEL"
-    ],
-    [
       54,
       35,
       0,
@@ -1987,14 +1966,6 @@
       "VAE"
     ],
     [
-      138,
-      11,
-      0,
-      59,
-      0,
-      "MODEL"
-    ],
-    [
       143,
       6,
       0,
@@ -2049,6 +2020,46 @@
       64,
       0,
       "IMAGE"
+    ],
+    [
+      178,
+      4,
+      0,
+      10,
+      0,
+      "MODEL"
+    ],
+    [
+      182,
+      11,
+      0,
+      101,
+      0,
+      "MODEL"
+    ],
+    [
+      183,
+      101,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      184,
+      98,
+      0,
+      101,
+      1,
+      "CONTEXT_OPTIONS"
+    ],
+    [
+      185,
+      101,
+      0,
+      59,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [],

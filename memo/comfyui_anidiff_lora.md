@@ -1,6 +1,6 @@
 # 워크플로우
 
-* 기본 워프플로우
+* 기본 워크플로우
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow1.json>
 
@@ -12,9 +12,24 @@
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow3.json>
 
-* FaceDetailer만 따로
+---
 
-<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow4.json> 
+> AnimateDiff LCM 적용  
+> beta schedule LCM이 추가되면서 순서가 조금 바꼈어요  
+> Content Options Standard Static으로 변경했어요
+
+* FaceDetailer
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow2-1.json>
+
+* FaceDetailer대신 SimpleDetector + Detailer (AnimateDiff)
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow3-1.json>
+
+* denoise 1.0 / lora / openpose / ip2p (전체적으로 변경할때 예시)
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lora/workflow5.json> 
+
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
