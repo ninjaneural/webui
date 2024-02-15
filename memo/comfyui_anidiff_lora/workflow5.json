@@ -1006,7 +1006,7 @@
         921
       ],
       "size": {
-        "0": 317.4000244140625,
+        "0": 319.20001220703125,
         "1": 198
       },
       "flags": {},
@@ -1246,7 +1246,7 @@
       ],
       "size": [
         568.8851928710938,
-        1249.469168663025
+        1225.469168663025
       ],
       "flags": {},
       "order": 27,
@@ -1278,10 +1278,9 @@
         "frame_rate": 15,
         "loop_count": 0,
         "filename_prefix": "AnimateDiff",
-        "format": "video/av1-webm",
-        "pix_fmt": "yuv420p10le",
-        "crf": 23,
-        "input_color_depth": "8bit",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
         "save_metadata": true,
         "pingpong": false,
         "save_output": true,
