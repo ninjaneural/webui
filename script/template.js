@@ -32,6 +32,15 @@ const checkpoints = [
         checkpoint_file: 'aniflatmixAnimeFlatColorStyle_v20.safetensors',
     },
     {
+        name: 'AniHelloy2d',
+        type: '2D',
+        model: 'https://civitai.com/models/147548/anihelloy2d',
+        ipynb: 'anihelloy2d_webui_colab',
+        checkpoint: 'https://civitai.com/api/download/models/245511',
+        checkpoint_file: 'anihelloy2d_v21.safetensors',
+        bakedVAE: true,
+    },
+    {
         name: 'AbsoluteReality',
         type: '실사',
         model: 'https://civitai.com/models/81458/absolutereality',

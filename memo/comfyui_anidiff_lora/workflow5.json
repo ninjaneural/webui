@@ -1,6 +1,6 @@
 {
-  "last_node_id": 55,
-  "last_link_id": 90,
+  "last_node_id": 56,
+  "last_link_id": 92,
   "nodes": [
     {
       "id": 13,
@@ -14,7 +14,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -25,7 +25,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 70
+          "link": 91
         }
       ],
       "outputs": [
@@ -55,7 +55,7 @@
         "1": 198
       },
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -106,7 +106,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -146,7 +146,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -186,7 +186,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -211,7 +211,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 16,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -236,7 +236,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 17,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -376,7 +376,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 69
+          "link": 92
         }
       ],
       "outputs": [
@@ -405,7 +405,7 @@
         "1": 100.9815673828125
       },
       "flags": {},
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -432,40 +432,6 @@
       ]
     },
     {
-      "id": 44,
-      "type": "AV_VAELoader",
-      "pos": [
-        35,
-        502
-      ],
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            69,
-            70
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "AV_VAELoader"
-      },
-      "widgets_values": [
-        "vae-ft-mse-840000-ema-pruned.safetensors",
-        "None"
-      ]
-    },
-    {
       "id": 35,
       "type": "ControlNetLoaderAdvanced",
       "pos": [
@@ -477,7 +443,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [
         {
@@ -504,70 +470,6 @@
       ]
     },
     {
-      "id": 14,
-      "type": "VHS_LoadVideoPath",
-      "pos": [
-        19,
-        18
-      ],
-      "size": [
-        315,
-        218
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            22
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "frame_count",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "audio",
-          "type": "VHS_AUDIO",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideoPath"
-      },
-      "widgets_values": {
-        "video": "D:\\ComfyUI_windows_portable\\ComfyUI\\input\\input.mp4",
-        "force_rate": 15,
-        "force_size": "Disabled",
-        "custom_width": 512,
-        "custom_height": 512,
-        "frame_load_cap": 0,
-        "skip_first_frames": 0,
-        "select_every_nth": 1,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "frame_load_cap": 0,
-            "skip_first_frames": 0,
-            "force_rate": 15,
-            "filename": "D:\\ComfyUI_windows_portable\\ComfyUI\\input\\input.mp4",
-            "type": "path",
-            "format": "video/mp4",
-            "select_every_nth": 1
-          }
-        }
-      }
-    },
-    {
       "id": 16,
       "type": "ImageScale",
       "pos": [
@@ -579,7 +481,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -625,7 +527,7 @@
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -661,7 +563,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -699,7 +601,7 @@
         "1": 94.61527252197266
       },
       "flags": {},
-      "order": 19,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -869,7 +771,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 14,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -925,7 +827,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -970,7 +872,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1010,7 +912,7 @@
         "1": 198
       },
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1059,7 +961,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1246,7 +1148,7 @@
       ],
       "size": [
         568.8851928710938,
-        1225.469168663025
+        1273.125418663025
       ],
       "flags": {},
       "order": 27,
@@ -1260,6 +1162,11 @@
         {
           "name": "audio",
           "type": "VHS_AUDIO",
+          "link": null
+        },
+        {
+          "name": "batch_manager",
+          "type": "VHS_BatchManager",
           "link": null
         }
       ],
@@ -1292,6 +1199,110 @@
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 56,
+      "type": "VAELoader",
+      "pos": [
+        33.61878851809843,
+        501.1137411163593
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            91,
+            92
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "vae-ft-mse-840000-ema-pruned.safetensors"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "VHS_LoadVideoPath",
+      "pos": [
+        19,
+        18
+      ],
+      "size": [
+        315,
+        218
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "batch_manager",
+          "type": "VHS_BatchManager",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            22
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideoPath"
+      },
+      "widgets_values": {
+        "video": "/content/drive/MyDrive/input3.mp4",
+        "force_rate": 15,
+        "force_size": "Disabled",
+        "custom_width": 512,
+        "custom_height": 512,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "force_rate": 15,
+            "filename": "/content/drive/MyDrive/input3.mp4",
+            "type": "path",
+            "format": "video/mp4",
+            "select_every_nth": 1
           }
         }
       }
@@ -1515,22 +1526,6 @@
       "CONTROL_NET"
     ],
     [
-      69,
-      44,
-      0,
-      8,
-      1,
-      "VAE"
-    ],
-    [
-      70,
-      44,
-      0,
-      13,
-      1,
-      "VAE"
-    ],
-    [
       72,
       16,
       0,
@@ -1601,6 +1596,22 @@
       3,
       0,
       "MODEL"
+    ],
+    [
+      91,
+      56,
+      0,
+      13,
+      1,
+      "VAE"
+    ],
+    [
+      92,
+      56,
+      0,
+      8,
+      1,
+      "VAE"
     ]
   ],
   "groups": [],

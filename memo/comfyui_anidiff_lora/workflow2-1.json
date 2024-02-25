@@ -1,6 +1,6 @@
 {
-  "last_node_id": 46,
-  "last_link_id": 75,
+  "last_node_id": 47,
+  "last_link_id": 78,
   "nodes": [
     {
       "id": 13,
@@ -25,7 +25,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 70
+          "link": 77
         }
       ],
       "outputs": [
@@ -616,7 +616,7 @@
       ],
       "size": [
         568.8851928710938,
-        577.1229209899902
+        612.7479209899902
       ],
       "flags": {},
       "order": 29,
@@ -630,6 +630,11 @@
         {
           "name": "audio",
           "type": "VHS_AUDIO",
+          "link": null
+        },
+        {
+          "name": "batch_manager",
+          "type": "VHS_BatchManager",
           "link": null
         }
       ],
@@ -675,7 +680,7 @@
       ],
       "size": [
         568.8851928710938,
-        270
+        290
       ],
       "flags": {},
       "order": 31,
@@ -689,6 +694,11 @@
         {
           "name": "audio",
           "type": "VHS_AUDIO",
+          "link": null
+        },
+        {
+          "name": "batch_manager",
+          "type": "VHS_BatchManager",
           "link": null
         }
       ],
@@ -858,7 +868,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 69
+          "link": 78
         }
       ],
       "outputs": [
@@ -916,80 +926,6 @@
       ]
     },
     {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": [
-        422,
-        335
-      ],
-      "size": {
-        "0": 429.51519775390625,
-        "1": 100.9815673828125
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 16
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            30,
-            66
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "text, watermark(worst quality, low quality:1.2), (makeup, mole), (nsfw, nude)"
-      ]
-    },
-    {
-      "id": 44,
-      "type": "AV_VAELoader",
-      "pos": [
-        35,
-        502
-      ],
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            69,
-            70,
-            71
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "AV_VAELoader"
-      },
-      "widgets_values": [
-        "vae-ft-mse-840000-ema-pruned.safetensors",
-        "None"
-      ]
-    },
-    {
       "id": 4,
       "type": "CheckpointLoaderSimple",
       "pos": [
@@ -1001,7 +937,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -1094,70 +1030,6 @@
       ]
     },
     {
-      "id": 14,
-      "type": "VHS_LoadVideoPath",
-      "pos": [
-        19,
-        18
-      ],
-      "size": [
-        315,
-        218
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            22
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "frame_count",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "audio",
-          "type": "VHS_AUDIO",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideoPath"
-      },
-      "widgets_values": {
-        "video": "D:\\ComfyUI_windows_portable\\ComfyUI\\input\\input3.mp4",
-        "force_rate": 15,
-        "force_size": "Disabled",
-        "custom_width": 512,
-        "custom_height": 512,
-        "frame_load_cap": 0,
-        "skip_first_frames": 0,
-        "select_every_nth": 1,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "frame_load_cap": 0,
-            "skip_first_frames": 0,
-            "force_rate": 15,
-            "filename": "D:\\ComfyUI_windows_portable\\ComfyUI\\input\\input3.mp4",
-            "type": "path",
-            "format": "video/mp4",
-            "select_every_nth": 1
-          }
-        }
-      }
-    },
-    {
       "id": 45,
       "type": "ADE_StandardStaticContextOptions",
       "pos": [
@@ -1165,11 +1037,11 @@
         940
       ],
       "size": {
-        "0": 317.4000244140625,
+        "0": 319.20001220703125,
         "1": 198
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1442,7 +1314,7 @@
       ],
       "size": {
         "0": 506.4000244140625,
-        "1": 856
+        "1": 880
       },
       "flags": {},
       "order": 30,
@@ -1466,7 +1338,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 71
+          "link": 76
         },
         {
           "name": "positive",
@@ -1569,7 +1441,153 @@
         "False",
         10,
         "",
-        1
+        1,
+        false,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "type": "VAELoader",
+      "pos": [
+        38,
+        517
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            76,
+            77,
+            78
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "vae-ft-mse-840000-ema-pruned.safetensors"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "VHS_LoadVideoPath",
+      "pos": [
+        19,
+        18
+      ],
+      "size": [
+        315,
+        218
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "batch_manager",
+          "type": "VHS_BatchManager",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            22
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideoPath"
+      },
+      "widgets_values": {
+        "video": "/content/drive/MyDrive/input3.mp4",
+        "force_rate": 15,
+        "force_size": "Disabled",
+        "custom_width": 512,
+        "custom_height": 512,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "force_rate": 15,
+            "filename": "/content/drive/MyDrive/input3.mp4",
+            "type": "path",
+            "format": "video/mp4",
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        422,
+        335
+      ],
+      "size": {
+        "0": 429.51519775390625,
+        "1": 100.9815673828125
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            30,
+            66
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(worst quality, low quality:1.2), (makeup, mole), (nsfw, nude)"
       ]
     }
   ],
@@ -1895,30 +1913,6 @@
       "CLIP"
     ],
     [
-      69,
-      44,
-      0,
-      8,
-      1,
-      "VAE"
-    ],
-    [
-      70,
-      44,
-      0,
-      13,
-      1,
-      "VAE"
-    ],
-    [
-      71,
-      44,
-      0,
-      38,
-      3,
-      "VAE"
-    ],
-    [
       72,
       45,
       0,
@@ -1949,6 +1943,30 @@
       46,
       0,
       "MODEL"
+    ],
+    [
+      76,
+      47,
+      0,
+      38,
+      3,
+      "VAE"
+    ],
+    [
+      77,
+      47,
+      0,
+      13,
+      1,
+      "VAE"
+    ],
+    [
+      78,
+      47,
+      0,
+      8,
+      1,
+      "VAE"
     ]
   ],
   "groups": [],
