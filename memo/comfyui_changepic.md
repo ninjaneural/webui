@@ -43,6 +43,16 @@ CLIPSeg 워크플로우
 > CLIPSeg (프롬프트로 마스크 선택)
 
 
+# ControlNet 모델
+
+<https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main> (오피셜)
+
+<https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/tree/main> (fp16버전:저용량)
+
+> 다운받아서 models/controlnet 에 저장  
+> 이 영상에서는 control_v11p_sd15_openpose_fp16.safetensors 만 받으셔도되요~ 
+
+
 # 사용한 체크포인트
 
 PicX_Real_V10

@@ -57,6 +57,16 @@ SDXL버전
 > ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
 
 
+# ControlNet 모델
+
+<https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main> (오피셜)
+
+<https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/tree/main> (fp16버전:저용량)
+
+> 다운받아서 models/controlnet 에 저장  
+> 이 영상에서는 control_v11p_sd15_openpose_fp16.safetensors 만 받으셔도되요~ 
+
+
 # ControlNet (SDXL)
 
 * OpenPose XL
