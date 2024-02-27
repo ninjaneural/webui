@@ -36,17 +36,25 @@
 
 # 사용된 커스텀노드
 
-<https://github.com/ltdrdata/ComfyUI-Manager> 
-
 <https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite>
+
+> 비디오 저장
 
 <https://github.com/ltdrdata/ComfyUI-Impact-Pack>
 
+> 디테일러
+
 <https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved>
+
+> AnimateDiff
 
 <https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet>
 
+> AnimateDiff + ControlNet
+
 <https://github.com/Fannovel16/comfyui_controlnet_aux>
+
+> ControlNet Preprocessors
 
 
 # LCM-LoRA 모델 다운로드
@@ -83,9 +91,13 @@
 (worst quality, low quality:1.2), (makeup, mole), (nsfw, nude)
 ```
 
-# 컨트롤넷 모델
+# ControlNet 모델
 
-<https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main>
+<https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main> (오피셜)
+
+<https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/tree/main> (fp16버전:저용량)
+
+> 다운받아서 models/controlnet 에 저장  
 
 
 # ComfyUI-VideoHelperSuite 노드가 나타나지 않는경우 
