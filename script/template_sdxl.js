@@ -342,6 +342,16 @@ async function make_readme2() {
 
     readmeText = readme.join('\n');
     fs.writeFileSync(`../COLAB_SDXL_ALL.md`, readmeText);
+
+    let variable = []
+    variable.push(
+        `LocalCheckpointName = 'juggernaut_xl_v8.safetensors' #@param [${list.map((a)=>'"'+a.checkpoint_file+'"').join(',')}]`
+    )
+    variable.push(
+        `LocalCheckpointMap = {${list.map((a)=>'"'+a.checkpoint_file+'":"'+a.checkpoint+'"').join(',')}}`
+    )    
+    fs.writeFileSync(`../install/SDXL_VARIABLES.md`, variable.join('\n'));
+
     return true;
 }
 
