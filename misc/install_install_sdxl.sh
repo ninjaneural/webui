@@ -1,8 +1,13 @@
-git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
+if [ $2 == "forge" ]; then
+  git clone https://github.com/ninjaneural/forgeui /content/$1
+else
+  git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
+fi
+
 cd /content/$1
 rm webui*.sh
 
-if [ $3 == True ]; then
+if [ $3 == True ] && [ $2 != "forge" ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet ./extensions/controlnet
 fi
 if [ $4 == True ]; then
@@ -29,7 +34,9 @@ fi
 
 git clone https://github.com/adieyal/sd-dynamic-prompts ./extensions/sd-dynamic-prompts
 git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding ./extensions/sd-dynamic-thresholding
-git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 ./extensions/multidiffusion-upscaler
+if [ $2 != "forge" ]; then
+  git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 ./extensions/multidiffusion-upscaler
+fi
 git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete ./extensions/tagcomplete
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 ./extensions/ultimate-upscale
 
@@ -45,6 +52,10 @@ fi
 
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config_sdxl.json -O ./config.json
 
-wget https://huggingface.co/ninjaneural/webui/resolve/main/direct/$2/repositories.tar
-tar -xvf repositories.tar
-rm repositories.tar
+if [ $2 != "forge" ]; then
+  wget https://huggingface.co/ninjaneural/webui/resolve/main/direct/$2/repositories.tar
+  tar -xvf repositories.tar
+  rm repositories.tar
+fi
+
+touch $2

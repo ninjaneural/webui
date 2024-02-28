@@ -7,13 +7,18 @@ if [ $4 == True ]; then
   mim install mmdet>=3.0.0
 fi
 
-if [ $2 == "forge" ]; then
+if [ "$2" = "forge" ]; then
   git clone https://github.com/ninjaneural/forgeui /content/$1
 else
   git clone -b $2 https://github.com/ninjaneural/colabui /content/$1
 fi
 cd /content/$1
 rm webui*.sh
+
+lastest_version=false
+if [ "$2" = "v1.6.0" ] || [ "$2" = "v1.7.0" ] || [ "$2" = "forge" ]; then
+  lastest_version=true
+fi
 
 if [ $3 == True ] && [ $2 != "forge" ]; then
   git clone https://github.com/Mikubill/sd-webui-controlnet ./extensions/controlnet
@@ -46,7 +51,7 @@ git clone https://github.com/fkunn1326/openpose-editor ./extensions/openpose-edi
 git clone https://github.com/hnmr293/posex ./extensions/posex
 git clone https://github.com/fishslot/video_loopback_for_webui ./extensions/video_loopback
 
-if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
+if [ "$lastest_version" = false ]; then
   git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris ./extensions/lycoris
 fi
 
@@ -78,18 +83,18 @@ if [ $6 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d ./models/sam -o sam_vit_h_4b8939.pth
 fi
 
-if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
+if [ "$lastest_version" = false ]; then
   sed -i -e "/from modules import launch_utils/a\import os" /content/$1/launch.py
   sed -i -e "/        prepare_environment()/a\        os.system(f\\\"\"\"sed -i -e \"s/dict()))/dict())).cuda()/g\" /content/$1/repositories/stable-diffusion-stability-ai/ldm/util.py\"\"\")" /content/$1/launch.py
 fi
 
-if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
+if [ "$lastest_version" = false ]; then
   cd ./extensions/controlnet
   git reset --hard 3011ff6e706d3fdd0cc7d2ac8ff0d59020b8f767
   cd /content/$1
 fi
 
-if [ $2 != "v1.6.0" ] && [ $2 != "v1.7.0" ]; then
+if [ "$lastest_version" = false ]; then
   pip install gradio-client==0.8.1
 fi
 
