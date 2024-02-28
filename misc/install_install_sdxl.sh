@@ -52,10 +52,8 @@ fi
 
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config_sdxl.json -O ./config.json
 
-if [ $2 != "forge" ]; then
-  wget https://huggingface.co/ninjaneural/webui/resolve/main/direct/$2/repositories.tar
-  tar -xvf repositories.tar
-  rm repositories.tar
-fi
+wget https://huggingface.co/ninjaneural/webui/resolve/main/direct/$2/repositories.tar
+tar -xvf repositories.tar
+rm repositories.tar
 
 touch $2
