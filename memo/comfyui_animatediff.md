@@ -1,49 +1,23 @@
 
-# ComfyUI
 
-2023-10-10 버전 기준
-```
-git reset --hard 8cc75c64ff7188ce72cd4ba595119586e425c09f
-```
+# 커스텀 노드
 
-# CustomNodes 커스텀 노드
+<https://github.com/ltdrdata/ComfyUI-Manager>
 
-https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved
+> 커스텀 노드 관리
 
-2023-10-10 버전 기준
-```
-git clone https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved
-cd ComfyUI-AnimateDiff-Evolved 
-git reset --hard 64688cb06093ee85f41b9fde61077f6455420368
-```
+<https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved>
 
-* 커스텀노드 매니저 
+> AnimateDiff
 
-https://github.com/ltdrdata/ComfyUI-Manager
+<https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet>
 
-* 컨트롤넷 관련
-
-https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet
+> AnimateDiff + ControlNet
 
 https://github.com/Fannovel16/comfyui_controlnet_aux
 
-2023-10-08 버전 기준
-```
-git clone https://github.com/Fannovel16/comfyui_controlnet_aux
-cd comfyui_controlnet_aux
-git reset --hard 532ed8c695cb661060baf302715f497b70c01fba
-cd ..
-```
+> ControlNet Preprocessors
 
-* 모듈 없다는 에러뜰때 (윈도우 기준)
-```
-No module named 'cv2' 
-```
-
-pip install 로 모듈 설치 
-```
-.\python_embeded\python.exe -m pip install opencv-python
-```
 
 * 비디오 저장
 
@@ -57,33 +31,33 @@ https://github.com/FizzleDorf/ComfyUI_FizzNodes
 
 # AnimateDiff 모델
 
+<https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt>
+
+<https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt>
+
+<https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt>
+
+<https://huggingface.co/CiaraRowles/TemporalDiff/resolve/main/temporaldiff-v1-animatediff.ckpt>
+
 > custom_nodes/ComfyUI-AnimateDiff-Evolved/models 이곳에 저장  
 
-https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt
+<https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanLeft.ckpt>
 
-https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt
+<https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanRight.ckpt>
 
-https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt
+<https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt>
 
-https://huggingface.co/CiaraRowles/TemporalDiff/resolve/main/temporaldiff-v1-animatediff.ckpt
+<https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt>
 
+<https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt>
+
+<https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt>
 
 > custom_nodes/ComfyUI-AnimateDiff-Evolved/motion_lora 이곳에 저장  
 
-https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanLeft.ckpt
-
-https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanRight.ckpt
-
-https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt
-
-https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt
-
-https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt
-
-https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt
-
-
 # Workflow
+
+(마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
 <a href="./comfyui_animatediff/workflow.zip">workflow.zip</a> (전체 압축파일)
 
@@ -152,3 +126,29 @@ pikkyharleyquinn, blonde hair, multicolored hair, blue hair, pink hair, twintail
 ```
 ng_deepnegative_v1_75t, (worst quality, low quality:1.3), nsfw, nude
 ```
+
+
+# ComfyUI-VideoHelperSuite 노드가 나타나지 않는경우 
+
+* 실행할때 아래 메세지가 나오는지 확인해보세요~
+
+```
+no module named 'cv2'
+```
+
+1. Manger 이용 방법
+
+> Manager 메뉴에서 Install PIP Packages 를 누르고 opencv-python 를 입력해서 설치해보세요 (설치 완료까지 대기후 재시작)
+
+<img src="./comfyui_anidiff_lora/manager.png"/>
+
+2. 직접설치 방법
+
+> 윈도우의 경우 아래처럼 "명령 프롬프트"에서 comfyui 설치폴더로 이동후 opencv-python을 직접 설치해주세요
+
+```
+python_embeded\python -m pip install opencv-python
+```
+
+<img src="./comfyui_anidiff_lora/opencv.png"/>
+
