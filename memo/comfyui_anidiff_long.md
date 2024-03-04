@@ -44,6 +44,10 @@ AnimateDiff+LCM 관련해서는 이 설명서를 참고해주세요~
 
 > ControlNet Preprocessors
 
+<https://github.com/pythongosssss/ComfyUI-Custom-Scripts>
+
+> Constrain Images
+
 
 # 파이썬 스크립트
 
