@@ -50,10 +50,4 @@ if [ $6 == True ]; then
   aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -d ./models/sam -o sam_vit_h_4b8939.pth
 fi
 
-wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
-
-wget https://huggingface.co/ninjaneural/webui/resolve/main/direct/$2/repositories.tar
-tar -xvf repositories.tar
-rm repositories.tar
-
 touch $2
