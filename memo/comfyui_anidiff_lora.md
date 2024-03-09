@@ -1,3 +1,7 @@
+# 영상링크
+
+<https://youtu.be/MCG_PJyazhs>
+
 # 워크플로우
 
 * 기본 워크플로우

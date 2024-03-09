@@ -1,3 +1,8 @@
+# 영상링크
+
+<https://youtu.be/6e0ZQR6DODE>
+
+
 # 이전 영상 설명서
 
 <https://github.com/ninjaneural/webui/blob/master/memo/comfyui_anidiff_lora.md>
