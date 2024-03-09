@@ -66,6 +66,7 @@ AnimateDiff+LCM 관련해서는 이 설명서를 참고해주세요~
 
 realcartoonXL <https://civitai.com/models/125907/realcartoon-xl>
 
+
 # 사용한 로라
 
 princess_xl_v1
@@ -75,6 +76,10 @@ EnvyPaperXL01
 ral-toiletpaper-sdxl
 
 je11y
+
+SDXL_Sewing_dol_v2
+
+CLAYMATE_V2
 
 
 # 프롬프트 정보
@@ -87,11 +92,17 @@ princess elsa, back view, skirt <lora:princess_xl_v1:0.6>
 
 statue, woman,
 
-figure made out of white jelly (je11y) <lora:je11y:0.9>
-
 paper strip diorama, woman, beautiful, warmly lit interior <lora:EnvyPaperXL01:1>
 
 girl made of toilet paper <lora:ral-toiletpaper-sdxl:1>
+
+figure made out of white jelly (je11y) <lora:je11y:0.9>
+
+sewing girl, <lora:SDXL_Sewing_dol_v2:1.0>, 
+
+girl made clay, CLAYMATE <lora:CLAYMATE_V2.03_:1.0>, 
+
+polygon girl <lora:ral-polygon-sdxl:1.0>, 
 
 girl,the god speed running as fast as the speed of light, electro thunder strike effect as a background, using the highest render computational, very complex and detailed, wearing the flash suit on
 ```
@@ -100,6 +111,11 @@ girl,the god speed running as fast as the speed of light, electro thunder strike
 ```
 nsfw, 3D, CG, stop-motion, photo-realistic,
 ```
+
+# 젤리나 클레이 같은경우
+
+openpose, dw openpose 에서 detect_face, detect_hand 를 끄면 도움이 되요!
+
 
 # ControlNet SDXL 모델
 
