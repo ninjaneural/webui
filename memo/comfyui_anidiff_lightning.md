@@ -51,7 +51,7 @@ AnimateDiff+LCM 관련해서는 이 설명서를 참고해주세요~
 <https://huggingface.co/hotshotco/Hotshot-XL/tree/main>
 
 
-# SDXL Lightningn 로라
+# SDXL Lightning 로라
 
 <https://huggingface.co/ByteDance/SDXL-Lightning> (홈페이지)
 
