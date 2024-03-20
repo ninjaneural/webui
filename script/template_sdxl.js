@@ -171,7 +171,7 @@ const checkpoints = [
         type: '복합',
         model: 'https://civitai.com/models/125907/realcartoon-xl',
         ipynb: 'real_cartoon_xl_webui_colab',
-        checkpoint: 'https://civitai.com/api/download/models/254091',
+        checkpoint: 'https://huggingface.co/jzli/realcartoonXL-v6/blob/main/realcartoonXL_v6.safetensors',
         checkpoint_file: 'realcartoon_xl_v6.safetensors',
         bakedVAE: true,
     },
