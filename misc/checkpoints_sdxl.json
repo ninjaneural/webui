@@ -280,5 +280,27 @@
         "checkpoint": "https://civitai.com/api/download/models/323674",
         "checkpoint_file": "anima_pencil_xl_v150.safetensors",
         "bakedVAE": true
-    }    
+    },
+    {
+        "name": "Pony Diffusion XL",
+        "type": "2D",
+        "model": "https://civitai.com/models/257749/pony-diffusion-v6-xl?modelVersionId=290640",
+        "ipynb": "pony_diffusion_xl_webui_colab",
+        "checkpoint": "https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "checkpoint_file": "pony_diffusion_v6_xl.safetensors",
+        "sdmodel": "pony",
+        "loras": [
+            {
+                "Concept Art Twilight": "https://civitai.com/api/download/models/330475?type=Model&format=SafeTensor",
+                "Concept Art Eclipse": "https://civitai.com/api/download/models/398292?type=Model&format=SafeTensor",
+                "Gothic Art": "https://civitai.com/api/download/models/324652?type=Model&format=SafeTensor",
+                "Gothic Art2": "https://civitai.com/api/download/models/382235?type=Model&format=SafeTensor",
+                "Line Art": "https://civitai.com/api/download/models/302106?type=Model&format=SafeTensor",
+                "Smooth": "https://civitai.com/api/download/models/297988?type=Model&format=SafeTensor",
+                "Smooth Anime": "https://civitai.com/api/download/models/298238?type=Model&format=SafeTensor",
+                "Smooth Anime2": "https://civitai.com/api/download/models/333607?type=Model&format=SafeTensor"
+            }
+        ],
+        "bakedVAE": true
+    } 
 ]
