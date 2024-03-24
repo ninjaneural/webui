@@ -16,7 +16,7 @@ cd /content/$1
 rm webui*.sh
 
 lastest_version=false
-if [ "$2" = "v1.6.0" ] || [ "$2" = "v1.7.0" ] || [ "$2" = "forge" ]; then
+if [ "$2" = "v1.6.0" ] || [ "$2" = "v1.7.0" ]|| [ "$2" = "v1.8.0" ] || [ "$2" = "forge" ]; then
   lastest_version=true
 fi
 
@@ -29,6 +29,12 @@ fi
 if [ $5 == True ]; then
   git clone https://github.com/Bing-su/adetailer ./extensions/adetailer
 fi
+if [ $5 == True ] && [ "$lastest_version" = false ]; then
+  cd ./extensions/adetailer
+  !git reset --hard afb9cd0b661886a18ce8e0a9cc3ac36d4a3af7d9
+  cd /content/$1
+fi
+
 if [ $6 == True ]; then
   git clone https://github.com/ninjaneural/segment-anything ./extensions/segment-anything
 fi
