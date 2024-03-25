@@ -58,7 +58,7 @@
         "type": "범용",
         "model": "https://civitai.com/models/239561/wildcardx-xl",
         "ipynb": "wildcardx_xl_webui_colab",
-        "checkpoint": "https://civitai.com/api/download/models/308455",
+        "checkpoint": "https://civitai.com/api/download/models/308455?&token=43529ae74264d3e8f68668780acd048f",
         "checkpoint_file": "wildcardx_xl_v4.safetensors",
         "bakedVAE": true,
         "auth": true
@@ -281,6 +281,25 @@
         "checkpoint_file": "anima_pencil_xl_v150.safetensors",
         "bakedVAE": true
     },
+    {
+        "name": "DucHaiten-Real3D-NSFW-XL",
+        "type": "3D",
+        "model": "https://civitai.com/models/247266/duchaiten-real3d-nsfw-xl",
+        "ipynb": "duchaiten_real3d_xl_webui_colab",
+        "checkpoint": "https://civitai.com/api/download/models/393880?&token=43529ae74264d3e8f68668780acd048f",
+        "checkpoint_file": "duchaiten_real3d_xl_v20.safetensors",
+        "bakedVAE": true
+    },
+    {
+        "name": "PhotoPedia XL",
+        "type": "3D",
+        "model": "https://civitai.com/models/189109/photopedia-xl",
+        "ipynb": "photo_pedia_xl_webui_colab",
+        "checkpoint": "https://civitai.com/api/download/models/259323?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "checkpoint_file": "photo_pedia_xl_v45.safetensors",
+        "bakedVAE": true
+    },
+    
     {
         "name": "Pony Diffusion XL",
         "type": "2D",
