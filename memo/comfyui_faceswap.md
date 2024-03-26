@@ -12,13 +12,11 @@
 
 # 워크플로우
 
+(마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
+
 기본 워크플로우
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow1.json>
-
-Anything Everywhere및 정리
-
-<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow2.json>
 
 이미지 생성없이 기존 이미지 수정
 
@@ -28,6 +26,25 @@ SDXL버전
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/workflow4.json>
 
+---
+
+**IPAdapter Plus 2024-03-26 이후 버전 워크플로우**
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/20240326/workflow1.json>
+
+이미지 생성없이 기존 이미지 수정
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/20240326/workflow3.json>
+
+SDXL버전
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/20240326/workflow4.json>
+
+*통합버전 (새로워진 IPAdapter Plus 방식)*
+
+> 모든 파일명을 맞췄을경우 하나의 노드로 통합가능해요    
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/20240326/workflow.json>
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
