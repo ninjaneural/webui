@@ -22,7 +22,7 @@ AnimateDiff+LCM 관련해서는 이 설명서를 참고해주세요~
 
 * 워크플로우2 (SDXL Lightning + 추가로라)
 
-<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lightning/workflow1.json>
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_anidiff_lightning/workflow2.json>
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
