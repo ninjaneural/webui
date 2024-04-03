@@ -15,9 +15,9 @@ if [ $2 == True ]; then
   rm /content/$1/models/hypernetworks/google
   rm /content/$1/output
   mv /content/$1/output /content/$1/output_backup
-  ln -s /content/drive/MyDrive/$3/embedding /content/$1/models/embeddings/google
-  ln -s /content/drive/MyDrive/$3/checkpoint /content/$1/models/checkpoints/google
-  ln -s /content/drive/MyDrive/$3/lora /content/$1/models/loras/google
-  ln -s /content/drive/MyDrive/$3/hypernetwork /content/$1/models/hypernetworks/google
-  ln -s /content/drive/MyDrive/$3/output /content/$1/output
+  ln -sf /content/drive/MyDrive/$3/embedding /content/$1/models/embeddings/google
+  ln -sf /content/drive/MyDrive/$3/checkpoint /content/$1/models/checkpoints/google
+  ln -sf /content/drive/MyDrive/$3/lora /content/$1/models/loras/google
+  ln -sf /content/drive/MyDrive/$3/hypernetwork /content/$1/models/hypernetworks/google
+  ln -sf /content/drive/MyDrive/$3/output /content/$1/output
 fi

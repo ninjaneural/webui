@@ -104,4 +104,8 @@ if [ "$lastest_version" = false ]; then
   pip install gradio-client==0.8.1
 fi
 
+if [ "$lastest_version" = true ]; then
+  pip install basicsr
+fi
+
 wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/config.json -O ./config.json
