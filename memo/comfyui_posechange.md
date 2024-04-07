@@ -26,6 +26,7 @@ SDXL버전
 # FaceID, ReActor 설치관련은 이 문서를 확인해주세요
 <https://github.com/ninjaneural/webui/blob/master/memo/comfyui_faceswap.md>
 
+
 # IPAdapter_plus
 
 * 커스텀노드 ComfyUI_IPAdapter_plus
@@ -36,17 +37,20 @@ SDXL버전
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.bin>
 
-> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
 
 <https://huggingface.co/h94/IP-Adapter/tree/main/models>
 
 > 그외에 기본, light, face, full 모델들
 
-* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드 (Optional)
+* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드 
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors>
 
-> 없다면 다운받아주세요
+> 설치폴더/models/clip_vision 이곳에 복사  
+> 파일명을 CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors 으로 변경해주세요
+
 
 # IPAdapter_plus (SDXL)
 
@@ -54,7 +58,8 @@ SDXL버전
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors>
 
-> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
 
 
 # ControlNet 모델

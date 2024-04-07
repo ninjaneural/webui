@@ -57,13 +57,15 @@
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors>
 
-> ComfyUI 설치폴더/models/clip_vision 이곳에 복사
+> 설치폴더/models/clip_vision 이곳에 복사  
+> 파일명을 CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors 으로 변경해주세요
 
 * ip-adapter_sd15 모델 다운로드
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors>
 
-> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
 
 * 컨트롤넷 inpaint 모델
 

@@ -59,19 +59,22 @@ SDXL버전
 
 <https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin>
 
-> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
 
 * faceid-plus-v2 로라 다운로드
 
 <https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors>
 
-> ComfyUI 설치폴더/models/loras 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/models/loras 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
 
-* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드 (Optional)
+* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드
 
 <https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors>
 
-> 없다면 다운받아주세요
+> 설치폴더/models/clip_vision 이곳에 복사  
+> 파일명을 CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors 으로 변경해주세요
 
 
 # IPAdapter_plus (SDXL)
@@ -80,13 +83,22 @@ SDXL버전
 
 <https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin>
 
-> ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
 
 * faceid-plusv2_sdxl 로라 다운로드
 
 <https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors>
 
-> ComfyUI 설치폴더/models/loras 이곳에 복사
+> [v1 legecy] <strike>ComfyUI 설치폴더/models/loras 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
+
+* clip vision 모델 (CLIP-ViT-bigG-14-laion2B-39B-b160k) 다운로드 (Optional)
+
+<https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors>
+
+> 설치폴더/models/clip_vision 이곳에 복사  
+> 파일명을 CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors 으로 변경해주세요
 
 
 # ReActor
