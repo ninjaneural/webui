@@ -31,9 +31,9 @@
 
 # 커스텀노드
 
-<https://github.com/neuralninja22/ComfyUI_Dreamtalk>
+<https://github.com/neuralninja22/ComfyUI_DDreamtalk> (forked https://github.com/hay86/ComfyUI_Dreamtalk)
 
-> Dreamtalk 커스텀노드
+> Dreamtalk 커스텀노드 (crop 값 추가)
 
 <https://github.com/Gourieff/comfyui-reactor-node>
 
