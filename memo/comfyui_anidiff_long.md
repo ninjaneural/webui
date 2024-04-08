@@ -67,11 +67,16 @@ AnimateDiff+LCM 관련해서는 이 설명서를 참고해주세요~
 <https://github.com/ninjaneural/webui/blob/master/memo/python_install.md>
 
 
+# python 설치 모듈  ffmpeg, PIL (없으면 설치해주세요)
+
+```
+pip install ffmpeg-python
+pip install pillow
+```
 
 # ffmpeg 설치방법
 
 <https://github.com/ninjaneural/webui/blob/master/memo/ffmpeg_install.md>
-
 
 
 # 영상, 이미지 변환 ffmpeg 명령어
