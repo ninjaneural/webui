@@ -129,6 +129,12 @@ Install PIP packages으로 설치하고 재시작해도 안될때 참고해보�
 
 https://github.com/Gourieff/comfyui-reactor-node#i-for-windows-users-if-you-still-cannot-build-insightface-for-some-reasons-or-just-dont-want-to-install-visual-studio-or-vs-c-build-tools---do-the-following
 
+* insightface 배포 패키지 설치 (insightface-0.7.3)
+
+```
+.\python_embeded\python -m pip install https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp311-cp311-win_amd64.whl
+```
+
 
 
 # 공통 프롬프트

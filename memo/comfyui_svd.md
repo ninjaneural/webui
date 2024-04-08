@@ -1,5 +1,4 @@
 
-
 # 샘플이미지
 
 <img src="./comfyui_svd/image1.jpg" width="480"/>
@@ -14,21 +13,29 @@
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
+
 # 예제 워크플로우 
 
 <https://comfyanonymous.github.io/ComfyUI_examples/video/>
 
-# 사용된 커스텀노드
 
-<https://github.com/ltdrdata/ComfyUI-Manager> 
+
+# 사용된 커스텀노드
 
 <https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite>
 
+> 영상 저장
+
 <https://github.com/ltdrdata/ComfyUI-Impact-Pack>
+
+> 각종 디텍터, 디테일러
 
 <https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved>
 
 <https://github.com/Fannovel16/ComfyUI-Frame-Interpolation>
+
+> 프레임 보간처리
+
 
 # SVD 모델정보
 
