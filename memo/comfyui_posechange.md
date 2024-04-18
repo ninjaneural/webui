@@ -10,6 +10,10 @@
 <img src="./comfyui_posechange/image7.jpg" width="480"/>
 <img src="./comfyui_posechange/image8.jpg" width="480"/>
 <img src="./comfyui_posechange/image9.jpg" width="480"/>
+<img src="./comfyui_posechange/image10.jpg" width="480"/>
+<img src="./comfyui_posechange/image11.jpg" width="480"/>
+<img src="./comfyui_posechange/image12.jpg" width="480"/>
+<img src="./comfyui_posechange/image13.jpg" width="480"/>
 
 # 워크플로우
 
@@ -43,6 +47,7 @@ SDXL버전
 
 
 # FaceID, ReActor 설치관련은 이 문서를 확인해주세요
+
 <https://github.com/ninjaneural/webui/blob/master/memo/comfyui_faceswap.md>
 
 
