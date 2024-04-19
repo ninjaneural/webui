@@ -64,20 +64,8 @@ def webui():
         shared.demo = ui.create_ui()
         startup_timer.record("create ui")
 
-        if not cmd_opts.no_gradio_queue:
-            shared.demo.queue(64)
-
-        gradio_auth_creds = list(initialize_util.get_gradio_auth_creds()) or None
-
-        auto_launch_browser = False
-        if os.getenv('SD_WEBUI_RESTARTING') != '1':
-            if shared.opts.auto_launch_browser == "Remote" or cmd_opts.autolaunch:
-                auto_launch_browser = True
-            elif shared.opts.auto_launch_browser == "Local":
-                auto_launch_browser = not cmd_opts.webui_is_non_local
-
         app, local_url, share_url = shared.demo.launch(
-            height=3000, prevent_thread_lock=True
+            height=3000, prevent_thread_lock=True, shared=False
         )
 
         startup_timer.record("gradio launch")
