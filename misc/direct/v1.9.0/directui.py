@@ -65,7 +65,7 @@ def webui():
         startup_timer.record("create ui")
 
         app, local_url, share_url = shared.demo.launch(
-            height=3000, prevent_thread_lock=True, shared=False
+            height=3000, prevent_thread_lock=True
         )
 
         startup_timer.record("gradio launch")
