@@ -326,6 +326,15 @@
         "bakedVAE": true
     },
     {
+        "name": "majicMIX realistic v7",
+        "type": "실사",
+        "model": "https://civitai.com/models/43331/majicmix-realistic",
+        "ipynb": "majic_mix_realistic_v7_webui_colab",
+        "checkpoint": "https://civitai.com/api/download/models/176425",
+        "checkpoint_file": "majicMIX_realistic_v7.safetensors",
+        "bakedVAE": true
+    },
+    {
         "name": "majicMIX fantasy",
         "type": "2.5D",
         "model": "https://civitai.com/models/41865/majicmix-fantasy",
