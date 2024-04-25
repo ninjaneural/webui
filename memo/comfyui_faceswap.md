@@ -30,6 +30,11 @@ SDXL버전
 
 **IPAdapter Plus 2024-03-26 이후 버전 워크플로우**
 
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/20240326/FaceID_Plus_v2.json>
+
+FaceID_Plus_v2.json
+
+
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_faceswap/20240326/workflow1.json>
 
 이미지 생성없이 기존 이미지 수정
