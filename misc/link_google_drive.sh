@@ -34,4 +34,4 @@ if [ $2 == True ]; then
   rm /content/$1/output
   mv /content/$1/output /content/$1/output_backup
   ln -sf /content/drive/MyDrive/$3/output /content/$1/output
-
+fi
