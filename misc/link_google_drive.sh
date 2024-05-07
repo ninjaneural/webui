@@ -1,6 +1,7 @@
 if [ $2 == True ]; then
   mkdir /content/drive/MyDrive/$3
   mkdir /content/drive/MyDrive/$3/output
+  mkdir /content/drive/MyDrive/$3/outputs
   mkdir /content/drive/MyDrive/$3/checkpoint
   mkdir /content/drive/MyDrive/$3/lora
   mkdir /content/drive/MyDrive/$3/lycoris
@@ -27,13 +28,9 @@ if [ $2 == True ]; then
   ln -sf /content/drive/MyDrive/$3/lycoris /content/$1/models/LyCORIS/google
   ln -sf /content/drive/MyDrive/$3/hypernetwork /content/$1/models/hypernetworks/google
   ln -sf /content/drive/MyDrive/$3/wildcards /content/$1/extensions/sd-dynamic-prompts/wildcards
-  if [ -d "/content/$1/outputs" ]; then
-    rm /content/$1/outputs
-    mv /content/$1/outputs /content/$1/outputs_backup
-    ln -sf /content/drive/MyDrive/$3/output /content/$1/outputs
-  else
-    rm /content/$1/output
-    mv /content/$1/output /content/$1/output_backup
-    ln -sf /content/drive/MyDrive/$3/output /content/$1/output
-  fi
-fi
+  rm /content/$1/outputs
+  mv /content/$1/outputs /content/$1/outputs_backup
+  ln -sf /content/drive/MyDrive/$3/outputs /content/$1/outputs
+  rm /content/$1/output
+  mv /content/$1/output /content/$1/output_backup
+  ln -sf /content/drive/MyDrive/$3/output /content/$1/output
