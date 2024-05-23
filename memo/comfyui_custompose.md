@@ -42,6 +42,34 @@
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
 
+# IPAdapter_plus
+
+* 커스텀노드 ComfyUI_IPAdapter_plus
+
+<https://github.com/cubiq/ComfyUI_IPAdapter_plus>
+
+* faceid-plus-v2 모델 다운로드
+
+<https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin>
+
+> [v1 legecy] <strike>ComfyUI 설치폴더/custom_nodes/ComfyUI_IPAdapter_plus/models 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
+
+* faceid-plus-v2 로라 다운로드
+
+<https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors>
+
+> [v1 legecy] <strike>ComfyUI 설치폴더/models/loras 이곳에 복사</strike>  
+> [2024-03-26 v2 적용] ComfyUI 설치폴더/models/ipadapter 이곳에 복사 (폴더 없으면 생성)
+
+* clip vision 모델 (CLIP-ViT-H-14-laion2B-s32B-b79K) 다운로드
+
+<https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors>
+
+> 설치폴더/models/clip_vision 이곳에 복사  
+> 파일명을 CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors 으로 변경해주세요
+
+
 # 페이스ID, 페이스스왑 
 
 <https://youtu.be/iCtyKP6sYNU>
