@@ -7,8 +7,10 @@
 <img src="./comfyui_dreamtalk/image4.jpg" width="480"/>
 <img src="./comfyui_dreamtalk/image5.jpg" width="480"/>
 
+* Mask 이미지 (하단 blur, 하단+좌우 blur)
+
 <img src="./comfyui_dreamtalk/mask.png" width="100"/>
-<img src="./comfyui_dreamtalk/mask2.jpg" width="100"/>
+<img src="./comfyui_dreamtalk/mask2.png" width="100"/>
 
 # 샘플 mp3
 
