@@ -7,6 +7,9 @@
 <img src="./comfyui_dreamtalk/image4.jpg" width="480"/>
 <img src="./comfyui_dreamtalk/image5.jpg" width="480"/>
 
+<img src="./comfyui_dreamtalk/mask.png" width="100"/>
+<img src="./comfyui_dreamtalk/mask2.jpg" width="100"/>
+
 # 샘플 mp3
 
 <https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_dreamtalk/hello.mp3>
