@@ -1,28 +1,22 @@
-1. https://www.ffmpeg.org/download.html 접속
+1. https://www.ffmpeg.org/download.html 접속  
+  <img src="./ffmpeg_install/1.png"/>
 
-  <img src="./ffmpeg_install/1.png">
+  - 윈도우 아이콘 클릭
+  - Windows builds from gyan.dev 클릭
 
-- 윈도우 아이콘 클릭
-- Windows builds from gyan.dev 클릭
 
----
+2. 프로그램 다운로드  
+  <img src="./ffmpeg_install/2.png"/>
 
-2. 프로그램 다운로드
+  - release builds 클릭
+  - ffmpeg-release-full.7z 클릭(다운로드)
 
-  <img src="./ffmpeg_install/2.png">
 
-- release builds 클릭
-- ffmpeg-release-full.7z 클릭(다운로드)
-
----
-
-3. 다운받은 ffmpeg release 파일을 적당한곳에 압축품
-
+3. 다운받은 ffmpeg release 파일을 적당한곳에 압축품  
   <img src="./ffmpeg_install/3.png">
 
-- 폴더명 변경 (안해도됨)
+  - 폴더명 변경 (안해도됨)
 
----
 
 4. bin폴더 경로 복사
 
