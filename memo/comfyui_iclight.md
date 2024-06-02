@@ -42,6 +42,10 @@
 
 > 이미지 관련 커스텀노드 (뼈다귀모양)
 
+<https://github.com/pythongosssss/ComfyUI-Custom-Scripts>
+
+> 뱀모양 시리즈 노드 / 하단 이미지 피드  
+
 <https://github.com/kijai/ComfyUI-KJNodes>
 
 > 마스크 관련노드, 원형 마스크 생성
