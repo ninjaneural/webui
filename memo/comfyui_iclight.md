@@ -59,9 +59,9 @@
 > 각종 디텍터, 페이스 디테일러 
 
 
-# IC-Light 모델
+# IC-Light 모델 (https://huggingface.co/lllyasviel/)
 
-<https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors>
+<https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors>  
 <https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fbc.safetensors>
 
 > ComfyUI설치폴더/models/unet 에 저장해주세요  
