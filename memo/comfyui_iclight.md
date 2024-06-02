@@ -6,6 +6,10 @@
 <img src="./comfyui_iclight/image3.jpg" width="480"/>
 <img src="./comfyui_iclight/image4.jpg" width="480"/>
 <img src="./comfyui_iclight/image5.jpg" width="480"/>
+<img src="./comfyui_iclight/bg1.jpg" width="480"/>
+<img src="./comfyui_iclight/bg2.jpg" width="480"/>
+<img src="./comfyui_iclight/bg3.jpg" width="480"/>
+<img src="./comfyui_iclight/bg4.jpg" width="480"/>
 
 # 워크플로우
 
