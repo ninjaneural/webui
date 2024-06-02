@@ -66,3 +66,9 @@
 
 > ComfyUI설치폴더/models/unet 에 저장해주세요  
 
+
+# 사용한 체크포인트
+
+RealisticVision v51
+
+
