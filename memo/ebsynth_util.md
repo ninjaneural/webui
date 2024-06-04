@@ -45,3 +45,9 @@ python run_stage5.py ./input ./key out-
 ```
 python run_stage7.py input.mp4 out-
 ```
+
+- 이미지 파일명 변경 (rename, 00001-00000001.png 이렇게 저장되어있을때)
+
+```
+python rename.py 이미지경로
+```
