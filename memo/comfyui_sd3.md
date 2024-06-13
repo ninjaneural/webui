@@ -29,3 +29,7 @@
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
+
+# 참고
+
+<https://huggingface.co/stabilityai/stable-diffusion-3-medium>
