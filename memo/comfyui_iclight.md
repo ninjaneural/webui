@@ -31,6 +31,20 @@
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 
+-----
+
+다른 bria rmbg (alpha채널) 예제 
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_iclight/workflow1-2.json>
+
+<https://github.com/ZHO-ZHO-ZHO/ComfyUI-BRIA_AI-RMBG>
+
+<https://huggingface.co/briaai/RMBG-1.4/resolve/main/model.pth>
+
+-> ComfyUI-BRIA_AI-RMBG/RMBG-1.4 이곳에 저장
+
+(마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
+
 
 # 그외 커스텀노드
 
