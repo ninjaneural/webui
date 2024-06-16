@@ -31,7 +31,7 @@ if [ $5 == True ]; then
 fi
 if [ $5 == True ] && [ "$lastest_version" = false ]; then
   cd ./extensions/adetailer
-  !git reset --hard afb9cd0b661886a18ce8e0a9cc3ac36d4a3af7d9
+  git reset --hard afb9cd0b661886a18ce8e0a9cc3ac36d4a3af7d9
   cd /content/$1
 fi
 
