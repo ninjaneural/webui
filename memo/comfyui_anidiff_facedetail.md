@@ -43,6 +43,10 @@
 
 > ControlNet Preprocessors
 
+<https://github.com/cubiq/ComfyUI_essentials>
+
+> 이미지, 마스크 처리
+
 <https://github.com/pythongosssss/ComfyUI-Custom-Scripts>
 
 > Constrain Images
