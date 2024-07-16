@@ -3,7 +3,9 @@
 
 워크플로우
 
-<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_a1111/workflow1.json>
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_a1111/workflow.json> (기본 워크플로우, clip skip -2)
+
+<https://raw.githubusercontent.com/ninjaneural/webui/master/memo/comfyui_a1111/workflow1.json> (페이스 디테일)
 
 (마우스 오른쪽버튼을 누르고 링크 저장을 눌러주세요)
 

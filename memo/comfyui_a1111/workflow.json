@@ -1,0 +1,1115 @@
+{
+  "last_node_id": 28,
+  "last_link_id": 55,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        468,
+        807
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            20
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        768,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1219,
+        195
+      ],
+      "size": {
+        "0": 299,
+        "1": 522
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        1558,
+        4
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            32
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4x-UltraSharp.pth"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        1585,
+        100
+      ],
+      "size": {
+        "0": 241.79998779296875,
+        "1": 46
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 32,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageUpscaleWithModel"
+      }
+    },
+    {
+      "id": 20,
+      "type": "ImageScaleBy",
+      "pos": [
+        1569,
+        189
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScaleBy"
+      },
+      "widgets_values": [
+        "nearest-exact",
+        0.5
+      ]
+    },
+    {
+      "id": 21,
+      "type": "VAEEncode",
+      "pos": [
+        1592,
+        314
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 34
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 43
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            39
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      }
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1209,
+        87
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 22
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9,
+            40
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 22,
+      "type": "KSampler //Inspire",
+      "pos": [
+        1903,
+        78
+      ],
+      "size": {
+        "0": 315,
+        "1": 358
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 35
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 36
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 37
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            41
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler //Inspire"
+      },
+      "widgets_values": [
+        222223,
+        "fixed",
+        30,
+        7,
+        "dpmpp_2m_sde",
+        "karras",
+        0.4,
+        "GPU(=A1111)",
+        "incremental",
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "type": "VAEDecode",
+      "pos": [
+        1966,
+        22
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 41
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 44
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            42
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 11,
+      "type": "BNK_CLIPTextEncodeAdvanced",
+      "pos": [
+        420,
+        180
+      ],
+      "size": {
+        "0": 397.7411193847656,
+        "1": 102
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 27
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            18,
+            36
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BNK_CLIPTextEncodeAdvanced"
+      },
+      "widgets_values": [
+        "1girl,black hair,blurry,blurry background,breasts,brick wall,bridge,brown eyes,building,city,city lights,cityscape,denim,depth of field,earrings,hoop earrings,jacket,jeans,jewelry,lips,midriff,navel,pants,photo background,realistic,road,skyscraper,solo,street,leggings",
+        "none",
+        "A1111"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "Power Prompt (rgthree)",
+      "pos": [
+        420,
+        -90
+      ],
+      "size": {
+        "0": 392,
+        "1": 232
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "opt_model",
+          "type": "MODEL",
+          "link": 24,
+          "dir": 3
+        },
+        {
+          "name": "opt_clip",
+          "type": "CLIP",
+          "link": 54,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3,
+          "dir": 4,
+          "disabled": false,
+          "slot_index": 0
+        },
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            26,
+            35
+          ],
+          "shape": 3,
+          "dir": 4,
+          "disabled": false,
+          "slot_index": 1
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            27,
+            30
+          ],
+          "shape": 3,
+          "dir": 4,
+          "disabled": false,
+          "slot_index": 2
+        },
+        {
+          "name": "TEXT",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "shape": 3,
+          "dir": 4,
+          "color_off": "#7F7",
+          "color_on": "#7F7",
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Power Prompt (rgthree)",
+        "combos_filter": ""
+      },
+      "widgets_values": [
+        "official art, unity 8k wallpaper, ultra detailed, beautiful and aesthetic, beautiful,, channeling arcane energies that ripple and distort the very air, abstract perspective, covered with small bones, gooey liquid neon color hair and lips, highly refractive skin with small rainbow sparkles, glowing color exploding cell shading, Voronoi diagrams sparkling lighting, Dappled Light, ((A canvas of code and creativity, bits and brushes unite, unveiling the portrait beyond pixels)), dreamy magical atmosphere, (skin texture), (film grain), (warm hue, warm tone), cinematic light, side lighting, Captain America (Marvel Comics): Captain America's suit features a blue, scale-patterned jumpsuit with a white star emblem on the chest, along with red and white stripes on the abdomen. He wears red boots, gloves, and a utility belt, as well as a blue helmet with wings on the sides., by boris vallejo",
+        "CHOOSE",
+        "CHOOSE"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "VAELoader",
+      "pos": [
+        38,
+        623
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            10,
+            43,
+            44
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "vae-ft-mse-840000-ema-pruned.safetensors"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        26,
+        474
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            24
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            53
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sd15\\dreamshaper_8.safetensors"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "KSampler //Inspire",
+      "pos": [
+        867,
+        185
+      ],
+      "size": {
+        "0": 315,
+        "1": 358
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 26
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 18
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 19
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            22
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler //Inspire"
+      },
+      "widgets_values": [
+        4270357491,
+        "fixed",
+        30,
+        7,
+        "dpmpp_2m",
+        "karras",
+        1,
+        "GPU(=A1111)",
+        "incremental",
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "type": "BNK_CLIPTextEncodeAdvanced",
+      "pos": [
+        412,
+        570
+      ],
+      "size": {
+        "0": 392.12908935546875,
+        "1": 102
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 30
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 29,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            19,
+            37
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BNK_CLIPTextEncodeAdvanced"
+      },
+      "widgets_values": [
+        "(((stocking, hat, glove, choker, collar, nail polish))),nsfw, nude, nipple, EasyNegative,paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot,extra fingers,fewer fingers, ng_deepnegative_v1_75t",
+        "none",
+        "A1111"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "Text Parse A1111 Embeddings",
+      "pos": [
+        452,
+        475
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 28,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            29,
+            31
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Parse A1111 Embeddings"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "ShowText|pysssss",
+      "pos": [
+        867,
+        639
+      ],
+      "size": {
+        "0": 332.12908935546875,
+        "1": 183.3990478515625
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 31,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "(easynegative, embedding:ng_deepnegative_v1_75t), (worst quality, low quality:1.4), (lowres, bad anatomy, text, error, blurry, lineart, pixel art, watermark, text, signature, zombie, sketch, interlocked fingers, comic), (bad hand, extra hands, extra fingers, too many fingers, fused fingers, bad arm, distorted arm, extra arms, fused arms, extra legs, missing leg, disembodied leg, extra nipples, detached arm, liquid hand, inverted hand, disembodied limb)"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "Text Multiline",
+      "pos": [
+        432,
+        315
+      ],
+      "size": {
+        "0": 359.26739501953125,
+        "1": 123.040771484375
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            28
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline"
+      },
+      "widgets_values": [
+        "(EasyNegative, ng_deepnegative_v1_75t), (worst quality, low quality:1.4), (lowres, bad anatomy, text, error, blurry, lineart, pixel art, watermark, text, signature, zombie, sketch, interlocked fingers, comic), (bad hand, extra hands, extra fingers, too many fingers, fused fingers, bad arm, distorted arm, extra arms, fused arms, extra legs, missing leg, disembodied leg, extra nipples, detached arm, liquid hand, inverted hand, disembodied limb)"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "CLIPSetLastLayer",
+      "pos": [
+        35,
+        362
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            54
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ]
+    },
+    {
+      "id": 24,
+      "type": "SaveImage",
+      "pos": [
+        2254,
+        64
+      ],
+      "size": {
+        "0": 458.70001220703125,
+        "1": 647.9000244140625
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 42
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    }
+  ],
+  "links": [
+    [
+      9,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      18,
+      11,
+      0,
+      13,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      19,
+      12,
+      0,
+      13,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      20,
+      5,
+      0,
+      13,
+      3,
+      "LATENT"
+    ],
+    [
+      22,
+      13,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      23,
+      14,
+      3,
+      11,
+      1,
+      "STRING"
+    ],
+    [
+      24,
+      4,
+      0,
+      14,
+      0,
+      "MODEL"
+    ],
+    [
+      26,
+      14,
+      1,
+      13,
+      0,
+      "MODEL"
+    ],
+    [
+      27,
+      14,
+      2,
+      11,
+      0,
+      "CLIP"
+    ],
+    [
+      28,
+      16,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      15,
+      0,
+      12,
+      1,
+      "STRING"
+    ],
+    [
+      30,
+      14,
+      2,
+      12,
+      0,
+      "CLIP"
+    ],
+    [
+      31,
+      15,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      32,
+      19,
+      0,
+      18,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      33,
+      18,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      20,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      14,
+      1,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      36,
+      11,
+      0,
+      22,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      37,
+      12,
+      0,
+      22,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      39,
+      21,
+      0,
+      22,
+      3,
+      "LATENT"
+    ],
+    [
+      40,
+      8,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      41,
+      22,
+      0,
+      23,
+      0,
+      "LATENT"
+    ],
+    [
+      42,
+      23,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      43,
+      10,
+      0,
+      21,
+      1,
+      "VAE"
+    ],
+    [
+      44,
+      10,
+      0,
+      23,
+      1,
+      "VAE"
+    ],
+    [
+      53,
+      4,
+      1,
+      28,
+      0,
+      "CLIP"
+    ],
+    [
+      54,
+      28,
+      0,
+      14,
+      1,
+      "CLIP"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6209213230591552,
+      "offset": [
+        220.2036574962787,
+        256.4047400661241
+      ]
+    }
+  },
+  "version": 0.4
+}
