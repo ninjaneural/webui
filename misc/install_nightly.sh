@@ -16,7 +16,7 @@ cd /content/$1
 rm webui*.sh
 
 lastest_version=false
-if [ "$2" = "v1.6.0" ] || [ "$2" = "v1.7.0" ] || [ "$2" = "v1.8.0" ] || [ "$2" = "v1.9.0" ] || [ "$2" = "forge" ]; then
+if [ "$2" = "v1.6.0" ] || [ "$2" = "v1.7.0" ] || [ "$2" = "v1.8.0" ] || [ "$2" = "v1.9.0" ] || [ "$2" = "v1.10.0" ] || [ "$2" = "forge" ]; then
   lastest_version=true
 fi
 
