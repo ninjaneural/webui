@@ -43,6 +43,10 @@ async function copy_files() {
         if (!item.checkpoint_file) {
             item.checkpoint_file = id+'.safetensors';
         }
+        if (!item.sdmodel) {
+            item.sdmodel = 'sdxl';
+        }
+        return item;
     });
     list.forEach((item) => {
         let code = templateCode;
@@ -65,8 +69,6 @@ async function copy_files() {
 
 async function make_readme2() {
     let readme = [];
-    readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전(install)                                                                                                                                                                                | Model                                                                                  | VAE  | Memo                    |`);
-    readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
     const list = checkpoints.filter(x=>!x.auth).sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0).map(item=>{
         let id = item.name.toLowerCase().replace(/[- ]/g, '_').replace(/[^a-z0-9]/g, '');
         if (!item.ipynb) {
@@ -75,8 +77,21 @@ async function make_readme2() {
         if (!item.checkpoint_file) {
             item.checkpoint_file = id+'.safetensors';
         }
+        if (!item.sdmodel) {
+            item.sdmodel = 'sdxl';
+        }
+        return item;
     });
-    list.forEach((item) => {
+    readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전(install)                                                                                                                                                                                | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
+    list.filter(x=>x.sdmodel=='sdxl').forEach((item) => {
+        readme.push(`| [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/sdxl/${item.ipynb}.ipynb) | [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge-install.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install_sdxl/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
+    });
+    readme.push(``);
+
+    readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전(install)                                                                                                                                                                                | Model                                                                                  | VAE  | Memo                    |`);
+    readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
+    list.filter(x=>x.sdmodel=='pony').forEach((item) => {
         readme.push(`| [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/sdxl/${item.ipynb}.ipynb) | [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge-install.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install_sdxl/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
     });
 
