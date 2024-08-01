@@ -321,5 +321,77 @@
             }
         ],
         "bakedVAE": true
-    } 
+    },
+    {
+        "name": "Pony Realism",
+        "type": "실사",
+        "model": "https://civitai.com/models/372465/pony-realism",
+        "checkpoint": "https://civitai.com/api/download/models/534642?type=Model&format=SafeTensor&size=full&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "WAI-REAL_CN",
+        "type": "실사",
+        "model": "https://civitai.com/models/469902/wai-realcn",
+        "checkpoint": "https://civitai.com/api/download/models/655516?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "PinkiePie pony mix",
+        "type": "실사",
+        "model": "https://civitai.com/models/457669/pinkiepie-pony-mix",
+        "checkpoint": "https://civitai.com/api/download/models/659781?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "DucHaiten-Pony-XL",
+        "type": "2D",
+        "model": "https://civitai.com/models/376450/duchaiten-pony-xl-no-score",
+        "checkpoint": "https://civitai.com/api/download/models/665034?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "DucHaiten-Pony-Real",
+        "type": "실사",
+        "model": "https://civitai.com/models/477851/duchaiten-pony-real",
+        "checkpoint": "https://civitai.com/api/download/models/619549?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "T-ponynai3",
+        "type": "2D",
+        "model": "https://civitai.com/models/317902/t-ponynai3",
+        "checkpoint": "https://civitai.com/api/download/models/673299?type=Model&format=SafeTensor&size=full&fp=bf16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "Speciosa 2.5D",
+        "type": "2.5D",
+        "model": "https://civitai.com/models/560402/speciosa-25d",
+        "checkpoint": "https://civitai.com/api/download/models/634767?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "CyberRealistic Pony",
+        "type": "실사",
+        "model": "https://civitai.com/models/443821/cyberrealistic-pony",
+        "checkpoint": "https://civitai.com/api/download/models/680915?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    },
+    {
+        "name": "iNiverse Mix XL",
+        "type": "실사",
+        "model": "https://civitai.com/models/226533/iniverse-mix-xlsfw-and-nsfw",
+        "checkpoint": "https://civitai.com/api/download/models/636561?type=Model&format=SafeTensor&size=full&fp=fp16",
+        "sdmodel": "pony",
+        "bakedVAE": true
+    }
 ]

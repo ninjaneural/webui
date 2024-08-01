@@ -35,10 +35,18 @@ async function copy_files() {
     let readme = [];
     readme.push(`| Colab                                                                                                                                                                                            | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    const list = checkpoints.filter(x=>!x.auth).sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
+    const list = checkpoints.filter(x=>!x.auth).sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0).map(item=>{
+        let id = item.name.toLowerCase().replace(/[- ]/g, '_').replace(/[^a-z0-9]/g, '');
+        if (!item.ipynb) {
+            item.ipynb = id+'_webui_colab';
+        }
+        if (!item.checkpoint_file) {
+            item.checkpoint_file = id+'.safetensors';
+        }
+    });
     list.forEach((item) => {
-        console.log(`${item.ipynb} 복사`);
         let code = templateCode;
+        console.log(`${item.ipynb} 복사`);
         code = code.replaceAll('#template_checkpoint_default#', item.checkpoint);
         code = code.replaceAll('#template_checkpoint_default_name#', item.checkpoint_file);
         code = code.replaceAll('#template_refine_checkpoint_default#', item.refine_checkpoint ?? '');
@@ -59,7 +67,15 @@ async function make_readme2() {
     let readme = [];
     readme.push(`| 바로실행                                                                                                                                                                                        | 설치버전(install)                                                                                                                                                                                | Model                                                                                  | VAE  | Memo                    |`);
     readme.push(`| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---- | ----------------------- |`);
-    const list = checkpoints.filter(x=>!x.auth).sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0);
+    const list = checkpoints.filter(x=>!x.auth).sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 0).map(item=>{
+        let id = item.name.toLowerCase().replace(/[- ]/g, '_').replace(/[^a-z0-9]/g, '');
+        if (!item.ipynb) {
+            item.ipynb = id+'_webui_colab';
+        }
+        if (!item.checkpoint_file) {
+            item.checkpoint_file = id+'.safetensors';
+        }
+    });
     list.forEach((item) => {
         readme.push(`| [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/sdxl/${item.ipynb}.ipynb) | [![Open In Colab](https://raw.githubusercontent.com/neuralninja22/colab/master/icons/colab-badge-install.svg)](https://colab.research.google.com/github/ninjaneural/webui/blob/master/install_sdxl/${item.ipynb}.ipynb) | [${item.name}](${item.model})                    | ${item.bakedVAE ? '' : '선택'} | ${item.type}                      |`)
     });
