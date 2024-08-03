@@ -15,6 +15,12 @@ fi
 cd /content/$1
 rm webui*.sh
 
+if [ "$2" = "v1.3.2" ]; then
+  wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/patch/v1.3.2/requirements_versions.txt -O ./requirements_versions.txt
+fi
+if [ "$2" = "v1.4.1" ]; then
+  wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/patch/v1.4.1/requirements_versions.txt -O ./requirements_versions.txt
+fi
 if [ "$2" = "v1.5.2" ]; then
   wget https://raw.githubusercontent.com/neuralninja22/colab/master/misc/patch/v1.5.2/requirements_versions.txt -O ./requirements_versions.txt
 fi
