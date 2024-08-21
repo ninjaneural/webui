@@ -13,10 +13,10 @@
   * **t5xxl_fp8_e4m3fn.safetensors, clip_l.safetensors**  
     <https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main>  
 
-  * t5xxl 양자화모델
+  * t5xxl 양자화모델  
     <https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/tree/main>
 
-## Unet 모델  
+## UNet 모델  
   models/unet 에 저장
 
   * **flux.1 dev 양자화 모델(GGUF)**  
