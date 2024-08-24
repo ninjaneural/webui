@@ -76,27 +76,24 @@
 # 사용한 프롬프트
 
 ```
-running chick donald trump running with a knife, 
+running chick running with a knife, 
 Mickey Mouse with huge swords in the middle of the desert, sandstorm blowing, very realistic photo
 A cat runs away with a fish in its mouth through a market
 
 Minecraft characters Iron Man, Thor, and Captain America walk down a street with Van Gogh's Starry Night in the background.
 In a town that looks exactly like Van Gogh's Starry Night, Minecraft characters Iron Man, Thor, and Captain America are fighting each other.
-A warrior Mickey Mouse staggering across the desert with a giant sword.  The atmosphere is cinematic, with hyper-realistic detail.
-
-A blue burning skeleton with leather clothes appears on the street in the middle of the night city. It's a cinematic and hyper-realistic scene.
-lego devil in leather appears on a street in the middle of a night city. Lightning strikes all around. It's a cinematic and very realistic scene.
-
-A scene where Iron Man with Tony Stark's face is holding up Doctor Doom with Tony Stark's face after defeating him. The atmosphere is cinematic, with hyper-realistic detail.
 
 jesus cat walking on water. It's a cinematic and very realistic scene.
 
-Donald Trump and Biden dance together at the White House. Made of pixel art
+Donald Trump and Biden dance together at the White House.
 Elon Musk praying. Made of pixel art
 
+cute cat like jesus walking on water. clouds are in the shape of the text "Holy", It's a cinematic and very realistic scene.
+
 object that express AI and the logo with the text "NeuralNinja" in the middle.
+A blue burning skeleton with leather clothes appears on the hell, There is a burning text in the background that says "Welcome". It's a cinematic and hyper-realistic scene.
 
 A beautiful woman with electricity running through her body poses in a vacant lot, wearing leather jeans and a jacket. The electricity extends like spiderweb-like wings. The atmosphere is cinematic, with hyper-realistic detail.
 A beautiful woman is struck by lightning and looks like a skeleton. The surroundings are filled with electric effects. A vacant lot in the middle of the city. The atmosphere is cinematic, with hyper-realistic detail.
 
-```
+portrait of a female character with long, flowing hair that appears to be made of ethereal, swirling patterns resembling the Northern Lights or Aurora Borealis. Her face is serene, with pale skin and striking features. She wears a dark-colored outfit with subtle patterns. The ```
