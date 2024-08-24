@@ -55,10 +55,13 @@
 
 ## forge 이용방법
   
-  그냥 체크포인트를 받아서 이용하면되요!  
+  체크포인트를 받아서 이용하면되요!  
 
-  * 체크포인트  
+  * nf4 체크포인트  
     <https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/blob/main/flux1-dev-bnb-nf4.safetensors>
+
+  * fp8 체크포인트  
+    <https://civitai.com/models/622579/flux1-dev-fp8>
 
 
 
