@@ -1,0 +1,7 @@
+{
+    "path_checkpoints": "e:\\models\\checkpoints",
+    "path_loras": "e:\\models\\loras",
+    "path_embeddings": "e:\\models\\embeddings",
+    "path_vae_approx": "e:\\models\\vae",
+    "path_outputs": "e:\\output\\fooocus"
+}

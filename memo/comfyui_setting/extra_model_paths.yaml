@@ -1,0 +1,18 @@
+#Rename this to extra_model_paths.yaml and ComfyUI will load it
+
+#config for a1111 ui
+#all you have to do is change the base_path to where yours is installed
+comfyui:
+    checkpoints: e:\models\checkpoints
+    vae: e:\models\vae
+    loras: e:\models\loras
+    embeddings: e:\models\embeddings
+    hypernetworks: e:\models\hypernetworks
+    controlnet: e:\models\controlnet
+    upscale_models: e:\models\upscale_models
+    clip: e:\models\clip
+    clip_vision: e:\models\clip_vision
+    unet: e:\models\unet
+    ipadapter: e:\models\ipadapter
+    animatediff_models: e:\models\animatediff
+    animatediff_motion_lora: e:\models\animatediff_motion_lora
