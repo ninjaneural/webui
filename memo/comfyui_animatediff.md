@@ -75,11 +75,13 @@ https://github.com/FizzleDorf/ComfyUI_FizzNodes
 
 * 32프레임 이상 오픈포즈 3이미지 전환
 
-<a href="./comfyui_animatediff/cn_adv_3images.json">cn_adv_2image.json</a>
+<a href="./comfyui_animatediff/cn_adv_3images.json">cn_adv_3images.json</a>
 
 * 32프레임 이상 오픈포즈 3이미지 + 프롬프트 트레블 전환
 
-<a href="./comfyui_animatediff/cn_adv_3images_travel.json">cn_adv_2image.json</a>
+<a href="./comfyui_animatediff/cn_adv_3images_travel.json">cn_adv_3images_travel.json</a>
+
+(OPENPOSE 전환 애니메이션)
 
 
 * 모션로라
