@@ -73,6 +73,15 @@ https://github.com/FizzleDorf/ComfyUI_FizzNodes
 
 (생성한 이미지로 설정하고 프롬프트도 맟추면 초기 이미지 애니메이션)
 
+* 32프레임 이상 오픈포즈 3이미지 전환
+
+<a href="./comfyui_animatediff/cn_adv_3images.json">cn_adv_2image.json</a>
+
+* 32프레임 이상 오픈포즈 3이미지 + 프롬프트 트레블 전환
+
+<a href="./comfyui_animatediff/cn_adv_3images_travel.json">cn_adv_2image.json</a>
+
+
 * 모션로라
 
 <a href="./comfyui_animatediff/motion_lora.json">motion_lora.json</a>
