@@ -1,4 +1,3 @@
-@유튜브채널 https://www.youtube.com/@neuralninja-ai  
 
 > ComfyUI실행사이트 https://github.com/ninjaneural/comfyui  
 > Kaggle실행사이트 https://github.com/ninjaneural/kaggle  
