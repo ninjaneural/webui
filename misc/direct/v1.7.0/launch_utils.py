@@ -49,13 +49,13 @@ def check_python_version():
             f"""
 INCOMPATIBLE PYTHON VERSION
 
-This program is tested with 3.10.6 Python, but you have {major}.{minor}.{micro}.
+This program is tested with 3.11.12 Python, but you have {major}.{minor}.{micro}.
 If you encounter an error with "RuntimeError: Couldn't install torch." message,
 or any other error regarding unsuccessful package (library) installation,
-please downgrade (or upgrade) to the latest version of 3.10 Python
+please downgrade (or upgrade) to the latest version of 3.11.12 Python
 and delete current Python and "venv" folder in WebUI's directory.
 
-You can download 3.10 Python from here: https://www.python.org/downloads/release/python-3106/
+You can download 3.11.12 Python from here: https://www.python.org/downloads/release/python-31112/
 
 {"Alternatively, use a binary release of WebUI: https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases" if is_windows else ""}
 
@@ -433,7 +433,7 @@ def prepare_environment():
     )
     torch_command = os.environ.get(
         "TORCH_COMMAND",
-        f"pip install torch==2.0.1 torchvision==0.15.2 --extra-index-url {torch_index_url}",
+        f"pip install torch==2.6.0 torchvision==0.20.1 --extra-index-url {torch_index_url}",
     )
     if args.use_ipex:
         if platform.system() == "Windows":
@@ -446,11 +446,11 @@ def prepare_environment():
             #   - Bundles minimal oneAPI 2023.2 dependencies into the python wheels, so users don't need to install oneAPI for the whole system.
             #   - Provides a compatible torchvision wheel: https://github.com/intel/intel-extension-for-pytorch/issues/465
             # Limitation:
-            #   - Only works for python 3.10
+            #   - Only works for python 3.11.12
             url_prefix = "https://github.com/Nuullll/intel-extension-for-pytorch/releases/download/v2.0.110%2Bxpu-master%2Bdll-bundle"
             torch_command = os.environ.get(
                 "TORCH_COMMAND",
-                f"pip install {url_prefix}/torch-2.0.0a0+gite9ebda2-cp310-cp310-win_amd64.whl {url_prefix}/torchvision-0.15.2a0+fa99a53-cp310-cp310-win_amd64.whl {url_prefix}/intel_extension_for_pytorch-2.0.110+gitc6ea20b-cp310-cp310-win_amd64.whl",
+                f"pip install {url_prefix}/torch-2.6.0a0+gite9ebda2-cp310-cp310-win_amd64.whl {url_prefix}/torchvision-0.20.1a0+fa99a53-cp310-cp310-win_amd64.whl {url_prefix}/intel_extension_for_pytorch-2.0.110+gitc6ea20b-cp310-cp310-win_amd64.whl",
             )
         else:
             # Using official IPEX release for linux since it's already an AOT build.
